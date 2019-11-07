@@ -28,7 +28,7 @@ export class Navigation extends Component {
 
   render() {
     const { active } = this.state,
-      { subNav } = this.props,
+      // { subNav } = this.props,
       NavLink = ({ to, className, children, ...props }) => (
         <Link
           to={to}
@@ -49,9 +49,36 @@ export class Navigation extends Component {
             <Logo />
           </Link>
           <div className="Nav--Links">
-            <NavLink to="/">Home</NavLink>
-            <NavLink to="/components/">Components</NavLink>
             <div
+              className={`Nav--Group ${
+                this.state.activeSubNav === 'about' ? 'active' : ''
+              }`}
+            >
+              <NavLink
+                to="/about/"
+                className={`NavLink Nav--GroupParent ${
+                  this.props.location.pathname.includes('philosophy')
+                    ? 'active'
+                    : ''
+                }`}
+                onClick={() => this.toggleSubNav('about')}
+              >
+                About
+              </NavLink>
+
+              <div className="Nav--GroupLinks">
+                <NavLink to="/philosophy/" className="Nav--GroupLink">
+                  Philosophy
+                </NavLink>
+                <NavLink to="/why-rising-stars/" className="Nav--GroupLink">
+                  Why Rising Stars?
+                </NavLink>
+                <NavLink to="/faq/" className="Nav--GroupLink">
+                  FAQ
+                </NavLink>
+              </div>
+            </div>
+            {/* <div
               className={`Nav--Group ${
                 this.state.activeSubNav === 'posts' ? 'active' : ''
               }`}
@@ -82,8 +109,7 @@ export class Navigation extends Component {
                   </NavLink>
                 ))}
               </div>
-            </div>
-            <NavLink to="/default/">Default</NavLink>
+            </div>*/}
             <NavLink to="/contact/">Contact</NavLink>
           </div>
           <button

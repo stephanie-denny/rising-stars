@@ -1,7 +1,7 @@
 ---
-template: HomePage
-slug: ''
-title: Rising Stars Bilingual Learning Center
+template: AboutPage
+slug: about
+title: About Rising Stars Bilingual Learning Center
 featuredImage: 'https://ucarecdn.com/0819ea94-ec42-4108-ac6b-46deccf43cae/'
 subtitle: ' Welcome to the ultimate Gatsby and Netlify starter project.'
 meta:
