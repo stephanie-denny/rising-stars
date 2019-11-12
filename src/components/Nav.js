@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
 import { Location } from '@reach/router'
-import { Menu, X } from 'react-feather'
 import Logo from './Logo'
+import { Link } from 'gatsby'
 import AniLink from "gatsby-plugin-transition-link/AniLink"
+import FA from 'react-fontawesome'
 
 import './Nav.css'
 
@@ -46,7 +47,7 @@ export class Navigation extends Component {
     return (
       <nav className={`Nav ${active ? 'Nav-active' : ''}`}>
         <div className="Nav--Container container">
-          <NavLink to="/" fade onClick={this.handleLinkClick}>
+          <NavLink to="/" onClick={this.handleLinkClick}>
             <Logo />
           </NavLink>
           <div className="Nav--Links">
@@ -57,7 +58,7 @@ export class Navigation extends Component {
             >
               <NavLink
                 to="/about/"
-                fade
+
                 className={`NavLink Nav--GroupParent ${
                   this.props.location.pathname.includes('philosophy') ||
                   this.props.location.pathname.includes('why-rising-stars') ||
@@ -74,17 +75,17 @@ export class Navigation extends Component {
                 className="Nav--GroupLinks"
                 onMouseLeave={() => this.toggleSubNav('about')}
               >
-                <NavLink fade to="/philosophy/" className="Nav--GroupLink">
+                <NavLink to="/philosophy/" className="Nav--GroupLink">
                   Philosophy
                 </NavLink>
                 <NavLink
-                  fade
+
                   to="/why-rising-stars/"
                   className="Nav--GroupLink"
                 >
                   Why Rising Stars?
                 </NavLink>
-                <NavLink fade to="/faq/" className="Nav--GroupLink">
+                <NavLink to="/faq/" className="Nav--GroupLink">
                   FAQ
                 </NavLink>
               </div>
@@ -96,7 +97,7 @@ export class Navigation extends Component {
             >
               <NavLink
                 to="/programs/"
-                fade
+
                 className={`NavLink Nav--GroupParent ${
                   this.props.location.pathname.includes('infants') ||
                   this.props.location.pathname.includes('twos') ||
@@ -114,16 +115,16 @@ export class Navigation extends Component {
                 className="Nav--GroupLinks"
                 onMouseLeave={() => this.toggleSubNav('programs')}
               >
-                <NavLink fade to="/infants/" className="Nav--GroupLink">
+                <NavLink to="/infants/" className="Nav--GroupLink">
                   Infants
                 </NavLink>
-                <NavLink fade to="/twos/" className="Nav--GroupLink">
+                <NavLink to="/twos/" className="Nav--GroupLink">
                   Twos
                 </NavLink>
-                <NavLink fade to="/threes/" className="Nav--GroupLink">
+                <NavLink to="/threes/" className="Nav--GroupLink">
                   Threes
                 </NavLink>
-                <NavLink fade to="/pre-k/" className="Nav--GroupLink">
+                <NavLink to="/pre-k/" className="Nav--GroupLink">
                   Pre-K
                 </NavLink>
               </div>
@@ -135,7 +136,7 @@ export class Navigation extends Component {
             >
               <NavLink
                 to="/parents/"
-                fade
+
                 className={`NavLink Nav--GroupParent ${
                   this.props.location.pathname.includes('policies') ||
                   this.props.location.pathname.includes('handbook') ||
@@ -153,24 +154,21 @@ export class Navigation extends Component {
                 className="Nav--GroupLinks"
                 onMouseLeave={() => this.toggleSubNav('parents')}
               >
-                <NavLink fade to="/policies/" className="Nav--GroupLink">
+                <NavLink to="/policies/" className="Nav--GroupLink">
                   Policies
                 </NavLink>
-                <NavLink fade to="/handbook/" className="Nav--GroupLink">
+                <NavLink to="/handbook/" className="Nav--GroupLink">
                   Handbook
                 </NavLink>
-                <NavLink fade to="/calendar/" className="Nav--GroupLink">
+                <NavLink to="/calendar/" className="Nav--GroupLink">
                   Calendar
                 </NavLink>
-                <NavLink fade to="/resources/" className="Nav--GroupLink">
+                <NavLink to="/resources/" className="Nav--GroupLink">
                   Resources
                 </NavLink>
               </div>
             </div>
-            <NavLink
-              to="/enrollment/"
-              fade
-            >
+            <NavLink to="/enrollment/">
               Enrollment
             </NavLink>
 
@@ -201,13 +199,14 @@ export class Navigation extends Component {
                 </NavLink>
               </div>
             </div>
+            <a
+              href="https://www.facebook.com/risingstarsbilingual/"
+              target="_blank" class="SVGIcon"
+            >
+              <FA name="facebook" />
+            </a>
+            <a class="Button" href="tel:+17372260768">Call Now: (737) 226-0768</a>
           </div>
-          <button
-            className="Button-blank Nav--MenuButton"
-            onClick={this.handleMenuToggle}
-          >
-            {active ? <X /> : <Menu />}
-          </button>
         </div>
       </nav>
     )
