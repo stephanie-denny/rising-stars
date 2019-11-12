@@ -2,12 +2,13 @@ const postcssPresetEnv = require('postcss-preset-env')
 
 module.exports = {
   siteMetadata: {
-    title: 'Yelloecake',
+    title: 'Rising Stars Bilingual Learning Center',
     siteUrl: 'https://yellowcake.netlify.com'
   },
   plugins: [
     'gatsby-plugin-react-helmet',
     'gatsby-transformer-yaml',
+    'gatsby-plugin-transition-link',
     {
       resolve: 'gatsby-plugin-google-tagmanager',
       options: {
@@ -44,8 +45,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'yellowcake',
-        short_name: 'yellowcake',
+        name: 'Rising Stars Bilingual Learning Center',
+        short_name: 'rising_stars',
         start_url: '/',
         background_color: '#00C2BD',
         theme_color: '#00C2BD',

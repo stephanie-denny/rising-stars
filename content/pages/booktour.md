@@ -1,7 +1,7 @@
 ---
 template: ContactPage
-slug: contact
-title: Contact Rising Stars Bilingual Learning Center
+slug: book-a-tour
+title: Book A Tour With Rising Stars
 featuredImage: 'https://ucarecdn.com/0819ea94-ec42-4108-ac6b-46deccf43cae/'
 subtitle: This is the contact page subtitle.
 address: '404 James St, Burleigh Heads QLD 4220'
@@ -13,7 +13,7 @@ locations:
     mapLink: ''
 meta:
   description: This is a meta description.
-  title: Contact Rising Stars Bilingual Learning Center
+  title: Book A Tour With Rising Stars
 ---
 
 # Example contact form
