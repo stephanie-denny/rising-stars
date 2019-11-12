@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import { Location } from '@reach/router'
-import { Link } from 'gatsby'
 import { Menu, X } from 'react-feather'
 import Logo from './Logo'
 import AniLink from "gatsby-plugin-transition-link/AniLink"
@@ -47,9 +46,9 @@ export class Navigation extends Component {
     return (
       <nav className={`Nav ${active ? 'Nav-active' : ''}`}>
         <div className="Nav--Container container">
-          <AniLink to="/" fade onClick={this.handleLinkClick}>
+          <NavLink to="/" fade onClick={this.handleLinkClick}>
             <Logo />
-          </AniLink>
+          </NavLink>
           <div className="Nav--Links">
             <div
               className={`Nav--Group ${
@@ -87,41 +86,46 @@ export class Navigation extends Component {
                 </AniLink>
               </div>
             </div>
-            {/* <div
+            <div
               className={`Nav--Group ${
-                this.state.activeSubNav === 'posts' ? 'active' : ''
+                this.state.activeSubNav === 'programs' ? 'active' : ''
               }`}
             >
-              <span
+              <NavLink
+                to="/programs/"
+                fade
                 className={`NavLink Nav--GroupParent ${
-                  this.props.location.pathname.includes('posts') ||
-                  this.props.location.pathname.includes('blog') ||
-                  this.props.location.pathname.includes('post-categories')
+                  this.props.location.pathname.includes('infants') ||
+                  this.props.location.pathname.includes('twos') ||
+                  this.props.location.pathname.includes('threes') ||
+                  this.props.location.pathname.includes('pre-k')
                     ? 'active'
                     : ''
                 }`}
-                onClick={() => this.toggleSubNav('posts')}
+                onClick={() => this.toggleSubNav('programs')}
               >
-                Blog
-              </span>
+                Programs
+              </NavLink>
+
               <div className="Nav--GroupLinks">
-                <NavLink to="/blog/" className="Nav--GroupLink">
-                  All Posts
+                <NavLink fade to="/infants/" className="Nav--GroupLink">
+                  Infants
                 </NavLink>
-                {subNav.posts.map((link, index) => (
-                  <NavLink
-                    to={link.slug}
-                    key={'posts-subnav-link-' + index}
-                    className="Nav--GroupLink"
-                  >
-                    {link.title}
-                  </NavLink>
-                ))}
+                <NavLink fade to="/twos/" className="Nav--GroupLink">
+                  Twos
+                </NavLink>
+                <NavLink fade to="/threes/" className="Nav--GroupLink">
+                  Threes
+                </NavLink>
+                <NavLink fade to="/pre-k/" className="Nav--GroupLink">
+                  Pre-K
+                </NavLink>
               </div>
-            </div>*/}
-            <AniLink fade to="/contact/">
+            </div>
+
+            <NavLink fade to="/contact/">
               Contact
-            </AniLink>
+            </NavLink>
           </div>
           <button
             className="Button-blank Nav--MenuButton"

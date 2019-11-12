@@ -1,12 +1,12 @@
 ---
 template: ProgramsPage
-slug: programs
-title: Rising Stars Programs
+slug: infants
+title: Rising Stars Infants
 featuredImage: 'https://ucarecdn.com/0819ea94-ec42-4108-ac6b-46deccf43cae/'
 subtitle: ' Nullam quis risus eget urna mollis ornare vel eu leo.'
 meta:
   description: This is a meta description.
-  title: Rising Stars Programs
+  title: Rising Stars Infants
 ---
 
 Rising Stars Bilingual Learning Center is an opinionated starter project created by [Thrive Digital](https://thriveweb.com.au/) a [Gold Coast Web Design](https://thriveweb.com.au/) studio. to help you create lightening fast websites with [Gatsby](https://gatsbyjs.org) and [Netlify CMS](https://netlifycms.org).

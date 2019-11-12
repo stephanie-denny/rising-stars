@@ -6,8 +6,16 @@ export default () => (
     <footer className="footer">
       <div className="container taCenter">
         <span>
-          © Copyright {new Date().getFullYear()} Rising Stars Bilingual Learning Center. All rights reserved. Made with &hearts; by{' '}
-          <a target="_blank" href="https://hirestephanie.today">Stephanie Denny</a>.
+          © Copyright {new Date().getFullYear()} Rising Stars Bilingual Learning
+          Center. All rights reserved. Made with &hearts; by{' '}
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://hirestephanie.today"
+          >
+            Stephanie Denny
+          </a>
+          .
         </span>
       </div>
     </footer>

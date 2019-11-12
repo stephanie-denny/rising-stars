@@ -3,10 +3,10 @@ template: HomePage
 slug: ''
 title: Rising Stars Bilingual Learning Center
 featuredImage: 'https://ucarecdn.com/0819ea94-ec42-4108-ac6b-46deccf43cae/'
-subtitle: ' Welcome to the ultimate Gatsby and Netlify starter project.'
+subtitle: ' Nullam quis risus eget urna mollis ornare vel eu leo.'
 meta:
   description: This is a meta description.
-  title: The Ultimate Gatsby Starter
+  title: Rising Stars Bilingual Learning Center
 ---
 
 Rising Stars Bilingual Learning Center is an opinionated starter project created by [Thrive Digital](https://thriveweb.com.au/) a [Gold Coast Web Design](https://thriveweb.com.au/) studio. to help you create lightening fast websites with [Gatsby](https://gatsbyjs.org) and [Netlify CMS](https://netlifycms.org).

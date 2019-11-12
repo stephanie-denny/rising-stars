@@ -13,7 +13,7 @@ locations:
     mapLink: ''
 meta:
   description: This is a meta description.
-  title: Contact Page
+  title: Contact Rising Stars Bilingual Learning Center
 ---
 
 # Example contact form
