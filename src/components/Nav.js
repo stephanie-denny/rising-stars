@@ -3,6 +3,7 @@ import { Location } from '@reach/router'
 import { Link } from 'gatsby'
 import { Menu, X } from 'react-feather'
 import Logo from './Logo'
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 import './Nav.css'
 
@@ -30,7 +31,8 @@ export class Navigation extends Component {
     const { active } = this.state,
       // { subNav } = this.props,
       NavLink = ({ to, className, children, ...props }) => (
-        <Link
+        <AniLink
+          fade
           to={to}
           className={`NavLink ${
             to === this.state.currentPath ? 'active' : ''
@@ -39,43 +41,50 @@ export class Navigation extends Component {
           {...props}
         >
           {children}
-        </Link>
+        </AniLink>
       )
 
     return (
       <nav className={`Nav ${active ? 'Nav-active' : ''}`}>
         <div className="Nav--Container container">
-          <Link to="/" onClick={this.handleLinkClick}>
+          <AniLink to="/" fade onClick={this.handleLinkClick}>
             <Logo />
-          </Link>
+          </AniLink>
           <div className="Nav--Links">
             <div
               className={`Nav--Group ${
                 this.state.activeSubNav === 'about' ? 'active' : ''
               }`}
             >
-              <NavLink
+              <AniLink
                 to="/about/"
+                fade
                 className={`NavLink Nav--GroupParent ${
-                  this.props.location.pathname.includes('philosophy')
+                  this.props.location.pathname.includes('philosophy') ||
+                  this.props.location.pathname.includes('why-rising-stars') ||
+                  this.props.location.pathname.includes('faq')
                     ? 'active'
                     : ''
                 }`}
                 onClick={() => this.toggleSubNav('about')}
               >
                 About
-              </NavLink>
+              </AniLink>
 
               <div className="Nav--GroupLinks">
-                <NavLink to="/philosophy/" className="Nav--GroupLink">
+                <AniLink fade to="/philosophy/" className="Nav--GroupLink">
                   Philosophy
-                </NavLink>
-                <NavLink to="/why-rising-stars/" className="Nav--GroupLink">
+                </AniLink>
+                <AniLink
+                  fade
+                  to="/why-rising-stars/"
+                  className="Nav--GroupLink"
+                >
                   Why Rising Stars?
-                </NavLink>
-                <NavLink to="/faq/" className="Nav--GroupLink">
+                </AniLink>
+                <AniLink fade to="/faq/" className="Nav--GroupLink">
                   FAQ
-                </NavLink>
+                </AniLink>
               </div>
             </div>
             {/* <div
@@ -110,7 +119,9 @@ export class Navigation extends Component {
                 ))}
               </div>
             </div>*/}
-            <NavLink to="/contact/">Contact</NavLink>
+            <AniLink fade to="/contact/">
+              Contact
+            </AniLink>
           </div>
           <button
             className="Button-blank Nav--MenuButton"
