@@ -55,7 +55,7 @@ export class Navigation extends Component {
                 this.state.activeSubNav === 'about' ? 'active' : ''
               }`}
             >
-              <AniLink
+              <NavLink
                 to="/about/"
                 fade
                 className={`NavLink Nav--GroupParent ${
@@ -65,25 +65,28 @@ export class Navigation extends Component {
                     ? 'active'
                     : ''
                 }`}
-                onClick={() => this.toggleSubNav('about')}
+                onMouseEnter={() => this.toggleSubNav('about')}
               >
                 About
-              </AniLink>
+              </NavLink>
 
-              <div className="Nav--GroupLinks">
-                <AniLink fade to="/philosophy/" className="Nav--GroupLink">
+              <div
+                className="Nav--GroupLinks"
+                onMouseLeave={() => this.toggleSubNav('about')}
+              >
+                <NavLink fade to="/philosophy/" className="Nav--GroupLink">
                   Philosophy
-                </AniLink>
-                <AniLink
+                </NavLink>
+                <NavLink
                   fade
                   to="/why-rising-stars/"
                   className="Nav--GroupLink"
                 >
                   Why Rising Stars?
-                </AniLink>
-                <AniLink fade to="/faq/" className="Nav--GroupLink">
+                </NavLink>
+                <NavLink fade to="/faq/" className="Nav--GroupLink">
                   FAQ
-                </AniLink>
+                </NavLink>
               </div>
             </div>
             <div
@@ -102,12 +105,15 @@ export class Navigation extends Component {
                     ? 'active'
                     : ''
                 }`}
-                onClick={() => this.toggleSubNav('programs')}
+                onMouseEnter={() => this.toggleSubNav('programs')}
               >
                 Programs
               </NavLink>
 
-              <div className="Nav--GroupLinks">
+              <div
+                className="Nav--GroupLinks"
+                onMouseLeave={() => this.toggleSubNav('programs')}
+              >
                 <NavLink fade to="/infants/" className="Nav--GroupLink">
                   Infants
                 </NavLink>
@@ -122,10 +128,79 @@ export class Navigation extends Component {
                 </NavLink>
               </div>
             </div>
+            <div
+              className={`Nav--Group ${
+                this.state.activeSubNav === 'parents' ? 'active' : ''
+              }`}
+            >
+              <NavLink
+                to="/parents/"
+                fade
+                className={`NavLink Nav--GroupParent ${
+                  this.props.location.pathname.includes('policies') ||
+                  this.props.location.pathname.includes('handbook') ||
+                  this.props.location.pathname.includes('calendar') ||
+                  this.props.location.pathname.includes('resources')
+                    ? 'active'
+                    : ''
+                }`}
+                onMouseEnter={() => this.toggleSubNav('parents')}
+              >
+                Programs
+              </NavLink>
 
-            <NavLink fade to="/contact/">
-              Contact
+              <div
+                className="Nav--GroupLinks"
+                onMouseLeave={() => this.toggleSubNav('parents')}
+              >
+                <NavLink fade to="/policies/" className="Nav--GroupLink">
+                  Policies
+                </NavLink>
+                <NavLink fade to="/handbook/" className="Nav--GroupLink">
+                  Handbook
+                </NavLink>
+                <NavLink fade to="/calendar/" className="Nav--GroupLink">
+                  Calendar
+                </NavLink>
+                <NavLink fade to="/resources/" className="Nav--GroupLink">
+                  Resources
+                </NavLink>
+              </div>
+            </div>
+            <NavLink
+              to="/enrollment/"
+              fade
+            >
+              Enrollment
             </NavLink>
+
+            <div
+              className={`Nav--Group ${
+                this.state.activeSubNav === 'contact' ? 'active' : ''
+              }`}
+            >
+              <NavLink
+                to="/contact/"
+                fade
+                className={`NavLink Nav--GroupParent ${
+                  this.props.location.pathname.includes('book-a-tour')
+                    ? 'active'
+                    : ''
+                }`}
+                onMouseEnter={() => this.toggleSubNav('contact')}
+              >
+                Contact
+              </NavLink>
+
+              <div
+                className="Nav--GroupLinks"
+                onMouseLeave={() => this.toggleSubNav('contact')}
+              >
+                <NavLink fade to="/book-a-tour/" className="Nav--GroupLink">
+                  Book A Tour
+                </NavLink>
+              </div>
+            </div>
           </div>
           <button
             className="Button-blank Nav--MenuButton"
