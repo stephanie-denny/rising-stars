@@ -9,23 +9,8 @@ meta:
   title: Rising Stars Infants
 ---
 
-Rising Stars Bilingual Learning Center is an opinionated starter project created by [Thrive Digital](https://thriveweb.com.au/) a [Gold Coast Web Design](https://thriveweb.com.au/) studio. to help you create lightening fast websites with [Gatsby](https://gatsbyjs.org) and [Netlify CMS](https://netlifycms.org).
+Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Etiam porta sem malesuada magna mollis euismod. Maecenas sed diam eget risus varius blandit sit amet non magna. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam quis risus eget urna mollis ornare vel eu leo. Etiam porta sem malesuada magna mollis euismod.
 
-View the [project overview](https://thriveweb.com.au/the-lab/Rising Stars Bilingual Learning Center-gatsby-react-js-starter-project/) and the [docs](https://github.com/thriveweb/Rising Stars Bilingual Learning Center/blob/master/README.md).
+Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec ullamcorper nulla non metus auctor fringilla. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam quis risus eget urna mollis ornare vel eu leo. Donec sed odio dui.
 
-# Features
-
-- **[Gatsby](https://gatsbyjs.org)** static site generator
-- **[Netlify CMS](https://github.com/netlify/netlify-cms)** for content management
-- Dynamic menus and forms
-- **[Mailchimp](http://mailchimp.com)** and **[Uploadcare](https://uploadcare.com)** integrations
-- Fully responsive layout for mobile and widescreen browsing
-- Blog searching and paging functionality
-- Seamless image and content sliders
-- Instagram feed integration
-
-## Get started
-
-View the [Netlify CMS Docs](https://www.netlifycms.org/docs/) and the [Netlify CMS Repo](https://github.com/netlify/netlify-cms).
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/thriveweb/Rising Stars Bilingual Learning Center&stack=cms)
+Etiam porta sem malesuada magna mollis euismod. Donec ullamcorper nulla non metus auctor fringilla. Donec ullamcorper nulla non metus auctor fringilla. Cras mattis consectetur purus sit amet fermentum.
