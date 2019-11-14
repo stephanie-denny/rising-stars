@@ -110,6 +110,41 @@
   padding: 1rem 1rem;
   color: var(--secondary);
 }
+.Nav .SVGIcon {
+  height: 2.6rem;
+  width: 2.6rem;
+  text-align: center;
+  background-color: var(--secondary);
+}
+.Nav .SVGIcon .SVGIcon--icon {
+  background: transparent;
+  color: white;
+}
+
+.Nav .SVGIcon:hover {
+  background: #caeaf9;
+}
+
+.Nav .SVGIcon:hover .SVGIcon--icon {
+  background: transparent;
+}
+
+.Nav .Button {
+  font-size: 1rem;
+  padding: 1rem 2rem;
+  background: white;
+  color: var(--primary);
+}
+
+.Nav.fixed .Button {
+  background: var(--primary);
+  color: white;
+}
+.Nav .Button:hover,
+.Nav.fixed .Button:hover {
+  background: var(--secondary);
+  color: white;
+}
 
 @media (max-width: 600px) {
   .Nav--Container {
@@ -137,6 +172,8 @@
     bottom: 0;
     background: white;
     animation: Nav--Links 0.2s ease;
+    z-index: 1;
+    color: var(--primary);
   }
 
   .Nav--Links > * + * {
@@ -186,47 +223,27 @@
   .Nav--GroupLinks {
     position: relative;
     text-align: center;
+    top: 0;
   }
 
   .Nav--GroupLinks .NavLink {
     font-size: 1.5rem;
     width: auto;
   }
-}
-.Nav .SVGIcon {
-  height: 2.6rem;
-  width: 2.6rem;
-  text-align: center;
-  background-color: var(--secondary);
-}
-.Nav .SVGIcon .SVGIcon--icon {
-  background: transparent;
-  color: white;
-}
-
-.Nav .SVGIcon:hover {
-  background: #caeaf9;
-}
-
-.Nav .SVGIcon:hover .SVGIcon--icon {
-  background: transparent;
-}
-
-.Nav .Button {
-  font-size: 1rem;
-  padding: 1rem 2rem;
-  background: white;
-  color: var(--primary);
-}
-
-.Nav.fixed .Button {
-  background: var(--primary);
-  color: white;
-}
-.Nav .Button:hover,
-.Nav.fixed .Button:hover {
-  background: var(--secondary);
-  color: white;
+  .Nav--GroupParent:after {
+    border-bottom: 2px solid var(--primary);
+    border-right: 2px solid var(--primary);
+  }
+  .Nav--MenuButton svg {
+    color: white;
+  }
+  .Nav.Nav-active .Nav--MenuButton svg {
+    color: var(--primary);
+  }
+  .Nav .Button {
+    background: var(--primary);
+    color: white;
+  }
 }
 
 @keyframes Nav--Link {

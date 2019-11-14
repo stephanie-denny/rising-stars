@@ -232,3 +232,6 @@ blockquote {
   align-items: center;
   justify-content: center;
 }
+.ScrollUpButton__Container svg {
+  fill: white;
+}

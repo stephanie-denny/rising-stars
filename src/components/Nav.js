@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Location } from '@reach/router'
 import Logo from './Logo'
 import { Link } from 'gatsby'
+import { Menu, X } from 'react-feather'
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 import FA from 'react-fontawesome'
 
@@ -38,7 +39,7 @@ export class Navigation extends Component {
 
   render() {
     const { active } = this.state,
-      // { subNav } = this.props,
+      { subNav } = this.props,
       NavLink = ({ to, className, children, ...props }) => (
         <AniLink
           fade
@@ -79,6 +80,7 @@ export class Navigation extends Component {
                     : ''
                 }`}
                 onMouseEnter={() => this.toggleSubNav('about')}
+                onTouchStart={() => this.toggleSubNav('about')}
               >
                 About
               </NavLink>
@@ -114,6 +116,7 @@ export class Navigation extends Component {
                     : ''
                 }`}
                 onMouseEnter={() => this.toggleSubNav('programs')}
+                onTouchStart={() => this.toggleSubNav('programs')}
               >
                 Programs
               </NavLink>
@@ -152,8 +155,9 @@ export class Navigation extends Component {
                     : ''
                 }`}
                 onMouseEnter={() => this.toggleSubNav('parents')}
+                onTouchStart={() => this.toggleSubNav('parents')}
               >
-                Programs
+                Parents
               </NavLink>
 
               <div
@@ -199,6 +203,12 @@ export class Navigation extends Component {
               Book A Tour
             </Link>
           </div>
+          <button
+            className="Button-blank Nav--MenuButton"
+            onClick={this.handleMenuToggle}
+          >
+            {active ? <X /> : <Menu />}
+          </button>
         </div>
       </nav>
     )
