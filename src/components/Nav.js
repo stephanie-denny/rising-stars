@@ -11,11 +11,20 @@ export class Navigation extends Component {
   state = {
     active: false,
     activeSubNav: false,
-    currentPath: false
+    currentPath: false,
+    isTop: true
   }
 
-  componentDidMount = () =>
+  componentDidMount () {
     this.setState({ currentPath: this.props.location.pathname })
+
+   document.addEventListener('scroll', () => {
+      const isTop = window.scrollY < 100;
+      if (isTop !== this.state.isTop) {
+          this.setState({ isTop })
+      }
+    })
+  }
 
   handleMenuToggle = () => this.setState({ active: !this.state.active })
 
@@ -45,7 +54,11 @@ export class Navigation extends Component {
       )
 
     return (
-      <nav className={`Nav ${active ? 'Nav-active' : ''}`}>
+      <nav
+        className={`Nav ${active ? 'Nav-active' : ''} ${
+          this.state.isTop ? '' : 'fixed'
+        }`}
+      >
         <div className="Nav--Container container">
           <NavLink to="/" onClick={this.handleLinkClick}>
             <Logo />
@@ -58,7 +71,6 @@ export class Navigation extends Component {
             >
               <NavLink
                 to="/about/"
-
                 className={`NavLink Nav--GroupParent ${
                   this.props.location.pathname.includes('philosophy') ||
                   this.props.location.pathname.includes('why-rising-stars') ||
@@ -78,11 +90,7 @@ export class Navigation extends Component {
                 <NavLink to="/philosophy/" className="Nav--GroupLink">
                   Philosophy
                 </NavLink>
-                <NavLink
-
-                  to="/why-rising-stars/"
-                  className="Nav--GroupLink"
-                >
+                <NavLink to="/why-rising-stars/" className="Nav--GroupLink">
                   Why Rising Stars?
                 </NavLink>
                 <NavLink to="/faq/" className="Nav--GroupLink">
@@ -97,7 +105,6 @@ export class Navigation extends Component {
             >
               <NavLink
                 to="/programs/"
-
                 className={`NavLink Nav--GroupParent ${
                   this.props.location.pathname.includes('infants') ||
                   this.props.location.pathname.includes('twos') ||
@@ -136,7 +143,6 @@ export class Navigation extends Component {
             >
               <NavLink
                 to="/parents/"
-
                 className={`NavLink Nav--GroupParent ${
                   this.props.location.pathname.includes('policies') ||
                   this.props.location.pathname.includes('handbook') ||
@@ -168,44 +174,30 @@ export class Navigation extends Component {
                 </NavLink>
               </div>
             </div>
-            <NavLink to="/enrollment/">
-              Enrollment
-            </NavLink>
-
-            <div
-              className={`Nav--Group ${
-                this.state.activeSubNav === 'contact' ? 'active' : ''
-              }`}
-            >
-              <NavLink
-                to="/contact/"
-                fade
-                className={`NavLink Nav--GroupParent ${
-                  this.props.location.pathname.includes('book-a-tour')
-                    ? 'active'
-                    : ''
-                }`}
-                onMouseEnter={() => this.toggleSubNav('contact')}
-              >
-                Contact
-              </NavLink>
-
-              <div
-                className="Nav--GroupLinks"
-                onMouseLeave={() => this.toggleSubNav('contact')}
-              >
-                <NavLink fade to="/book-a-tour/" className="Nav--GroupLink">
-                  Book A Tour
-                </NavLink>
-              </div>
-            </div>
+            <NavLink to="/enrollment/">Enrollment</NavLink>
+            <NavLink to="/contact/">Contact</NavLink>
             <a
               href="https://www.facebook.com/risingstarsbilingual/"
-              target="_blank" class="SVGIcon"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="SVGIcon"
             >
-              <FA name="facebook" />
+              <FA name="facebook" className="SVGIcon--icon" />
             </a>
-            <a class="Button" href="tel:+17372260768">Call Now: (737) 226-0768</a>
+            <a
+              href="https://www.yelp.com/biz/rising-stars-bilingual-daycare-manchaca-2"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="SVGIcon"
+            >
+              <FA name="yelp" className="SVGIcon--icon" />
+            </a>
+            <a className="Button" href="tel:+17372260768">
+              Call Now: (737) 226-0768
+            </a>
+            <Link className="Button" to="/book-a-tour">
+              Book A Tour
+            </Link>
           </div>
         </div>
       </nav>

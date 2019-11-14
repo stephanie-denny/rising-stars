@@ -3,6 +3,7 @@ import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 import Meta from './Meta'
 import Nav from './Nav'
+import ScrollUpButton from 'react-scroll-up-button'
 import Footer from './Footer'
 
 import 'modern-normalize/modern-normalize.css'
@@ -79,7 +80,7 @@ export default ({ children, meta, title }) => {
             <Nav subNav={subNav} />
 
             <Fragment>{children}</Fragment>
-
+            <ScrollUpButton />
             <Footer />
           </Fragment>
         )

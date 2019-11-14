@@ -1,10 +1,17 @@
 .Nav {
-  background: white;
-  position: sticky;
+  background: var(--primary);
+  position: static;
+  width: 100%;
   top: 0;
   z-index: 2;
-  border-bottom: 1px solid var(--lightGrey);
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.025);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  color: white;
+  transition: all 0.2s;
+}
+.Nav.fixed {
+  position: fixed;
+  background: white;
+  color: var(--primary);
 }
 
 .Nav--Container {
@@ -34,21 +41,12 @@
 }
 
 .NavLink {
-  padding: 0.5rem 1rem;
+  padding: 1.7rem 1rem;
   display: block;
   font-weight: 500;
   transition: color 0.2s, border-bottom-color 0.2s;
   color: inherit;
   text-decoration: none;
-  border-bottom: 2px solid;
-  border-bottom-color: transparent;
-}
-
-.NavLink:hover,
-.NavLink.active,
-.NavLink:focus {
-  color: var(--primary);
-  border-bottom-color: currentColor;
 }
 
 .Nav--Group {
@@ -65,8 +63,8 @@
   position: absolute;
   top: calc(50% - 0.2rem);
   right: 1rem;
-  border-bottom: 2px solid var(--darkGrey);
-  border-right: 2px solid var(--darkGrey);
+  border-bottom: 2px solid var(--lightGrey);
+  border-right: 2px solid var(--lightGrey);
   display: block;
   height: 0.8rem;
   width: 0.8rem;
@@ -84,6 +82,7 @@
   max-height: 0;
   overflow: hidden;
   transition: 0.3s ease all;
+  z-index: 9999;
 }
 
 .Nav--Group.active .Nav--GroupLinks {
@@ -100,7 +99,16 @@
 .Nav--GroupLink {
   display: block;
   position: relative;
-  width: 15rem;
+  width: 18rem;
+}
+.Nav--GroupLink.NavLink {
+  padding: 1rem 1rem;
+  color: var(--primary);
+  transition: 0.2s;
+}
+.Nav--GroupLink.NavLink:hover {
+  padding: 1rem 1rem;
+  color: var(--secondary);
 }
 
 @media (max-width: 600px) {
@@ -184,6 +192,41 @@
     font-size: 1.5rem;
     width: auto;
   }
+}
+.Nav .SVGIcon {
+  height: 2.6rem;
+  width: 2.6rem;
+  text-align: center;
+  background-color: var(--secondary);
+}
+.Nav .SVGIcon .SVGIcon--icon {
+  background: transparent;
+  color: white;
+}
+
+.Nav .SVGIcon:hover {
+  background: #caeaf9;
+}
+
+.Nav .SVGIcon:hover .SVGIcon--icon {
+  background: transparent;
+}
+
+.Nav .Button {
+  font-size: 1rem;
+  padding: 1rem 2rem;
+  background: white;
+  color: var(--primary);
+}
+
+.Nav.fixed .Button {
+  background: var(--primary);
+  color: white;
+}
+.Nav .Button:hover,
+.Nav.fixed .Button:hover {
+  background: var(--secondary);
+  color: white;
 }
 
 @keyframes Nav--Link {

@@ -1,6 +1,6 @@
 :root {
-  --primary: #00c2bd;
-  --secondary: #000;
+  --primary: #1b75bc;
+  --secondary: #f59726;
   --lightGrey: whitesmoke;
   --midGrey: #cacaca;
   --darkGrey: #272727;
@@ -38,7 +38,7 @@ body {
   min-height: 100%;
   position: relative;
   background: white;
-  color: var(--secondary);
+  color: var(--darkGrey);
   font-size: 1.6em;
   font-weight: 400;
   letter-spacing: 0.01em;
