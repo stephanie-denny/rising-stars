@@ -62,13 +62,17 @@
   position: absolute;
   top: calc(50% - 0.2rem);
   right: 1rem;
-  border-bottom: 2px solid var(--lightGrey);
-  border-right: 2px solid var(--lightGrey);
+  border-bottom: 2px solid white;
+  border-right: 2px solid white;
   display: block;
   height: 0.8rem;
   width: 0.8rem;
   transition: 0.3s ease all;
   transform: translateY(-50%) rotate(45deg);
+}
+.Nav.fixed .Nav--GroupParent::after {
+  border-bottom: 2px solid var(--primary);
+  border-right: 2px solid var(--primary);
 }
 
 .Nav--GroupLinks {
