@@ -3,6 +3,7 @@ import { Location } from '@reach/router'
 import Logo from './Logo'
 import { Link } from 'gatsby'
 import { Menu, X } from 'react-feather'
+import { isMobile } from 'react-device-detect'
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 import FA from 'react-fontawesome'
 
@@ -39,7 +40,6 @@ export class Navigation extends Component {
 
   render() {
     const { active } = this.state,
-      { subNav } = this.props,
       NavLink = ({ to, className, children, ...props }) => (
         <AniLink
           fade
@@ -67,7 +67,7 @@ export class Navigation extends Component {
           <div className="Nav--Links">
             <div
               className={`Nav--Group ${
-                this.state.activeSubNav === 'about' ? 'active' : ''
+                this.state.activeSubNav === 'about' || isMobile ? 'active' : ''
               }`}
             >
               <NavLink
@@ -80,11 +80,9 @@ export class Navigation extends Component {
                     : ''
                 }`}
                 onMouseEnter={() => this.toggleSubNav('about')}
-                onTouchStart={() => this.toggleSubNav('about')}
               >
                 About
               </NavLink>
-
               <div
                 className="Nav--GroupLinks"
                 onMouseLeave={() => this.toggleSubNav('about')}
@@ -102,7 +100,9 @@ export class Navigation extends Component {
             </div>
             <div
               className={`Nav--Group ${
-                this.state.activeSubNav === 'programs' ? 'active' : ''
+                this.state.activeSubNav === 'programs' || isMobile
+                  ? 'active'
+                  : ''
               }`}
             >
               <NavLink
@@ -116,7 +116,6 @@ export class Navigation extends Component {
                     : ''
                 }`}
                 onMouseEnter={() => this.toggleSubNav('programs')}
-                onTouchStart={() => this.toggleSubNav('programs')}
               >
                 Programs
               </NavLink>
@@ -141,7 +140,9 @@ export class Navigation extends Component {
             </div>
             <div
               className={`Nav--Group ${
-                this.state.activeSubNav === 'parents' ? 'active' : ''
+                this.state.activeSubNav === 'parents' || isMobile
+                  ? 'active'
+                  : ''
               }`}
             >
               <NavLink
@@ -155,7 +156,6 @@ export class Navigation extends Component {
                     : ''
                 }`}
                 onMouseEnter={() => this.toggleSubNav('parents')}
-                onTouchStart={() => this.toggleSubNav('parents')}
               >
                 Parents
               </NavLink>
@@ -178,8 +178,44 @@ export class Navigation extends Component {
                 </NavLink>
               </div>
             </div>
-            <NavLink to="/enrollment/">Enrollment</NavLink>
-            <NavLink to="/contact/">Contact</NavLink>
+            <div
+              className={`Nav--Group ${
+                this.state.activeSubNav === 'contact'
+                  ? 'active'
+                  : ''
+              } ${isMobile ? "hide" : ""}`}
+            >
+              <NavLink
+                to="/contact/"
+                className={`NavLink Nav--GroupParent ${
+                  this.props.location.pathname.includes('enrollment') ||
+                  this.props.location.pathname.includes('book-a-tour')
+                    ? 'active'
+                    : ''
+                }`}
+                onMouseEnter={() => this.toggleSubNav('contact')}
+              >
+                Contact
+              </NavLink>
+
+              <div
+                className="Nav--GroupLinks"
+                onMouseLeave={() => this.toggleSubNav('contact')}
+              >
+                <NavLink to="/enrollment/" className="Nav--GroupLink">
+                  Enrollment
+                </NavLink>
+                <NavLink to="/book-a-tour/" className="Nav--GroupLink">
+                  Book A Tour
+                </NavLink>
+              </div>
+            </div>
+            <NavLink className={isMobile ? '' : 'hide'} to="/enrollment/">
+              Enrollment
+            </NavLink>
+            <NavLink className={isMobile ? '' : 'hide'} to="/contact/">
+              Contact
+            </NavLink>
             <a
               href="https://www.facebook.com/risingstarsbilingual/"
               target="_blank"
@@ -197,10 +233,10 @@ export class Navigation extends Component {
               <FA name="yelp" className="SVGIcon--icon" />
             </a>
             <a className="Button" href="tel:+17372260768">
-              Call Now: (737) 226-0768
+              Call: (737) 226-0768
             </a>
             <Link className="Button" to="/book-a-tour">
-              Book A Tour
+              Book Tour
             </Link>
           </div>
           <button

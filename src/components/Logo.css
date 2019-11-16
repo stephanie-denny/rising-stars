@@ -3,8 +3,9 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  height: 4rem;
-  width: 4rem;
+  height: 61px;
+  width: 301px;
   align-items: center;
   justify-content: center;
+  z-index: 1;
 }

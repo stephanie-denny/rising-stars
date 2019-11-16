@@ -184,7 +184,7 @@ blockquote {
 }
 
 .container {
-  max-width: 1111px;
+  max-width: 1200px;
   width: 90%;
   margin: 0 auto;
 }
@@ -234,4 +234,8 @@ blockquote {
 }
 .ScrollUpButton__Container svg {
   fill: white;
+}
+
+.hide {
+  display: none !important;
 }

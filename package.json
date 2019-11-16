@@ -41,6 +41,7 @@
     "postcss-preset-env": "^6.7.0",
     "prop-types": "^15.7.2",
     "react": "^16.11.0",
+    "react-device-detect": "^1.9.10",
     "react-dom": "^16.11.0",
     "react-feather": "^2.0.3",
     "react-fontawesome": "^1.7.1",
