@@ -9,6 +9,10 @@
   --font-system: system-ui; /* postcssPresetEnv */
   --borderRadius: 3px;
 }
+body:after {
+  display: none;
+  content: url(/images/Rising_Stars_Logo.svg);
+}
 
 ::-webkit-scrollbar {
   width: 0.4rem;
