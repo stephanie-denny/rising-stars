@@ -109,9 +109,9 @@ export class Navigation extends Component {
                 to="/programs/"
                 className={`NavLink Nav--GroupParent ${
                   this.props.location.pathname.includes('infants') ||
+                  this.props.location.pathname.includes('ones') ||
                   this.props.location.pathname.includes('twos') ||
-                  this.props.location.pathname.includes('threes') ||
-                  this.props.location.pathname.includes('pre-k')
+                  this.props.location.pathname.includes('threes')
                     ? 'active'
                     : ''
                 }`}
@@ -127,14 +127,14 @@ export class Navigation extends Component {
                 <NavLink to="/infants/" className="Nav--GroupLink">
                   Infants
                 </NavLink>
+                <NavLink to="/ones/" className="Nav--GroupLink">
+                  Ones
+                </NavLink>
                 <NavLink to="/twos/" className="Nav--GroupLink">
                   Twos
                 </NavLink>
                 <NavLink to="/threes/" className="Nav--GroupLink">
-                  Threes
-                </NavLink>
-                <NavLink to="/pre-k/" className="Nav--GroupLink">
-                  Pre-K
+                  Threes +
                 </NavLink>
               </div>
             </div>
@@ -150,7 +150,6 @@ export class Navigation extends Component {
                 className={`NavLink Nav--GroupParent ${
                   this.props.location.pathname.includes('policies') ||
                   this.props.location.pathname.includes('handbook') ||
-                  this.props.location.pathname.includes('calendar') ||
                   this.props.location.pathname.includes('resources')
                     ? 'active'
                     : ''
@@ -169,9 +168,6 @@ export class Navigation extends Component {
                 </NavLink>
                 <NavLink to="/handbook/" className="Nav--GroupLink">
                   Handbook
-                </NavLink>
-                <NavLink to="/calendar/" className="Nav--GroupLink">
-                  Calendar
                 </NavLink>
                 <NavLink to="/resources/" className="Nav--GroupLink">
                   Resources
