@@ -1,10 +1,91 @@
 .footer {
-  padding: 2rem 0;
-  background: var(--lightGrey);
-  font-size: 1.2rem;
+  background: var(--primary);
+  color: white;
+  font-size: 1.7rem;
+}
+.footer-links {
+  padding: 6rem 0;
+}
+.footer-links .container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.col {
+  flex: 0 0 auto;
+}
+.footer-credits {
+  background: var(--primaryDark);
+  padding: 1rem 0;
+  font-size: 1rem;
+}
+.footer-menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  line-height: 2em;
 }
 
+.footer-menu__title {
+  font-size: 18px;
+  margin: 0.5em 0;
+  font-weight: 500;
+}
+.footer-menu__address {
+  margin: 1em 0;
+  line-height: 1.3em;
+}
 .footer a {
-  color: black;
+  color: white;
   text-decoration: none;
+  transition: all 0.2s;
+}
+
+.footer a:hover .Logo {
+  opacity: 0.8;
+}
+.footer a:hover {
+  color: var(--secondary);
+}
+.footer .Button {
+  padding: 0 2rem;
+  margin: 1em 0;
+}
+.footer .Button:hover {
+  color: var(--primary);
+  background: white;
+}
+.footer .SVGIcon {
+  height: 3rem;
+  width: 3rem;
+  text-align: center;
+  margin-right: 1em;
+  background-color: var(--secondary);
+}
+.footer .SVGIcon .SVGIcon--icon {
+  background: transparent;
+  color: white;
+}
+
+.footer .SVGIcon:hover {
+  background: var(--primaryLight);
+}
+
+.footer .SVGIcon:hover .SVGIcon--icon {
+  color: var(--primary);
+  background: transparent;
+}
+
+@media (max-width: 600px) {
+  .col {
+    flex: 0 0 100%;
+    text-align: center;
+  }
+  .footer .Logo {
+    margin: 0 auto;
+  }
+
+  .footer-menu {
+    margin: 1em 0;
+  }
 }

@@ -125,11 +125,12 @@
 }
 
 .Nav .SVGIcon:hover {
-  background: #caeaf9;
+  background: var(--primaryLight);
 }
 
 .Nav .SVGIcon:hover .SVGIcon--icon {
   background: transparent;
+  color: var(--primary);
 }
 
 .Nav .Button {
