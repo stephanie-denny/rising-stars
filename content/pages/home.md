@@ -4,6 +4,13 @@ slug: ''
 title: Rising Stars Bilingual Learning Center
 featuredImage: 'https://ucarecdn.com/0819ea94-ec42-4108-ac6b-46deccf43cae/'
 subtitle: ' Nullam quis risus eget urna mollis ornare vel eu leo.'
+slides:
+  - image: '/slides/colin-maynard-CEEhmAGpYzE-unsplash.jpg'
+    title: 'Rising Stars Bilingual Learning Center'
+  - image: '/slides/eye-for-ebony-OWi1sIWiCAI-unsplash.jpg'
+    title: 'Rising Stars Bilingual Learning Center'
+  - image: '/slides/gabby-orcutt-7E29j_4GBNI-unsplash.jpg'
+    title: 'Rising Stars Bilingual Learning Center'
 meta:
   description: This is a meta description.
   title: Rising Stars Bilingual Learning Center

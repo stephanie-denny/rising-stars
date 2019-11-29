@@ -209,6 +209,13 @@ collections: # A list of collections the CMS should be able to edit
           - { label: Featured Image, name: featuredImage, widget: image }
           - { label: Subtitle, name: subtitle, widget: markdown }
           - { label: Body, name: body, widget: markdown }
+          - label: 'Slideshow'
+            name: 'slides'
+            widget: 'list'
+            required: false
+            fields:
+              - { label: 'Title', name: 'title', widget: 'string' }
+              - { label: 'Image', name: 'image', widget: 'image' }
           - label: 'Accordion'
             name: 'accordion'
             widget: 'list'
