@@ -216,7 +216,7 @@ collections: # A list of collections the CMS should be able to edit
             allow_add: false
             fields:
               - { label: 'Image', name: image, widget: image }
-              - { label: 'Title', name: 'title', widget: string }
+              - { label: 'Title', name: 'title', widget: string, default: '' }
           - label: 'Meta'
             required: false
             name: 'meta'
