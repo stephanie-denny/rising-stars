@@ -212,10 +212,11 @@ collections: # A list of collections the CMS should be able to edit
           - label: 'Slideshow'
             name: 'slides'
             widget: 'list'
-            required: false
+            required: true
+            allow_add: false
             fields:
-              - { label: 'Title', name: 'title', widget: 'string' }
-              - { label: 'Image', name: 'image', widget: 'image' }
+              - { label: 'Title', name: 'title', widget: string }
+              - { label: 'Image', name: image, widget: image }
           - label: 'Accordion'
             name: 'accordion'
             widget: 'list'
