@@ -1,17 +1,23 @@
 import React from 'react'
 import { Fade } from 'react-slideshow-image'
 import './Slideshow.css'
+export default class Slideshow extends React.Component {
+  static defaultProps = {
+    fadeImages: []
+  }
 
-const fadeProperties = {
-  duration: 5000,
-  transitionDuration: 500,
-  infinite: true,
-  indicators: true,
-  arrows: false,
-  autoplay: true
-}
+  render() {
 
-const Slideshow = ({fadeImages}) => {
+  const fadeProperties = {
+    duration: 5000,
+    transitionDuration: 500,
+    infinite: true,
+    indicators: true,
+    arrows: false,
+    autoplay: true
+  }
+
+const { fadeImages } = this.props
   return (
     <Fade {...fadeProperties}>
       {fadeImages.map((slide, index) => (
@@ -27,4 +33,4 @@ const Slideshow = ({fadeImages}) => {
     </Fade>
   )
 }
-export default Slideshow
+}
