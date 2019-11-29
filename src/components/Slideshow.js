@@ -19,18 +19,21 @@ export default class Slideshow extends React.Component {
 
 const { fadeImages } = this.props
   return (
-    <Fade {...fadeProperties}>
-      {fadeImages.map((slide, index) => (
-        <div className="each-fade" key={index}>
-          <div
-            className="image-container"
-            style={{ backgroundImage: `url(${slide.image})` }}
-          >
-          <h1 className="slide-title">{slide.title}</h1>
-          </div>
-        </div>
-      ))}
-    </Fade>
+    <div className="slide-container">
+      <Fade {...fadeProperties}>
+        {!!fadeImages &&
+          fadeImages.map((slide, index) => (
+            <div className="each-fade" key={index}>
+              <div
+                className="image-container"
+                style={{ backgroundImage: `url(${slide.image})` }}
+              >
+                <h1 className="slide-title">{slide.title}</h1>
+              </div>
+            </div>
+          ))}
+      </Fade>
+    </div>
   )
 }
 }
