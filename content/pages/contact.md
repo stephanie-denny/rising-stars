@@ -4,13 +4,13 @@ slug: contact
 title: Contact Rising Stars
 featuredImage: 'https://ucarecdn.com/0819ea94-ec42-4108-ac6b-46deccf43cae/'
 subtitle: This is the contact page subtitle.
-address: '404 James St, Burleigh Heads QLD 4220'
-phone: 0987 123 456
-email: example@example.com
+address: '11406 Conroy Ln, Manchaca, TX 78652'
+phone: (737) 226-0768
+email: risingstarsaustintexas@gmail.com
 locations:
-  - lat: '-27.9654732'
-    lng: '153.2432449'
-    mapLink: ''
+  - lat: '30.1398968'
+    lng: '-97.8073311'
+    mapLink: 'https://goo.gl/maps/UWPkfPT7wtjTuVDt9'
 meta:
   description: This is a meta description.
   title: Contact Rising Stars

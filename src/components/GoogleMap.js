@@ -10,10 +10,10 @@ if (process.env.NETLIFY_MAP_KEY) {
 class GoogleMap extends Component {
   static defaultProps = {
     center: {
-      lat: -28.0914483,
-      lng: 153.4425208
+      lat: 30.1398968,
+      lng: -97.8073311
     },
-    zoom: 14
+    zoom: 15
   }
 
   render() {
@@ -25,7 +25,7 @@ class GoogleMap extends Component {
           defaultCenter={this.props.center}
           defaultZoom={this.props.zoom}
         >
-          <Marker lat={-28.0914483} lng={153.4425208} text={'Kreyser Avrora'} />
+          <Marker lat={this.props.center.lat} lng={this.props.center.lng} text={'Rising Stars Bilingual Learning Center'} />
         </GoogleMapReact>
       </div>
     )
