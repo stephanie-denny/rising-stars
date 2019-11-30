@@ -264,6 +264,15 @@ collections: # A list of collections the CMS should be able to edit
               - { label: 'Subtitle', name: subtitle, widget: string }
               - { label: 'Text', name: text, widget: string }
               - { label: 'Alt Image', name: altimage, widget: image }
+          - label: 'Wait List'
+            name: 'waitlist'
+            widget: 'object'
+            required: false
+            allow_add: false
+            fields:
+              - { label: 'Background Image', name: bgimage, widget: image }
+              - { label: 'Title', name: title, widget: string }
+              - { label: 'Text', name: text, widget: string }
           - label: 'Meta'
             required: false
             name: 'meta'

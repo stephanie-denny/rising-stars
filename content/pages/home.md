@@ -39,6 +39,10 @@ tour:
   title: 'Want to take a tour?'
   subtitle: We'd love to meet you and show you our school!
   altimg: 'https://ucarecdn.com/3f0cf03e-363c-4021-b680-6b4c368236cc/teacherchild.jpg'
+waitlist:
+  bgimage: 'https://ucarecdn.com/0819ea94-ec42-4108-ac6b-46deccf43cae/'
+  title: 'Join our Waitlist'
+  text: 'Rising Stars Bilingual Learning Center enrolls new children throughout the year. Complete our Wait List Request Form to indicate your interest in enrolling your child in the future.'
 meta:
   description: This is a meta description.
   title: Rising Stars Bilingual Learning Center

@@ -7,8 +7,9 @@ import Layout from '../components/Layout'
 import AboutSection from '../components/AboutSection'
 import ProgramsSection from '../components/ProgramsSection'
 import BookTour from '../components/BookTour'
+import WaitList from '../components/WaitList'
 
-export const HomePageTemplate = ({ title, subtitle, featuredImage, slides, about, programs, tour }) => (
+export const HomePageTemplate = ({ title, subtitle, featuredImage, slides, about, programs, tour, waitlist }) => (
          <main className="Home">
            {isMobile ? (
              <PageHeader
@@ -24,6 +25,7 @@ export const HomePageTemplate = ({ title, subtitle, featuredImage, slides, about
            <AboutSection about={about} />
            <ProgramsSection programs={programs} />
            <BookTour tour={tour} />
+           <WaitList waitlist={waitlist} />
          </main>
        )
 
@@ -71,6 +73,11 @@ export const pageQuery = graphql`
                  title
                  subtitle
                  altimg
+               }
+               waitlist {
+                 bgimage
+                 title
+                 text
                }
              }
            }
