@@ -23,21 +23,6 @@ export default ({ children, meta, title }) => {
               image
             }
           }
-          allPosts: allMarkdownRemark(
-            filter: { fields: { contentType: { eq: "postCategories" } } }
-            sort: { order: DESC, fields: [frontmatter___date] }
-          ) {
-            edges {
-              node {
-                fields {
-                  slug
-                }
-                frontmatter {
-                  title
-                }
-              }
-            }
-          }
         }
       `}
       render={data => {
