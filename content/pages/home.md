@@ -5,12 +5,26 @@ title: Rising Stars Bilingual Learning Center
 featuredImage: 'https://ucarecdn.com/0819ea94-ec42-4108-ac6b-46deccf43cae/'
 subtitle: ' Nullam quis risus eget urna mollis ornare vel eu leo.'
 slides:
-  - image: 'https://ucarecdn.com/2223ad84-c2c4-4017-85ed-78a919581157/ramintalebiu_b0jWnkgM0unsplash.jpg'
+  - image: 'https://ucarecdn.com/055b06a3-f7ff-4d43-8025-666c6d42842e/girlwithleaf.jpg'
     title: Rising Stars Bilingual Learning Center
-  - image: 'https://ucarecdn.com/7302acc7-ebab-4a40-a6f1-38471d616b2a/eyeforebonyOWi1sIWiCAIunsplash.jpg'
+  - image: 'https://ucarecdn.com/2d672c5d-eed9-4d45-9a0f-e04179d067a6/kidsmiling.jpg'
     title: Rising Stars Bilingual Learning Center
-  - image: 'https://ucarecdn.com/9f82d6f5-6853-4fe0-bcdc-77d7a211869f/gabbyorcutt7E29j_4GBNIunsplash.jpg'
+  - image: 'https://ucarecdn.com/66cfbc8e-9a73-436e-8c6e-74f0f3c4aa91/babywithblock.jpg'
     title: Rising Stars Bilingual Learning Center
+about:
+  title: 'Condimentum Ornare Tortor'
+  subtitle: 'Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.'
+  text: 'CCras mattis consectetur purus sit amet fermentum. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.'
+  col:
+    - icon: 'star'
+      title: 'Tellus Vehicula Vulputate Cras'
+      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+    - icon: 'space-shuttle'
+      title: 'Ultricies Cras Mollis Dolor'
+      text: 'Vestibulum id ligula porta felis euismod semper.'
+    - icon: 'music'
+      title: 'Magna Ullamcorper Cursus Aenean'
+      text: 'Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.'
 meta:
   description: This is a meta description.
   title: Rising Stars Bilingual Learning Center

@@ -39,7 +39,7 @@ export default () => (
               </li>
             </ul>
           </div>
-          <div className="col">
+          <div className="col ml-5">
             <ul className="footer-menu">
               <li>
                 <Link to="/about">About</Link>

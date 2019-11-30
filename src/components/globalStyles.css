@@ -1,14 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather:300,700|Open+Sans:400,400i,600&display=swap');
+
 :root {
   --primary: #1b75bc;
   --primaryDark: #0d3859;
   --primaryLight: #caeaf9;
   --secondary: #f59726;
+  --green: #5ab346;
   --lightGrey: whitesmoke;
   --midGrey: #cacaca;
   --darkGrey: #272727;
   --danger: #ff3d3d;
-  --font-primary: 'Open Sans', sans-serif;
-  --font-system: system-ui; /* postcssPresetEnv */
+  --font-primary: 'Merriweather', serif;
+  --font-system: 'Open Sans', sans-serif;
   --borderRadius: 3px;
 }
 
@@ -52,6 +55,11 @@ a {
   color: var(--primary);
 }
 
+a.Button:hover {
+  text-decoration: none;
+  color: white;
+}
+
 strong {
   font-weight: 600;
 }
@@ -69,6 +77,10 @@ h5,
 h6 {
   margin: 0;
   margin-bottom: 0.5em;
+  font-family: var(--font-primary);
+  -webkit-font-smoothing: antialiased;
+  font-weight: 700;
+  line-height: 1.5em;
 }
 
 pre {
@@ -196,7 +208,12 @@ blockquote {
 .container.skinnier {
   max-width: 555px;
 }
-
+/* Divider */
+.divider {
+  background: url(/images/colorful-divider.jpg);
+  background-size: cover;
+  height: 12px;
+}
 /* Buttons */
 
 .Button {
@@ -204,7 +221,7 @@ blockquote {
   color: white;
   text-transform: uppercase;
   text-decoration: none;
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: 0.05em;
   font-size: 1.4rem;
   display: inline-block;

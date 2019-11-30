@@ -1,5 +1,6 @@
 import React from 'react'
 import Carousel from 'react-bootstrap/Carousel'
+import './Slideshow.css'
 
 export default class Slideshow extends React.Component {
   static defaultProps = {
@@ -10,9 +11,9 @@ export default class Slideshow extends React.Component {
 
   const { fadeImages } = this.props
     return (
-      <Carousel>
+      <Carousel fade={true} controls={false} pauseOnHover={false} interval={4000}>
         {!!fadeImages &&
-            fadeImages.map((slide, index) => (
+          fadeImages.map((slide, index) => (
             <Carousel.Item key={index}>
               <img
                 className="d-block w-100"
@@ -21,10 +22,12 @@ export default class Slideshow extends React.Component {
               />
               <Carousel.Caption>
                 <h3>{slide.title}</h3>
-                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                <p>
+                  Nulla vitae elit libero, a pharetra augue mollis interdum.
+                </p>
               </Carousel.Caption>
             </Carousel.Item>
-        ))}
+          ))}
       </Carousel>
     )
   }

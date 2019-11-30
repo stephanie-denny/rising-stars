@@ -1,0 +1,19 @@
+section.about {
+  background-color: var(--lightGrey);
+}
+section.about h2 {
+  font-size: 2em;
+  color: var(--primary);
+}
+section.about h3 {
+  font-size: 1.5em;
+  color: var(--secondary);
+  font-weight: 300;
+}
+
+section.about h5 {
+  text-transform: uppercase;
+  color: var(--primary);
+  font-weight: 700;
+  font-size: 1em;
+}
