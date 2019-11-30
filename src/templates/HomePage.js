@@ -1,21 +1,32 @@
 import React from 'react'
 import { graphql } from 'gatsby'
+import { isMobile } from 'react-device-detect'
+import PageHeader from '../components/PageHeader'
 import Slideshow from '../components/Slideshow'
 import Layout from '../components/Layout'
 import AboutSection from '../components/AboutSection'
 import ProgramsSection from '../components/ProgramsSection'
+import BookTour from '../components/BookTour'
 
-// Export Template for use in CMS preview
-export const HomePageTemplate = ({ slides, about, programs }) => (
+export const HomePageTemplate = ({ title, subtitle, featuredImage, slides, about, programs, tour }) => (
          <main className="Home">
-           <Slideshow fadeImages={slides} />
+           {isMobile ? (
+             <PageHeader
+               large
+               title={title}
+               subtitle={subtitle}
+               backgroundImage={featuredImage}
+             />
+           ) : (
+             <Slideshow fadeImages={slides} />
+           )}
            <div className="divider"></div>
-            <AboutSection about={about} />
-            <ProgramsSection programs={programs} />
+           <AboutSection about={about} />
+           <ProgramsSection programs={programs} />
+           <BookTour tour={tour} />
          </main>
        )
 
-// Export Default HomePage for front-end
 const HomePage = ({ data: { page } }) => (
   <Layout meta={page.frontmatter.meta || false}>
     <HomePageTemplate {...page} {...page.frontmatter} body={page.html} />
@@ -51,10 +62,16 @@ export const pageQuery = graphql`
                    text
                  }
                }
-              programs{
-                image
-                title
-              }
+               programs {
+                 image
+                 title
+               }
+               tour {
+                 bgimage
+                 title
+                 subtitle
+                 altimg
+               }
              }
            }
          }

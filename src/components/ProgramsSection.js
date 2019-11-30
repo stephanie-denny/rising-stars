@@ -1,5 +1,4 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import { Link } from 'gatsby'
@@ -15,7 +14,7 @@ const ProgramsSection = ({
         <Row className="pt-5">
           {!!programs &&
             programs.map((program, index) => (
-              <Col className="col-3 m-0 p-0" key={index}>
+              <Col className="col-12 col-md-3 m-0 p-0" key={index}>
                 <Link to={`/${program.title}`}>
                   {program.image && (
                     <figure>
@@ -34,11 +33,6 @@ const ProgramsSection = ({
       </div>
     </section>
   )
-}
-
-ProgramsSection.propTypes = {
-  title: PropTypes.string,
-  subtitle: PropTypes.string
 }
 
 export default ProgramsSection

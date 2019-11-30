@@ -36,8 +36,15 @@ section.programs figcaption {
   color: white;
   text-transform: capitalize;
   padding: 1em 2em;
+  font-size: 2em;
 }
 
 section.programs .img-fluid {
   width: 100%;
+}
+
+@media screen and (max-width: 600) {
+  section.programs figcaption {
+    font-size: 2em;
+  }
 }

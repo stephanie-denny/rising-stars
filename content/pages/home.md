@@ -2,7 +2,7 @@
 template: HomePage
 slug: ''
 title: Rising Stars Bilingual Learning Center
-featuredImage: 'https://ucarecdn.com/0819ea94-ec42-4108-ac6b-46deccf43cae/'
+featuredImage: 'https://ucarecdn.com/055b06a3-f7ff-4d43-8025-666c6d42842e'
 subtitle: ' Nullam quis risus eget urna mollis ornare vel eu leo.'
 slides:
   - image: 'https://ucarecdn.com/055b06a3-f7ff-4d43-8025-666c6d42842e/girlwithleaf.jpg'
@@ -34,6 +34,11 @@ programs:
     title: 'twos'
   - image: 'https://ucarecdn.com/e3ada390-e0fb-4f5d-91fc-e0958ad4c02c/threes.jpg'
     title: 'threes'
+tour:
+  bgimage: 'https://ucarecdn.com/591972b2-2be6-45af-8c6f-140bce5b5dc5/pencils.jpg'
+  title: 'Want to take a tour?'
+  subtitle: We'd love to meet you and show you our school!
+  altimg: 'https://ucarecdn.com/3f0cf03e-363c-4021-b680-6b4c368236cc/teacherchild.jpg'
 meta:
   description: This is a meta description.
   title: Rising Stars Bilingual Learning Center

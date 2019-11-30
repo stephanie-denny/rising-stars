@@ -1,5 +1,4 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import FA from 'react-fontawesome'
@@ -34,11 +33,6 @@ const AboutSection = ({
       </div>
     </section>
   )
-}
-
-AboutSection.propTypes = {
-  title: PropTypes.string,
-  subtitle: PropTypes.string
 }
 
 export default AboutSection

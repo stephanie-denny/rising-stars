@@ -208,9 +208,8 @@ collections: # A list of collections the CMS should be able to edit
           - { label: Title, name: title, widget: string }
           - { label: Featured Image, name: featuredImage, widget: image }
           - { label: Subtitle, name: subtitle, widget: markdown }
-          - { label: Body, name: body, widget: markdown }
-          - label: 'Slideshow'
-            name: 'slides'
+          - label: Slideshow
+            name: slides
             widget: 'list'
             required: true
             allow_add: false
@@ -254,6 +253,17 @@ collections: # A list of collections the CMS should be able to edit
             fields:
               - { label: 'Image', name: image, widget: image }
               - { label: 'Title', name: title, widget: string }
+          - label: 'Book Tour'
+            name: 'tour'
+            widget: 'object'
+            required: false
+            allow_add: false
+            fields:
+              - { label: 'Background Image', name: bgimage, widget: image }
+              - { label: 'Title', name: title, widget: string }
+              - { label: 'Subtitle', name: subtitle, widget: string }
+              - { label: 'Text', name: text, widget: string }
+              - { label: 'Alt Image', name: altimage, widget: image }
           - label: 'Meta'
             required: false
             name: 'meta'
