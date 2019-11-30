@@ -23,33 +23,11 @@ export default ({ children, meta, title }) => {
               image
             }
           }
-          allPosts: allMarkdownRemark(
-            filter: { fields: { contentType: { eq: "postCategories" } } }
-            sort: { order: DESC, fields: [frontmatter___date] }
-          ) {
-            edges {
-              node {
-                fields {
-                  slug
-                }
-                frontmatter {
-                  title
-                }
-              }
-            }
-          }
         }
       `}
       render={data => {
         const { siteTitle, socialMediaCard, googleTrackingId } =
-            data.settingsYaml || {},
-          subNav = {
-            posts: data.allPosts.hasOwnProperty('edges')
-              ? data.allPosts.edges.map(post => {
-                  return { ...post.node.fields, ...post.node.frontmatter }
-                })
-              : false
-          }
+            data.settingsYaml || {}
 
         return (
           <Fragment>
@@ -78,7 +56,7 @@ export default ({ children, meta, title }) => {
               {...data.settingsYaml}
             />
 
-            <Nav subNav={subNav} />
+            <Nav />
 
             <Fragment>{children}</Fragment>
             <ScrollUpButton />
