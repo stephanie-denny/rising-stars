@@ -1,0 +1,36 @@
+section.testimonials {
+  color: black;
+}
+
+section.testimonials .carousel-item {
+  min-height: 275px;
+}
+section.testimonials .carousel-caption {
+  color: black;
+  position: static;
+  width: 60%;
+  margin: 0 auto;
+}
+
+section.testimonials blockquote {
+  border: none;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.5em;
+}
+section.testimonials .fa {
+  vertical-align: super;
+}
+section.testimonials .carousel-control-prev,
+section.testimonials .carousel-control-next {
+  color: black;
+  opacity: 1;
+}
+
+section.testimonials .carousel-indicators li {
+  background-color: var(--primary);
+}
+
+section.testimonials .carousel-indicators {
+  top: 100%;
+}
