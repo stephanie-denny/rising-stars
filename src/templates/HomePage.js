@@ -1,21 +1,17 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import Slideshow from '../components/Slideshow'
-import Content from '../components/Content'
 import Layout from '../components/Layout'
 import AboutSection from '../components/AboutSection'
+import ProgramsSection from '../components/ProgramsSection'
 
 // Export Template for use in CMS preview
-export const HomePageTemplate = ({ slides, body, about }) => (
+export const HomePageTemplate = ({ slides, about, programs }) => (
          <main className="Home">
            <Slideshow fadeImages={slides} />
            <div className="divider"></div>
             <AboutSection about={about} />
-           <section className="section">
-             <div className="container">
-               <Content source={body} />
-             </div>
-           </section>
+            <ProgramsSection programs={programs} />
          </main>
        )
 
@@ -55,6 +51,10 @@ export const pageQuery = graphql`
                    text
                  }
                }
+              programs{
+                image
+                title
+              }
              }
            }
          }

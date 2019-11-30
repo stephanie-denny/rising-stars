@@ -246,6 +246,14 @@ collections: # A list of collections the CMS should be able to edit
                       default: '',
                     }
                   - { label: 'Text', name: 'text', widget: string, default: '' }
+          - label: 'Programs'
+            name: 'programs'
+            widget: 'list'
+            required: true
+            allow_add: false
+            fields:
+              - { label: 'Image', name: image, widget: image }
+              - { label: 'Title', name: title, widget: string }
           - label: 'Meta'
             required: false
             name: 'meta'

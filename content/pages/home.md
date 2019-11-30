@@ -25,13 +25,16 @@ about:
     - icon: 'music'
       title: 'Magna Ullamcorper Cursus Aenean'
       text: 'Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.'
+programs:
+  - image: 'https://ucarecdn.com/f6118b66-830d-4111-a420-cc514dd75b42/babies.jpg'
+    title: 'infants'
+  - image: 'https://ucarecdn.com/eb1846e9-8faf-4966-b619-c45575a1bade/ones.jpg'
+    title: 'ones'
+  - image: 'https://ucarecdn.com/6e881c73-22bc-4908-8d84-c84f8e4f71da/twos.jpg'
+    title: 'twos'
+  - image: 'https://ucarecdn.com/e3ada390-e0fb-4f5d-91fc-e0958ad4c02c/threes.jpg'
+    title: 'threes'
 meta:
   description: This is a meta description.
   title: Rising Stars Bilingual Learning Center
 ---
-
-Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Etiam porta sem malesuada magna mollis euismod. Maecenas sed diam eget risus varius blandit sit amet non magna. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam quis risus eget urna mollis ornare vel eu leo. Etiam porta sem malesuada magna mollis euismod.
-
-Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec ullamcorper nulla non metus auctor fringilla. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam quis risus eget urna mollis ornare vel eu leo. Donec sed odio dui.
-
-Etiam porta sem malesuada magna mollis euismod. Donec ullamcorper nulla non metus auctor fringilla. Donec ullamcorper nulla non metus auctor fringilla. Cras mattis consectetur purus sit amet fermentum.

@@ -13,8 +13,8 @@ const AboutSection = ({
   return (
     <section className="section about">
       <div className="container text-center">
-        <h2>{about.title}</h2>
-        <h3>{about.subtitle}</h3>
+        <h2 className="text-primary">{about.title}</h2>
+        <h3 className="text-secondary">{about.subtitle}</h3>
         <p className='mb-5'><em>{about.text}</em></p>
         <Row>
           {about.col.map((column, index) => (

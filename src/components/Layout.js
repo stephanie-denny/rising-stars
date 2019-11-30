@@ -82,6 +82,7 @@ export default ({ children, meta, title }) => {
 
             <Fragment>{children}</Fragment>
             <ScrollUpButton />
+            <div className="divider"></div>
             <Footer />
           </Fragment>
         )
