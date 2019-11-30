@@ -208,14 +208,78 @@ collections: # A list of collections the CMS should be able to edit
           - { label: Title, name: title, widget: string }
           - { label: Featured Image, name: featuredImage, widget: image }
           - { label: Subtitle, name: subtitle, widget: markdown }
-          - { label: Body, name: body, widget: markdown }
-          - label: 'Accordion'
-            name: 'accordion'
+          - label: Slideshow
+            name: slides
+            widget: 'list'
+            required: true
+            allow_add: false
+            fields:
+              - { label: 'Image', name: image, widget: image }
+              - { label: 'Title', name: 'title', widget: string, default: '' }
+          - label: 'About'
+            name: 'about'
+            widget: 'object'
+            fields:
+              - { label: 'Title', name: 'title', widget: string, default: '' }
+              - {
+                  label: 'Subtitle',
+                  name: 'subtitle',
+                  widget: string,
+                  default: '',
+                }
+              - { label: 'Text', name: 'text', widget: string, default: '' }
+              - label: 'Column'
+                name: 'col'
+                widget: 'list'
+                fields:
+                  - {
+                      label: 'Icon',
+                      name: 'icon',
+                      widget: string,
+                      default: 'star',
+                    }
+                  - {
+                      label: 'Title',
+                      name: 'title',
+                      widget: string,
+                      default: '',
+                    }
+                  - { label: 'Text', name: 'text', widget: string, default: '' }
+          - label: 'Programs'
+            name: 'programs'
+            widget: 'list'
+            required: true
+            allow_add: false
+            fields:
+              - { label: 'Image', name: image, widget: image }
+              - { label: 'Title', name: title, widget: string }
+          - label: 'Book Tour'
+            name: 'tour'
+            widget: 'object'
+            required: false
+            allow_add: false
+            fields:
+              - { label: 'Background Image', name: bgimage, widget: image }
+              - { label: 'Title', name: title, widget: string }
+              - { label: 'Subtitle', name: subtitle, widget: string }
+              - { label: 'Text', name: text, widget: string }
+              - { label: 'Alt Image', name: altimage, widget: image }
+          - label: 'Wait List'
+            name: 'waitlist'
+            widget: 'object'
+            required: false
+            allow_add: false
+            fields:
+              - { label: 'Background Image', name: bgimage, widget: image }
+              - { label: 'Title', name: title, widget: string }
+              - { label: 'Text', name: text, widget: string }
+          - label: 'Testimonials'
+            name: 'testimonials'
             widget: 'list'
             required: false
             fields:
-              - { label: 'Title', name: 'title', widget: 'string' }
-              - { label: Content, name: content, widget: text }
+              - { label: 'Text', name: text, widget: string }
+              - { label: 'Name', name: name, widget: string }
           - label: 'Meta'
             required: false
             name: 'meta'

@@ -1,0 +1,10 @@
+.book-tour-cta {
+  background-size: cover;
+  padding: 6em;
+  padding-left: 27em;
+}
+@media screen and (max-width: 600px) {
+  .book-tour-cta {
+    padding: 3em;
+  }
+}

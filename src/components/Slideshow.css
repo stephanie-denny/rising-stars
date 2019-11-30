@@ -1,0 +1,18 @@
+.carousel-caption {
+  right: 0;
+  top: 35%;
+  left: 0;
+}
+
+.carousel-caption h3 {
+  font-size: 4em;
+}
+.carousel-caption p {
+  font-size: 1.5em;
+}
+
+@media screen and (max-width: 600px) {
+  .carousel-caption h3 {
+    font-size: 2em;
+  }
+}

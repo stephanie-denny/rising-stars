@@ -7,6 +7,7 @@ import { TinyButton as ScrollUpButton } from 'react-scroll-up-button'
 import Footer from './Footer'
 
 import 'modern-normalize/modern-normalize.css'
+import 'bootstrap/dist/css/bootstrap.min.css'
 import './globalStyles.css'
 
 export default ({ children, meta, title }) => {
@@ -81,6 +82,7 @@ export default ({ children, meta, title }) => {
 
             <Fragment>{children}</Fragment>
             <ScrollUpButton />
+            <div className="divider"></div>
             <Footer />
           </Fragment>
         )
