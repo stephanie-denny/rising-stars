@@ -23,7 +23,7 @@ export const DefaultPageTemplate = ({
     <section className="section">
       <div className="container">
         <Content source={body} />
-        <SVGIcon src="/images/calendar.svg" />
+        <SVGIcon src="/images/Rising_Stars_Logo.svg" />
       </div>
     </section>
   </main>
