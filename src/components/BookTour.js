@@ -17,7 +17,7 @@ const BookTour = ({ tour }) => {
           >
             <div className="boot-tour-text">
               <h2 className="text-primary">{tour.title}</h2>
-              <h4>{tour.subtitle}</h4>
+              <h3>{tour.subtitle}</h3>
               <p>{tour.text}</p>
               <Link to="/book-a-tour" className="Button">
                 Book A Tour Now

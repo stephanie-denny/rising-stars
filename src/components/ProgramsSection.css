@@ -30,7 +30,7 @@ section.programs figure:after {
 }
 section.programs figcaption {
   position: absolute;
-  z-index: 2;
+  z-index: 1;
   bottom: 10%;
   background: var(--primary);
   color: white;
