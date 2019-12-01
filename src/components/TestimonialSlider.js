@@ -13,7 +13,7 @@ export default class Testimonials extends React.Component {
   const { testimonials } = this.props
     return (
       <section className="section testimonials">
-        <h2 className="text-center text-secondary">Hear From Happy Parents!</h2>
+        <h2 className="text-center text-primary">Hear From Happy Parents!</h2>
         <Carousel fade={true} controls={false}>
           {!!testimonials &&
             testimonials.map((item, index) => (

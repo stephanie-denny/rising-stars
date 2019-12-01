@@ -3,6 +3,9 @@
   padding: 6em;
   padding-left: 27em;
 }
+.book-tour-cta h3 {
+  font-size: 1.5em;
+}
 @media screen and (max-width: 600px) {
   .book-tour-cta {
     padding: 3em;

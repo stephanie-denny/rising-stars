@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Merriweather:300,700|Open+Sans:400,400i,600&display=swap');
 
 :root {
-  --primary: #1b75bc;
-  --primaryDark: #0d3859;
-  --primaryLight: #caeaf9;
+  --primary: #125b96;
+  --primaryDark: #0c3d64;
+  --primaryLight: #4da3ea;
   --secondary: #f59726;
+  --secondaryDark: #a95d0a;
   --green: #5ab346;
   --lightGrey: whitesmoke;
   --midGrey: #cacaca;

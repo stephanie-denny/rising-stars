@@ -9,9 +9,8 @@ section.about h3 {
   font-weight: 300;
 }
 
-section.about h5 {
+section.about h4 {
   text-transform: uppercase;
-  color: var(--primary);
   font-weight: 700;
   font-size: 1em;
 }

@@ -61,7 +61,11 @@ export class Navigation extends Component {
         }`}
       >
         <div className="Nav--Container container">
-          <NavLink to="/" onClick={this.handleLinkClick}>
+          <NavLink
+            to="/"
+            onClick={this.handleLinkClick}
+            aria-label="Rising Stars Bilingual Learning Center Home"
+          >
             <Logo />
           </NavLink>
           <div className="Nav--Links">
@@ -176,10 +180,8 @@ export class Navigation extends Component {
             </div>
             <div
               className={`Nav--Group ${
-                this.state.activeSubNav === 'contact'
-                  ? 'active'
-                  : ''
-              } ${isMobile ? "hide" : ""}`}
+                this.state.activeSubNav === 'contact' ? 'active' : ''
+              } ${isMobile ? 'hide' : ''}`}
             >
               <NavLink
                 to="/contact/"
@@ -217,6 +219,7 @@ export class Navigation extends Component {
               target="_blank"
               rel="noopener noreferrer"
               className="SVGIcon"
+              aria-label="Rising Stars Facebook Page"
             >
               <FA name="facebook" className="SVGIcon--icon" />
             </a>
@@ -225,6 +228,7 @@ export class Navigation extends Component {
               target="_blank"
               rel="noopener noreferrer"
               className="SVGIcon"
+              aria-label="Rising Stars Yelp Page"
             >
               <FA name="yelp" className="SVGIcon--icon" />
             </a>

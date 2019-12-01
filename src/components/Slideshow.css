@@ -1,18 +1,13 @@
-.carousel-caption {
+.main .carousel-caption {
   right: 0;
   top: 35%;
   left: 0;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.8);
 }
 
-.carousel-caption h3 {
+.main .carousel-caption h1 {
   font-size: 4em;
 }
-.carousel-caption p {
+.main .carousel-caption p {
   font-size: 1.5em;
-}
-
-@media screen and (max-width: 600px) {
-  .carousel-caption h3 {
-    font-size: 2em;
-  }
 }

@@ -21,7 +21,7 @@ const ProgramsSection = ({
                       <img
                         className="img-fluid"
                         src={program.image}
-                        alt={program.title}
+                        alt={`Visit ${program.title} page`}
                       />
                       <figcaption>{program.title}{program.title === 'threes' ? ' +' : ''}</figcaption>
                     </figure>

@@ -13,7 +13,7 @@ const AboutSection = ({
     <section className="section about">
       <div className="container text-center">
         <h2 className="text-primary">{about.title}</h2>
-        <h3 className="text-secondary">{about.subtitle}</h3>
+        <h3>{about.subtitle}</h3>
         <p className='mb-5'><em>{about.text}</em></p>
         <Row>
           {about.col.map((column, index) => (
@@ -24,7 +24,7 @@ const AboutSection = ({
                 style={{ color: 'var(--secondary)' }}
                 className="mb-4"
               />
-              <h5>{column.title}</h5>
+              <h4 className="text-primary">{column.title}</h4>
               <p>{column.text}</p>
             </Col>
           ))}

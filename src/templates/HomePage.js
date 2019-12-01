@@ -20,7 +20,7 @@ export const HomePageTemplate = ({ title, subtitle, featuredImage, slides, about
                backgroundImage={featuredImage}
              />
            ) : (
-             <Slideshow fadeImages={slides} />
+             <Slideshow main="main" fadeImages={slides} />
            )}
            <div className="divider"></div>
            <AboutSection about={about} />

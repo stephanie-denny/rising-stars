@@ -12,7 +12,7 @@ export default () => (
           <div className="col">
             <ul className="footer-menu">
               <li>
-                <Link to="/">
+                <Link to="/" aria-label="Rising Stars Bilingual Learning Center Home">
                   <Logo />
                 </Link>
               </li>
@@ -25,6 +25,7 @@ export default () => (
                   target="_blank"
                   rel="noopener noreferrer"
                   className="SVGIcon"
+                  aria-label="Rising Stars Facebook Page"
                 >
                   <FA name="facebook" className="SVGIcon--icon" />
                 </a>
@@ -33,6 +34,7 @@ export default () => (
                   target="_blank"
                   rel="noopener noreferrer"
                   className="SVGIcon"
+                  aria-label="Rising Stars Yelp Page"
                 >
                   <FA name="yelp" className="SVGIcon--icon" />
                 </a>
