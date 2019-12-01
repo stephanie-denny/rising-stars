@@ -2,7 +2,7 @@
 template: AboutPage
 slug: about
 title: About Rising Stars
-featuredImage: 'https://ucarecdn.com/0819ea94-ec42-4108-ac6b-46deccf43cae/'
+featuredImage: 'https://ucarecdn.com/2d672c5d-eed9-4d45-9a0f-e04179d067a6/'
 subtitle: ' Nullam quis risus eget urna mollis ornare vel eu leo.'
 meta:
   description: This is a meta description.

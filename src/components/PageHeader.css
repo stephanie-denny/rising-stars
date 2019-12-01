@@ -16,11 +16,13 @@
   font-size: 6rem;
   margin-bottom: 0;
   line-height: 1;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.8);
 }
 
 .PageHeader--Subtitle {
   font-weight: 400;
   font-size: 1.8rem;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.8);
 }
 
 .PageHeader .container {

@@ -4,6 +4,9 @@ import { StaticQuery, graphql } from 'gatsby'
 import Meta from './Meta'
 import Nav from './Nav'
 import { TinyButton as ScrollUpButton } from 'react-scroll-up-button'
+import BookTour from '../components/BookTour'
+import WaitList from '../components/WaitList'
+import Testimonials from '../components/TestimonialSlider'
 import Footer from './Footer'
 
 import 'modern-normalize/modern-normalize.css'
@@ -22,12 +25,33 @@ export default ({ children, meta, title }) => {
             socialMediaCard {
               image
             }
+            tour {
+              bgimage
+              title
+              subtitle
+              altimg
+            }
+            waitlist {
+              bgimage
+              title
+              text
+            }
+            testimonials {
+              text
+              name
+            }
           }
         }
       `}
       render={data => {
-        const { siteTitle, socialMediaCard, googleTrackingId } =
-            data.settingsYaml || {}
+        const {
+          siteTitle,
+          socialMediaCard,
+          googleTrackingId,
+          tour,
+          waitlist,
+          testimonials
+        } = data.settingsYaml || {}
 
         return (
           <Fragment>
@@ -60,6 +84,9 @@ export default ({ children, meta, title }) => {
             <Nav />
 
             <Fragment>{children}</Fragment>
+            <BookTour tour={tour} />
+            <WaitList waitlist={waitlist} />
+            <Testimonials testimonials={testimonials} />
             <div role="complementary">
               <ScrollUpButton />
             </div>
