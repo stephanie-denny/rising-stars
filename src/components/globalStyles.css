@@ -208,7 +208,9 @@ blockquote {
 .section.noPadding {
   padding: 0;
 }
-
+.section.grey {
+  background-color: var(--lightGrey);
+}
 @media (max-width: 600px) {
   .section {
     width: 100%;
@@ -255,6 +257,9 @@ blockquote {
   transition: all 0.2s ease;
   cursor: pointer;
   border-radius: var(--borderRadius);
+}
+.Button:hover {
+  background: var(--secondary);
 }
 .Button-secondary {
   background: var(--secondary);

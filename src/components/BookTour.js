@@ -15,7 +15,7 @@ const BookTour = ({ tour }) => {
             className="col-12 col-md-9 book-tour-cta"
             style={{ background: isMobile ? `var(--primaryLight)` : `url(${tour.bgimage})` }}
           >
-            <div className="boot-tour-text">
+            <div className="book-tour-text">
               <h2 className="text-primary">{tour.title}</h2>
               <h3>{tour.subtitle}</h3>
               <p>{tour.text}</p>

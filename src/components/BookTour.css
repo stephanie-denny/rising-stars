@@ -1,7 +1,7 @@
 .book-tour-cta {
   background-size: cover;
   padding: 6em;
-  padding-left: 27em;
+  padding-left: 27em !important;
 }
 .book-tour-cta h3 {
   font-size: 1.5em;
