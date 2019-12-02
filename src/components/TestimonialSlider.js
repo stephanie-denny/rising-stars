@@ -10,9 +10,9 @@ export default class Testimonials extends React.Component {
 
   render() {
 
-  const { testimonials } = this.props
+  const { testimonials, background } = this.props
     return (
-      <section className="section testimonials">
+      <section className="section testimonials" style={{backgroundImage: `url(${background})`}}>
         <h2 className="text-center text-primary">Hear From Happy Parents!</h2>
         <Carousel fade={true} controls={false}>
           {!!testimonials &&

@@ -1,6 +1,7 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
 import PageHeader from '../components/PageHeader'
 import Content from '../components/Content'
 import Layout from '../components/Layout'
@@ -11,6 +12,7 @@ export const AboutPageTemplate = ({
          subtitle,
          featuredImage,
          section1,
+         section1img,
          section2
        }) => (
          <main className="About">
@@ -20,17 +22,27 @@ export const AboutPageTemplate = ({
              subtitle={subtitle}
              backgroundImage={featuredImage}
            />
-
            <section className="section">
              <div className="container">
-               <Content source={section1} />
+               <Row>
+                 <Col className="col-12 col-md-9">{section1}</Col>
+                 <Col className="col-md-3 d-none d-sm-block">
+                   <img
+                     className="img-fluid img-thumbnail"
+                     src={section1img}
+                     alt=""
+                   />
+                 </Col>
+               </Row>
              </div>
            </section>
-           <section className="section grey">
-             <div className="container">
-               <Content source={section2} />
-             </div>
-           </section>
+           {!!section2 && (
+             <section className="section grey">
+               <div className="container">
+                 <Content source={section2} />
+               </div>
+             </section>
+           )}
          </main>
        )
 
@@ -57,6 +69,7 @@ export const pageQuery = graphql`
         subtitle
         featuredImage
         section1
+        section1img
         section2
       }
     }

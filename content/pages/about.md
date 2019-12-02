@@ -4,11 +4,14 @@ slug: about
 title: About Rising Stars
 featuredImage: 'https://ucarecdn.com/2d672c5d-eed9-4d45-9a0f-e04179d067a6/'
 subtitle: Nullam quis risus eget urna mollis ornare vel eu leo.
+section1img: 'https://ucarecdn.com/2bf1c2c6-f444-4eea-804a-dff1754a8c34/audreyholdingtoy.jpg'
 section1: >-
   ## About Rising Stars
 
-  Our daycare accepts infants up to 5 years of age. Your children are taken care in a home like setting. We are a daycare in South Austin (Manchaca) on the junction of South 1st and 1626.
+  Donec id elit non mi porta gravida at eget metus. Vestibulum id ligula porta felis euismod semper. Maecenas faucibus mollis interdum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Curabitur blandit tempus porttitor.
 
+
+  Our daycare accepts infants up to 5 years of age. Your children are taken care in a home like setting. We are a daycare in South Austin (Manchaca) on the junction of South 1st and 1626.
 section2: |-
   ### Rising Stars Curriculum
 

@@ -40,6 +40,7 @@ export default ({ children, meta, title }) => {
               text
               name
             }
+            testimonialsBg
           }
         }
       `}
@@ -50,7 +51,8 @@ export default ({ children, meta, title }) => {
           googleTrackingId,
           tour,
           waitlist,
-          testimonials
+          testimonials,
+          testimonialsBg
         } = data.settingsYaml || {}
 
         return (
@@ -86,7 +88,10 @@ export default ({ children, meta, title }) => {
             <Fragment>{children}</Fragment>
             <BookTour tour={tour} />
             <WaitList waitlist={waitlist} />
-            <Testimonials testimonials={testimonials} />
+            <Testimonials
+              testimonials={testimonials}
+              background={testimonialsBg}
+            />
             <div role="complementary">
               <ScrollUpButton />
             </div>
