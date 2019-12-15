@@ -1,12 +1,12 @@
 ---
 template: AboutPage
 slug: philosophy
-title: Rising Stars   Philosophy
+title: Rising Stars Philosophy
 featuredImage: 'https://ucarecdn.com/2d672c5d-eed9-4d45-9a0f-e04179d067a6/'
-subtitle: ' Nullam quis risus eget urna mollis ornare vel eu leo.'
-section1img: 'https://ucarecdn.com/2bf1c2c6-f444-4eea-804a-dff1754a8c34/audreyholdingtoy.jpg'
+subtitle: 'We believe children learn through play. We believe in nurturing your child’s development in social, emotional, cognitive, and physical skills. We respect your child’s individual differences.'
+section1img: 'https://ucarecdn.com/c1cb3ae8-edc7-4b8d-bdcf-284d4f22a64b/babyinmirror.jpg'
 section1: >-
-  ## This is a container component
+  ## Children learn through play
 
   Your child naturally learns through what he or she encounters in the world. Our teachers create a developmentally appropriate environment for your child to play, create, move, experiment, and express themselves.
 
@@ -17,7 +17,7 @@ section1: >-
   Activities, materials, and classroom curriculum are selected based on your child’s social, emotional, physical, and congnitive abiltities.
   Your child experiences a balance of indoor and outdoor time, active and quiet play, and individual, small, and large group experiences.
 section2: |-
-  ##We believe in nurturing the whole child
+  ## We believe in nurturing the whole child
 
   Children express a range of emotions as a natural part of their development. We identify and acknowledge these emotions and create opportunities for your child to express them in healthy, constructive ways.
 

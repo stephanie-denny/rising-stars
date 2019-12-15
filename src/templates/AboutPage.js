@@ -3,6 +3,7 @@ import { graphql } from 'gatsby'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import PageHeader from '../components/PageHeader'
+import Accordion from '../components/Accordion'
 import Content from '../components/Content'
 import Layout from '../components/Layout'
 
@@ -13,7 +14,8 @@ export const AboutPageTemplate = ({
          featuredImage,
          section1,
          section1img,
-         section2
+         section2,
+         accordion
        }) => (
          <main className="About">
            <PageHeader
@@ -22,24 +24,33 @@ export const AboutPageTemplate = ({
              subtitle={subtitle}
              backgroundImage={featuredImage}
            />
-           <section className="section">
-             <div className="container">
-               <Row>
-                 <Col className="col-12 col-md-9">{section1}</Col>
-                 <Col className="col-md-3 d-none d-sm-block">
-                   <img
-                     className="img-fluid img-thumbnail"
-                     src={section1img}
-                     alt=""
-                   />
-                 </Col>
-               </Row>
-             </div>
-           </section>
+           {!!section1 && (
+             <section className="section">
+               <div className="container">
+                 <Row>
+                   <Content className="col-12 col-md-9" source={section1} />
+                   <Col className="col-md-3 d-none d-sm-block">
+                     <img
+                       className="img-fluid img-thumbnail"
+                       src={section1img}
+                       alt=""
+                     />
+                   </Col>
+                 </Row>
+               </div>
+             </section>
+           )}
            {!!section2 && (
              <section className="section grey">
                <div className="container">
                  <Content source={section2} />
+               </div>
+             </section>
+           )}
+           {!!accordion && (
+             <section className="section">
+               <div className="container">
+                 <Accordion items={accordion} />
                </div>
              </section>
            )}
@@ -71,6 +82,10 @@ export const pageQuery = graphql`
         section1
         section1img
         section2
+        accordion {
+          title
+          description
+        }
       }
     }
   }

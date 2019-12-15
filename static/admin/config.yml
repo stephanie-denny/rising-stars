@@ -256,6 +256,12 @@ collections: # A list of collections the CMS should be able to edit
           - { label: Section 1 Image, name: section1img, widget: image }
           - { label: Section 1, name: section1, widget: markdown }
           - { label: Section 2, name: section2, widget: markdown }
+          - label: 'accordion'
+            name: 'accordion'
+            widget: 'list'
+            fields:
+              - { name: title, label: title, widget: string, default: '' }
+              - { name: description, label: description, widget: string }
 
           - label: 'Meta'
             required: false
