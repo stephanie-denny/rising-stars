@@ -1,16 +1,36 @@
 ---
 template: AboutPage
 slug: philosophy
-title: Rising Stars   Philosophy
-featuredImage: 'https://ucarecdn.com/0819ea94-ec42-4108-ac6b-46deccf43cae/'
-subtitle: ' Nullam quis risus eget urna mollis ornare vel eu leo.'
+title: Rising Stars Philosophy
+featuredImage: 'https://ucarecdn.com/2d672c5d-eed9-4d45-9a0f-e04179d067a6/'
+subtitle: 'We believe children learn through play. We believe in nurturing your child’s development in social, emotional, cognitive, and physical skills. We respect your child’s individual differences.'
+section1img: 'https://ucarecdn.com/c1cb3ae8-edc7-4b8d-bdcf-284d4f22a64b/babyinmirror.jpg'
+section1: >-
+  ## Children learn through play
+
+  Your child naturally learns through what he or she encounters in the world. Our teachers create a developmentally appropriate environment for your child to play, create, move, experiment, and express themselves.
+
+
+  Children are active learners and have opportunities for choice, independence, and learning through hands-on play.
+
+
+  Activities, materials, and classroom curriculum are selected based on your child’s social, emotional, physical, and congnitive abiltities.
+  Your child experiences a balance of indoor and outdoor time, active and quiet play, and individual, small, and large group experiences.
+section2: |-
+  ## We believe in nurturing the whole child
+
+  Children express a range of emotions as a natural part of their development. We identify and acknowledge these emotions and create opportunities for your child to express them in healthy, constructive ways.
+
+
+  Children learn how to relate well to others by how they are treated. Teachers treat children, other staff, and parents with respect, kindness, and empathy.
+
+
+  Children learn how to participate in group activities, get along with peers, and develop trust for adults. We support your child by creating meaningful interactions with others, nurturing friendships, and teaching conflict resolution skills at every age.
+
+
+  Children develop an enhanced sense of self-esteem and intrinsic motivation through competence and mastery of tasks. Your child grows in independence and self-reliance through routines and activities.
+
 meta:
   description: This is a meta description.
-  title: Rising Stars   Philosophy
+  title: Rising Stars Philosophy
 ---
-
-Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Etiam porta sem malesuada magna mollis euismod. Maecenas sed diam eget risus varius blandit sit amet non magna. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam quis risus eget urna mollis ornare vel eu leo. Etiam porta sem malesuada magna mollis euismod.
-
-Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec ullamcorper nulla non metus auctor fringilla. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam quis risus eget urna mollis ornare vel eu leo. Donec sed odio dui.
-
-Etiam porta sem malesuada magna mollis euismod. Donec ullamcorper nulla non metus auctor fringilla. Donec ullamcorper nulla non metus auctor fringilla. Cras mattis consectetur purus sit amet fermentum.

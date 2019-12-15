@@ -13,9 +13,9 @@ const BookTour = ({ tour }) => {
         <Row>
           <Col
             className="col-12 col-md-9 book-tour-cta"
-            style={{ background: isMobile ? `var(--primaryLight)` : `url(${tour.bgimage})` }}
+            style={{ backgroundImage: isMobile ? `var(--primaryLight)` : `url(${tour.bgimage})` }}
           >
-            <div className="boot-tour-text">
+            <div className="book-tour-text">
               <h2 className="text-primary">{tour.title}</h2>
               <h3>{tour.subtitle}</h3>
               <p>{tour.text}</p>
@@ -24,7 +24,7 @@ const BookTour = ({ tour }) => {
               </Link>
             </div>
           </Col>
-          <Col className="col-12 col-md-3">
+          <Col className="col-12 col-md-3 p-0">
             <img className="img-fluid" src={tour.altimg} alt="Book a Tour" />
           </Col>
         </Row>

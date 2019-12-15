@@ -122,7 +122,7 @@ collections: # A list of collections the CMS should be able to edit
             widget: 'list'
             fields:
               - { name: title, label: title, widget: string, default: '' }
-              - { name: description, label: description, widget: string }
+              - { name: description, label: description, widget: markdown }
           - label: 'Gallery'
             name: 'gallery'
             widget: 'list'
@@ -214,33 +214,57 @@ collections: # A list of collections the CMS should be able to edit
             fields:
               - { label: 'Image', name: image, widget: image }
               - { label: 'Title', name: title, widget: string }
-          - label: 'Book Tour'
-            name: 'tour'
-            widget: 'object'
+          - label: 'Meta'
             required: false
-            allow_add: false
-            fields:
-              - { label: 'Background Image', name: bgimage, widget: image }
-              - { label: 'Title', name: title, widget: string }
-              - { label: 'Subtitle', name: subtitle, widget: string }
-              - { label: 'Text', name: text, widget: string }
-              - { label: 'Alt Image', name: altimage, widget: image }
-          - label: 'Wait List'
-            name: 'waitlist'
+            name: 'meta'
             widget: 'object'
-            required: false
-            allow_add: false
             fields:
-              - { label: 'Background Image', name: bgimage, widget: image }
-              - { label: 'Title', name: title, widget: string }
-              - { label: 'Text', name: text, widget: string }
-          - label: 'Testimonials'
-            name: 'testimonials'
+              - { label: Title, name: title, widget: string, required: false }
+              - {
+                  label: Description,
+                  name: description,
+                  widget: text,
+                  required: false,
+                }
+              - {
+                  label: Canonical Link,
+                  name: canonicalLink,
+                  widget: string,
+                  required: false,
+                }
+              - {
+                  label: Noindex,
+                  name: noindex,
+                  widget: boolean,
+                  required: false,
+                }
+
+      - file: 'content/pages/about.md'
+        label: 'About Page'
+        name: 'about'
+        fields:
+          - {
+              label: Template,
+              name: template,
+              widget: hidden,
+              default: AboutPage,
+            }
+          - { label: Slug, name: slug, widget: hidden, default: '' }
+          - { label: Title, name: title, widget: string }
+          - { label: Featured Image, name: featuredImage, widget: image }
+          - { label: Subtitle, name: subtitle, widget: markdown }
+          - { label: Section 1 Image, name: section1img, widget: image }
+          - { label: Section 1, name: section1, widget: markdown }
+          - { label: Section 2, name: section2, widget: markdown }
+          - label: 'accordion'
+            name: 'accordion'
             widget: 'list'
-            required: false
             fields:
-              - { label: 'Text', name: text, widget: string }
-              - { label: 'Name', name: name, widget: string }
+              - { name: title, label: title, widget: string, default: '' }
+              - { name: description, label: description, widget: markdown }
+              - { name: link, label: link, widget: string }
+              - { name: linkTitle, label: Link Title, widget: string }
+
           - label: 'Meta'
             required: false
             name: 'meta'
@@ -333,3 +357,30 @@ collections: # A list of collections the CMS should be able to edit
               widget: string,
               required: false,
             }
+          - label: 'Book Tour'
+            name: 'tour'
+            widget: 'object'
+            required: false
+            allow_add: false
+            fields:
+              - { label: 'Background Image', name: bgimage, widget: image }
+              - { label: 'Title', name: title, widget: string }
+              - { label: 'Subtitle', name: subtitle, widget: string }
+              - { label: 'Text', name: text, widget: string }
+              - { label: 'Alt Image', name: altimage, widget: image }
+          - label: 'Wait List'
+            name: 'waitlist'
+            widget: 'object'
+            required: false
+            allow_add: false
+            fields:
+              - { label: 'Background Image', name: bgimage, widget: image }
+              - { label: 'Title', name: title, widget: string }
+              - { label: 'Text', name: text, widget: string }
+          - label: 'Testimonials'
+            name: 'testimonials'
+            widget: 'list'
+            required: false
+            fields:
+              - { label: 'Text', name: text, widget: string }
+              - { label: 'Name', name: name, widget: string }
