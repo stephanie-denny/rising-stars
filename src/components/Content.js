@@ -67,7 +67,7 @@ const HtmlBlock = ({ value }) => {
   )
 }
 
-const Content = ({ source, src, className = '' }) => {
+const Content = ({ source, src, bgImg, link, linkText, className = '' }) => {
   // accepts either html or markdown
   source = source || src || ''
   if (source.match(/^</)) {
@@ -77,19 +77,25 @@ const Content = ({ source, src, className = '' }) => {
       <div
         className={`Content ${className}`}
         dangerouslySetInnerHTML={{ __html: source }}
+        style={{ backgroundImage: `url(${bgImg})` }}
       />
     )
   }
 
   return (
-    <Marked
+    <div
       className={`Content ${className}`}
-      source={encodeMarkdownURIs(source)}
-      renderers={{
-        image: MyImage,
-        html: HtmlBlock
-      }}
-    />
+      style={{ backgroundImage: `url(${bgImg})` }}
+    >
+      <Marked
+        source={encodeMarkdownURIs(source)}
+        renderers={{
+          image: MyImage,
+          html: HtmlBlock
+        }}
+      />{!!link && (<a href={link} className="Button">{linkText}</a>)}
+
+    </div>
   )
 }
 

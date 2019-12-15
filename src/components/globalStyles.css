@@ -211,7 +211,7 @@ blockquote {
 .section.grey {
   background-color: var(--lightGrey);
 }
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .section {
     width: 100%;
     padding: 5rem 0;
@@ -290,4 +290,8 @@ blockquote {
 
 .hide {
   display: none !important;
+}
+
+.img-fluid {
+  width: 100%;
 }

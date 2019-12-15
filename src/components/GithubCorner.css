@@ -19,7 +19,7 @@
   animation: octocat-wave 560ms ease-in-out;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .GithubCorner {
     position: absolute;
     top: 6rem;
