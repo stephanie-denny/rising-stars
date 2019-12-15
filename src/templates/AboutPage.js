@@ -47,13 +47,13 @@ export const AboutPageTemplate = ({
                </div>
              </section>
            )}
-           {!!accordion && (
+            {!!accordion && (
              <section className="section">
                <div className="container">
                  <Accordion items={accordion} />
                </div>
              </section>
-           )}
+            )}
          </main>
        )
 
@@ -85,6 +85,8 @@ export const pageQuery = graphql`
         accordion {
           title
           description
+          link
+          linkTitle
         }
       }
     }
