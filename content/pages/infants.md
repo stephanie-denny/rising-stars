@@ -2,15 +2,31 @@
 template: ProgramsPage
 slug: infants
 title: Rising Stars Infants
-featuredImage: 'https://ucarecdn.com/0819ea94-ec42-4108-ac6b-46deccf43cae/'
-subtitle: ' Nullam quis risus eget urna mollis ornare vel eu leo.'
+featuredImage: 'https://ucarecdn.com/66cfbc8e-9a73-436e-8c6e-74f0f3c4aa91/'
+subtitle: 'Hummingbirds, Chicks, Finches, Ducklings'
 meta:
   description: This is a meta description.
   title: Rising Stars Infants
+overview:
+  text: |-
+    ## Classroom Overview
+    In our infant classrooms, we focus on your baby’s needs and providing a safe and consistent environment for your baby to grow and learn. Fundamental to your baby’s care is a deep trust in his or her primary caregiver which we actively nurture. Our infant classrooms are set up to help your baby feel attuned to the caregiver, develop fine and gross motor skills, begin language development, and be creative and curious.
+  image: 'https://ucarecdn.com/2108eb4d-6cc7-4db9-9f70-6a5b72e72190/babiesincribs.jpg'
+  link: '/enrollment'
+  linkText: 'Learn About Enrollment'
+blades:
+  - rightText: |-
+      ## Rising Stars fosters healthy development
+
+      - Deep bonding between your child and their caregiver to foster a beneficial, trusting attachment.
+      - Belief in your child as an initiator, an explorer, and a self-learner.
+      - An environment for your child that is physically safe, cognitively challenging, and emotionally nurturing.
+      - Time for uninterrupted play.
+      - Freedom to explore and interact with other children.
+      - Involving your child in all care activities to allow your child to become an active participant rather than a passive recipient.
+      - Sensitive observation of your child in order to understand his/her needs.
+      - Consistent, clearly-defined limits and loving expectations.
+    rightBgImg: 'https://ucarecdn.com/b4958cc7-ca60-4e29-b1f0-443ea2db3f5b/darkBluesquiggles.jpg'
+    rightImg: 'https://ucarecdn.com/dfa63024-6b7a-412a-8cc4-7ae66442cd21/babyreadingbook.jpg'
+    rightTextDark: false
 ---
-
-Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Etiam porta sem malesuada magna mollis euismod. Maecenas sed diam eget risus varius blandit sit amet non magna. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam quis risus eget urna mollis ornare vel eu leo. Etiam porta sem malesuada magna mollis euismod.
-
-Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec ullamcorper nulla non metus auctor fringilla. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam quis risus eget urna mollis ornare vel eu leo. Donec sed odio dui.
-
-Etiam porta sem malesuada magna mollis euismod. Donec ullamcorper nulla non metus auctor fringilla. Donec ullamcorper nulla non metus auctor fringilla. Cras mattis consectetur purus sit amet fermentum.

@@ -1,0 +1,21 @@
+.Programs .Content.Blade {
+  padding: 4em 28em 0 4em;
+  background-position: 65% top;
+}
+.Programs .Content.Blade.Light {
+  color: white;
+  text-shadow: 0 0 1px rgba(0, 0, 0, 1);
+}
+.Programs .Content.Blade.Dark {
+  color: black;
+  text-shadow: 0 0 1px rgba(255, 255, 255, 1);
+}
+.Programs .Content.Blade.Light a.Button:hover {
+  background: white;
+  color: var(--primary);
+}
+@media screen and (max-width: 768px) {
+  .Programs .Content.Blade {
+    padding: 2em;
+  }
+}

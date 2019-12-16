@@ -78,7 +78,7 @@
   background: transparent;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .col {
     flex: 0 0 100%;
     text-align: center;

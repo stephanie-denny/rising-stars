@@ -2,15 +2,35 @@
 template: ProgramsPage
 slug: twos
 title: Rising Stars Twos
-featuredImage: 'https://ucarecdn.com/0819ea94-ec42-4108-ac6b-46deccf43cae/'
-subtitle: ' Nullam quis risus eget urna mollis ornare vel eu leo.'
+featuredImage: 'https://ucarecdn.com/a0891986-1f1f-4c66-9415-a96bdec11209/'
+subtitle: 'Koalas, Little Lambs, Turtles'
 meta:
-  description: This is a meta description.
+  description: Rising Stars Bilingual Learning Center Twos Program, Austin Tx
   title: Rising Stars Twos
+overview:
+  text: |-
+    ## Classroom Overview
+    Every day and each experience is a learning lab for kids in our twos program. Our goal is to provide new experiences that relate to each child’s needs, interests, and developmental level. In the two-year-old classroom, your child will be interacting with peers in a loving, safe, and friendly environment. We provide experiences that challenge and support each child’s language, social, emotional, physical, and creative development. Everyday your child will have opportunities to create, develop personal interaction skills, and learn problem-solving skills and concepts through hands-on experiences.
+  image: 'https://ucarecdn.com/58bb758e-a7c3-487f-ac51-c4a585bc6a44/kidsfruit.jpg'
+  link: '/enrollment'
+  linkText: 'Learn About Enrollment'
+blades:
+  - rightText: |-
+      ## Emergent Curriculum
+
+      The whole world is a potential curriculum for your child. Our emergent curriculum approach acknowledges and supports the interests that emerge from the daily life of your child.
+
+      - We believe the value of play is an imperative learning tool for young children.
+      - We place emphasis on the day-to-day experience each child gains from doing, rather than how it should be done.
+      - Through the use of developmentally appropriate materials, the children’s developing interests will guide the array of topics introduced throughout the school year.
+
+      During a child’s second year, life is full of discovery. We work individually and in community to help children:
+      - Increase their independence.
+      - Verbalize their needs in a calm manner to both caregivers and peers.
+      - Develop confidence in themselves and their abilities.
+      - Develop secure relationships with others.
+
+    rightBgImg: 'https://ucarecdn.com/ec171382-6e75-49f1-94ba-46f15fa2e791/orangehands.jpg'
+    rightImg: 'https://ucarecdn.com/2a07a0bf-89f1-47e4-bfbc-c2f0de3b34bf/elijahchalkboard.jpg'
+    rightTextDark: false
 ---
-
-Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Etiam porta sem malesuada magna mollis euismod. Maecenas sed diam eget risus varius blandit sit amet non magna. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam quis risus eget urna mollis ornare vel eu leo. Etiam porta sem malesuada magna mollis euismod.
-
-Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec ullamcorper nulla non metus auctor fringilla. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam quis risus eget urna mollis ornare vel eu leo. Donec sed odio dui.
-
-Etiam porta sem malesuada magna mollis euismod. Donec ullamcorper nulla non metus auctor fringilla. Donec ullamcorper nulla non metus auctor fringilla. Cras mattis consectetur purus sit amet fermentum.

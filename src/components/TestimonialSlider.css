@@ -13,7 +13,7 @@ section.testimonials .carousel-caption {
   margin: 0 auto;
   background: rgba(255, 255, 255, 0.5);
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   section.testimonials .carousel-caption {
     width: 95%;
   }
