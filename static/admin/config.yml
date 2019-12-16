@@ -322,6 +322,16 @@ collections: # A list of collections the CMS should be able to edit
               - { name: rightLinkText, label: Right Link Text, widget: string }
               - { name: rightTextDark, label: Dark Text?, widget: boolean, default: true }
 
+          - label: 'overview'
+            name: 'overview'
+            widget: 'object'
+            fields:
+              - { name: text, label: Text, widget: markdown }
+              - { name: image, label: Image, widget: string }
+              - { name: link, label: Link, widget: string }
+              - { name: linkText, label: Link Text, widget: string }
+
+
           - label: 'Meta'
             required: false
             name: 'meta'

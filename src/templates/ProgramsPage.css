@@ -1,5 +1,6 @@
 .Programs .Content.Blade {
   padding: 4em 28em 0 4em;
+  background-position: 65% top;
 }
 .Programs .Content.Blade.Light {
   color: white;

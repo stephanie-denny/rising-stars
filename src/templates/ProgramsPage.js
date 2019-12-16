@@ -5,6 +5,7 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import PageHeader from '../components/PageHeader'
 import Content from '../components/Content'
+import ContentSplit from '../components/ContentSplit'
 import Layout from '../components/Layout'
 import './ProgramsPage.css'
 
@@ -14,7 +15,8 @@ export const ProgramsPageTemplate = ({
          subtitle,
          featuredImage,
          section1,
-         blades
+         blades,
+         overview
        }) => (
          <main className="Programs">
            <PageHeader
@@ -23,6 +25,13 @@ export const ProgramsPageTemplate = ({
              subtitle={subtitle}
              backgroundImage={featuredImage}
            />
+           {!!overview && (
+             <section className="section grey text-center">
+               <div className="container">
+                 <ContentSplit source={overview} />
+               </div>
+             </section>
+           )}
            {!!section1 && (
              <section className="section grey text-center">
                <div className="container">
@@ -33,52 +42,56 @@ export const ProgramsPageTemplate = ({
            {!!blades &&
              blades.map((blade, index) => (
                <div key={index}>
-                 <section className="section p-0 border-0">
-                   <div className="container-fluid p-0">
-                     <Row>
-                       <Content
-                         source={blade.leftText}
-                         bgImg={blade.leftBgImg}
-                         link={blade.leftLink}
-                         linkText={blade.leftLinkText}
-                         className={
-                           (blade.leftTextDark ? 'Dark' : 'Light') +
-                           ' col-12 col-md-8 Blade'
-                         }
-                       />
-                       <Col className="col-12 col-md-4 p-0 d-none d-sm-block">
-                         <img
-                           className="img-fluid"
-                           src={blade.leftImg}
-                           alt=""
+                 {!!blade.leftText && (
+                   <section className="section p-0 border-0">
+                     <div className="container-fluid p-0">
+                       <Row>
+                         <Content
+                           source={blade.leftText}
+                           bgImg={blade.leftBgImg}
+                           link={blade.leftLink}
+                           linkText={blade.leftLinkText}
+                           className={
+                             (blade.leftTextDark ? 'Dark' : 'Light') +
+                             ' col-12 col-md-8 Blade'
+                           }
                          />
-                       </Col>
-                     </Row>
-                   </div>
-                 </section>
-                 <section className="section p-0 border-0">
-                   <div className="container-fluid p-0">
-                     <Row>
-                       <Col className="col-12 col-md-4 p-0 d-none d-sm-block">
-                         <img
-                           className="img-fluid"
-                           src={blade.rightImg}
-                           alt=""
+                         <Col className="col-12 col-md-4 p-0 d-none d-sm-block">
+                           <img
+                             className="img-fluid"
+                             src={blade.leftImg}
+                             alt=""
+                           />
+                         </Col>
+                       </Row>
+                     </div>
+                   </section>
+                 )}
+                 {!!blade.rightText && (
+                   <section className="section p-0 border-0">
+                     <div className="container-fluid p-0">
+                       <Row>
+                         <Col className="col-12 col-md-4 p-0 d-none d-sm-block">
+                           <img
+                             className="img-fluid"
+                             src={blade.rightImg}
+                             alt=""
+                           />
+                         </Col>
+                         <Content
+                           source={blade.rightText}
+                           bgImg={blade.rightBgImg}
+                           link={blade.rightLink}
+                           linkText={blade.rightLinkText}
+                           className={
+                             (blade.rightTextDark ? 'Dark' : 'Light') +
+                             ' col-12 col-md-8 Blade'
+                           }
                          />
-                       </Col>
-                       <Content
-                         source={blade.rightText}
-                         bgImg={blade.rightBgImg}
-                         link={blade.rightLink}
-                         linkText={blade.rightLinkText}
-                         className={
-                           (blade.rightTextDark ? 'Dark' : 'Light') +
-                           ' col-12 col-md-8 Blade'
-                         }
-                       />
-                     </Row>
-                   </div>
-                 </section>
+                       </Row>
+                     </div>
+                   </section>
+                 )}
                </div>
              ))}
          </main>
@@ -120,6 +133,12 @@ export const pageQuery = graphql`
                  rightLink
                  rightLinkText
                  rightTextDark
+               }
+               overview {
+                 text
+                 image
+                 link
+                 linkText
                }
              }
            }
