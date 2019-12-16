@@ -11,7 +11,7 @@ overview:
   text: |-
     ## Classroom Overview
     In our infant classrooms, we focus on your baby’s needs and providing a safe and consistent environment for your baby to grow and learn. Fundamental to your baby’s care is a deep trust in his or her primary caregiver which we actively nurture. Our infant classrooms are set up to help your baby feel attuned to the caregiver, develop fine and gross motor skills, begin language development, and be creative and curious.
-  image: 'https://ucarecdn.com/b16ec940-b19a-4c07-a8eb-68ee5d703f8d/babiesincribs.jpg'
+  image: 'https://ucarecdn.com/2108eb4d-6cc7-4db9-9f70-6a5b72e72190/babiesincribs.jpg'
   link: '/enrollment'
   linkText: 'Learn About Enrollment'
 blades:
