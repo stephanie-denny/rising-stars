@@ -3,15 +3,13 @@ import { MapPin, Smartphone, Mail } from 'react-feather'
 import { graphql } from 'gatsby'
 
 import PageHeader from '../components/PageHeader'
-// import FormSimpleAjax from '../components/FormSimpleAjax'
-import FormBookTourAjax from '../components/FormBookTourAjax'
 import Contact from '../components/Contact'
+import ContactTour from '../components/ContactTour'
 import Content from '../components/Content'
 import GoogleMap from '../components/GoogleMap'
 import Layout from '../components/Layout'
 import './ContactPage.css'
 
-// Export Template for use in CMS preview
 export const ContactPageTemplate = ({
          slug,
          body,
@@ -67,12 +65,12 @@ export const ContactPageTemplate = ({
 
                <div>
                  {slug === 'contact' ? (
-                  //  <FormSimpleAjax name="contact" />
-                    <Contact />
-                   ) : slug === 'book-a-tour' ?
-                   (<FormBookTourAjax name="tour" />)
-                   : ''
-                 }
+                   <Contact />
+                 ) : slug === 'book-a-tour' ? (
+                   <ContactTour />
+                 ) : (
+                   ''
+                 )}
                </div>
              </div>
            </section>

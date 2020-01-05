@@ -8,9 +8,11 @@ export default class Contact extends React.Component {
     super(props)
     this.state = {
       name: '',
-      subject: 'Contact Submission From Website',
+      subject: 'I want to Book A Tour',
       email: '',
-      message: ''
+      childname: '',
+      birthday: '',
+      phone: ''
     }
   }
 
@@ -18,25 +20,23 @@ export default class Contact extends React.Component {
     this.setState({ ...this.state, [e.target.name]: e.target.value })
   }
 
-  handleSubmit = async (e) => {
-
-    e.preventDefault();
+  handleSubmit = async e => {
+    e.preventDefault()
     const form = e.target
 
-  try{
-    const response = await fetch('/.netlify/functions/sendemail', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: JSON.stringify(this.state)
-    })
+    try {
+      const response = await fetch('/.netlify/functions/sendemail', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: JSON.stringify(this.state)
+      })
 
-    if (!response.ok) {
-      return
-    }
+      if (!response.ok) {
+        return
+      }
 
-    navigateTo(form.getAttribute('action'))
-
-    } catch(e){
+      navigateTo(form.getAttribute('action'))
+    } catch (e) {
       alert(e)
     }
   }
@@ -70,29 +70,56 @@ export default class Contact extends React.Component {
                 onChange={this.handleChange}
                 required
               />
-              <span>Your name:</span>
+              <span>First Name</span>
             </label>
             <label className="Form--Label">
               <input
                 className="Form--Input Form--InputText"
                 type="email"
                 name="email"
+                placholder="Your email"
                 onChange={this.handleChange}
                 required
               />
-              <span>Your email:</span>
+              <span>Your email</span>
             </label>
           </div>
           <label className="Form--Label">
-            <textarea
-              className="Form--Input Form--Textarea Form--InputText"
-              name="message"
-              placeholder="Message"
-              rows="10"
-              required
+            <input
+              className="Form--Input Form--InputText"
+              type="text"
+              name="childname"
+              placeholder="Your Child's Name:"
               onChange={this.handleChange}
+              required
             />
-            <span>Message:</span>
+            <span>Your Child's Name:</span>
+          </label>
+          <label className="Form--Label">
+            <input
+              className="Form--Input Form--InputText"
+              type="date"
+              name="birthday"
+              placeholder="Your Child's Birthday or Due Date:"
+              onChange={this.handleChange}
+              required
+            />
+            <span>Your Child's Birthday or Due Date:</span>
+          </label>
+          <label className="Form--Label">
+            <input
+              className="Form--Input Form--InputText"
+              type="tel"
+              name="phone"
+              placeholder="Your Phone Number:"
+              onChange={this.handleChange}
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+              required
+            />
+            <span>Your Phone Number:</span>
+            <small>
+              <em>Format: 555-555-5555</em>
+            </small>
           </label>
           <div data-netlify-recaptcha="true"></div>
           <input
