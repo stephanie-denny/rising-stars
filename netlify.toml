@@ -1,6 +1,7 @@
 [build]
   publish = "public"
   command = "npm run build"
+  functions = "./functions/"
 [build.environment]
   YARN_VERSION = "1.3.2"
   YARN_FLAGS = "--no-ignore-optional"
@@ -8,6 +9,4 @@
   environment = { NETLIFY_MAP_KEY = "AIzaSyCQVuWUGXqlhPez96eHvPjvyZTJxj8fKmY" }
 [template.environment]
 SENDGRID_API_KEY = "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"
-SENDGRID_WELCOME_SENDER_EMAIL = "steph.denny@gmail.com"
-SENDGRID_WELCOME_SENDER_NAME = "sender@risingstarsaustin.com"
-SENDGRID_WELCOME_TEMPLATE_ID = "d-9ab7fcfd407b45aeb2712664fba4db3c"
+SENDGRID_TO_EMAIL = "risingstars@mailinator.com"

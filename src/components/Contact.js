@@ -1,13 +1,13 @@
 import React, { Fragment } from 'react'
-// import { navigateTo } from 'gatsby-link'
+import { navigateTo } from 'gatsby-link'
 
 import './Form.css'
 
-// function encode(data) {
-//   return Object.keys(data)
-//     .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
-//     .join('&')
-// }
+function encode(data) {
+  return Object.keys(data)
+    .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+    .join('&')
+}
 
 export default class Contact extends React.Component {
   constructor(props) {
@@ -19,8 +19,6 @@ export default class Contact extends React.Component {
     }
   }
 
-
-
   handleChange = e => {
     this.setState({ ...this.state, [e.target.name]: e.target.value })
   }
@@ -28,22 +26,26 @@ export default class Contact extends React.Component {
   handleSubmit = async (e) => {
 
     e.preventDefault();
+    const form = e.target
 
   try{
-    const response = await fetch("/.functions/sendemail", {
-      method: "POST",
-      body: JSON.stringify(this.state),
+    const response = await fetch('/.functions/sendemail', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: encode({
+        'form-name': form.getAttribute('name'),
+        ...this.state
+      })
     })
 
     if (!response.ok) {
-      //not 200 response
       return
     }
 
-    //all OK
+    navigateTo(form.getAttribute('action'))
 
   } catch(e){
-    //error
+    alert(e)
   }
     // e.preventDefault()
     // const form = e.target
