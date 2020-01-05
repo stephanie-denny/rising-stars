@@ -1,5 +1,7 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import { navigateTo } from 'gatsby-link'
+
+import './Form.css'
 
 function encode(data) {
   return Object.keys(data)
@@ -34,9 +36,9 @@ export default class Contact extends React.Component {
 
   render() {
     return (
-      <div>
-        <h1>Contact</h1>
+      <Fragment>
         <form
+          className="Form"
           name="contact"
           method="post"
           action="/thank-you/"
@@ -52,32 +54,48 @@ export default class Contact extends React.Component {
               <input name="bot-field" onChange={this.handleChange} />
             </label>
           </p>
-          <p>
-            <label>
-              Your name:
-              <br />
-              <input type="text" name="name" onChange={this.handleChange} />
+          <div className="Form--Group">
+            <label className="Form--Label">
+              <input
+                className="Form--Input Form--InputText"
+                type="text"
+                placeholder="First Name"
+                name="first name"
+                onChange={this.handleChange}
+                required
+              />
+              <span>Your name:</span>
             </label>
-          </p>
-          <p>
-            <label>
-              Your email:
-              <br />
-              <input type="email" name="email" onChange={this.handleChange} />
+            <label className="Form--Label">
+              <input
+                className="Form--Input Form--InputText"
+                type="email"
+                name="email"
+                onChange={this.handleChange}
+                required
+              />
+              <span>Your email:</span>
             </label>
-          </p>
-          <p>
-            <label>
-              Message:
-              <br />
-              <textarea name="message" onChange={this.handleChange} />
-            </label>
-          </p>
-          <p>
-            <button type="submit">Send</button>
-          </p>
+          </div>
+          <label className="Form--Label">
+            <textarea
+              className="Form--Input Form--Textarea Form--InputText"
+              name="message"
+              placeholder="Message"
+              rows="10"
+              required
+              onChange={this.handleChange}
+            />
+            <span>Message:</span>
+          </label>
+          <input
+            className="Button Form--SubmitButton"
+            type="submit"
+            value="Send"
+            disabled={this.state.disabled}
+           />
         </form>
-      </div>
+      </Fragment>
     )
   }
 }
