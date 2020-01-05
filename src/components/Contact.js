@@ -30,7 +30,7 @@ export default class Contact extends React.Component {
     e.preventDefault();
 
   try{
-    const response = await fetch("/.netlify/functions/sendemail", {
+    const response = await fetch("/.functions/sendemail", {
       method: "POST",
       body: JSON.stringify(this.state),
     })
