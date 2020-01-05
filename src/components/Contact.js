@@ -46,7 +46,6 @@ export default class Contact extends React.Component {
           data-netlify-honeypot="bot-field"
           onSubmit={this.handleSubmit}
         >
-          {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
           <input type="hidden" name="form-name" value="contact" />
           <p hidden>
             <label>
@@ -88,12 +87,13 @@ export default class Contact extends React.Component {
             />
             <span>Message:</span>
           </label>
+          <div data-netlify-recaptcha="true"></div>
           <input
             className="Button Form--SubmitButton"
             type="submit"
             value="Send"
             disabled={this.state.disabled}
-           />
+          />
         </form>
       </Fragment>
     )
