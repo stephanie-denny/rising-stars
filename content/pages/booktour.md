@@ -2,26 +2,18 @@
 template: ContactPage
 slug: book-a-tour
 title: Book A Tour With Rising Stars
-featuredImage: 'https://ucarecdn.com/0819ea94-ec42-4108-ac6b-46deccf43cae/'
-subtitle: This is the contact page subtitle.
-address: '404 James St, Burleigh Heads QLD 4220'
-phone: 0987 123 456
-email: example@example.com
+featuredImage: 'https://ucarecdn.com/2d672c5d-eed9-4d45-9a0f-e04179d067a6/'
+subtitle: We would love to show you our school!
+address: '11406 Conroy Ln, Manchaca, TX 78652'
+phone: (737) 226-0768
+email: risingstarsaustintexas@gmail.com
 locations:
-  - lat: '-27.9654732'
-    lng: '153.2432449'
-    mapLink: ''
+  - lat: '30.1398968'
+    lng: '-97.8073311'
+    mapLink: 'https://goo.gl/maps/UWPkfPT7wtjTuVDt9'
 meta:
-  description: This is a meta description.
+  description: We are excited to show you our school. Please contact us to schedule a tour of our facility.
   title: Book A Tour With Rising Stars
 ---
 
-# Example contact form
-
-This form is setup to use Netlify's form handling:
-
-- the form action is set to the current absolute url: `action: '/contact/'`
-- a name attribute is sent with the form's data `'form-name': 'Contact'`
-- netlify data attributes are added to the form `data-netlify data-netlify-honeypot`
-
-Find out more in the [Netlify Docs](https://www.netlify.com/docs/form-handling/).
+We are excited to show you our school. Please contact us to schedule a tour of our facility. We provide tours Monday-Friday. Make your appointment by calling [(737) 226-0768](tel:+17372260768) or filling out the form.

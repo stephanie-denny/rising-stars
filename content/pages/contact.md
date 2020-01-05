@@ -2,8 +2,8 @@
 template: ContactPage
 slug: contact
 title: Contact Rising Stars
-featuredImage: 'https://ucarecdn.com/0819ea94-ec42-4108-ac6b-46deccf43cae/'
-subtitle: This is the contact page subtitle.
+featuredImage: 'https://ucarecdn.com/2d672c5d-eed9-4d45-9a0f-e04179d067a6/'
+subtitle: We would love to hear from you!
 address: '11406 Conroy Ln, Manchaca, TX 78652'
 phone: (737) 226-0768
 email: risingstarsaustintexas@gmail.com
@@ -16,12 +16,6 @@ meta:
   title: Contact Rising Stars
 ---
 
-# Example contact form
+### You can reach us many ways:
 
-This form is setup to use Netlify's form handling:
-
-- the form action is set to the current absolute url: `action: '/contact/'`
-- a name attribute is sent with the form's data `'form-name': 'Contact'`
-- netlify data attributes are added to the form `data-netlify data-netlify-honeypot`
-
-Find out more in the [Netlify Docs](https://www.netlify.com/docs/form-handling/).
+We’re excited to get to know your child and family! We provide tours Monday-Friday. Make your appointment by calling [(737) 226-0768](tel:+17372260768) or [schedule a visit now](/book-a-tour).
