@@ -66,6 +66,15 @@
   padding-bottom: 0.5rem;
   padding-top: 2.5rem;
 }
+input[type='date'].Form--InputText {
+  color: transparent;
+}
+input[type='date'].Form--InputText:valid,
+input[type='date'].Form--InputText:invalid:not(:empty),
+input[type='date'].Form--InputText:active,
+input[type='date'].Form--InputText:focus {
+  color: black;
+}
 
 .Form--InputText:valid + span,
 .Form--InputText:not(:empty) + span,

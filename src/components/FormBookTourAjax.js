@@ -8,7 +8,7 @@ import './Form.css'
 class Form extends React.Component {
   static defaultProps = {
     name: 'Contact From Website',
-    subject: '', // optional subject of the notification email
+    subject: 'Book A Tour',
     action: '',
     successMessage: 'Thanks for your message, we will get back to you soon',
     errorMessage:
@@ -111,14 +111,36 @@ class Form extends React.Component {
             <span>Email address</span>
           </label>
           <label className="Form--Label">
-            <textarea
-              className="Form--Input Form--Textarea Form--InputText"
-              placeholder="Message"
-              name="message"
-              rows="10"
+            <input
+              className="Form--Input Form--InputText"
+              type="tel"
+              placeholder="Phone Number"
+              name="phonenumber"
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
               required
             />
-            <span>Message</span>
+            <span>Phone Number</span>
+            <small>Format: 555-555-5555</small>
+          </label>
+          <label className="Form--Label">
+            <input
+              className="Form--Input Form--InputText"
+              type="text"
+              placeholder="Child's Name"
+              name="childsname"
+              required
+            />
+            <span>Child's Name</span>
+          </label>
+          <label className="Form--Label">
+            <input
+              className="Form--Input Form--InputText"
+              type="date"
+              placeholder="Child's Date of Birth or Due Date"
+              name="birthday"
+              required
+            />
+            <span>Child's Date of Birth or Due Date</span>
           </label>
           <div data-netlify-recaptcha="true"></div>
           {!!subject && <input type="hidden" name="subject" value={subject} />}
@@ -126,7 +148,7 @@ class Form extends React.Component {
           <input
             className="Button Form--SubmitButton"
             type="submit"
-            value="Submit"
+            value="Schedule Tour"
             disabled={this.state.disabled}
           />
         </form>
