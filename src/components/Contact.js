@@ -14,6 +14,7 @@ export default class Contact extends React.Component {
     super(props)
     this.state = {
       name: '',
+      subject: 'Test Email',
       email: '',
       message: ''
     }
