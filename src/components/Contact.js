@@ -15,16 +15,14 @@ export default class Contact extends React.Component {
     this.state = {
       name: '',
       email: '',
-      subject: '',
       message: ''
     }
-    this.formState = this.state
   }
 
 
 
   handleChange = e => {
-    this.setState({ ...this.formState, [e.target.name]: e.target.value })
+    this.setState({ ...this.state, [e.target.name]: e.target.value })
   }
 
   handleSubmit = async (e) => {
@@ -34,7 +32,7 @@ export default class Contact extends React.Component {
   try{
     const response = await fetch("/.netlify/functions/sendemail", {
       method: "POST",
-      body: JSON.stringify(this.formState),
+      body: JSON.stringify(this.state),
     })
 
     if (!response.ok) {
@@ -86,7 +84,7 @@ export default class Contact extends React.Component {
                 className="Form--Input Form--InputText"
                 type="text"
                 placeholder="First Name"
-                name="first name"
+                name="name"
                 onChange={this.handleChange}
                 required
               />
