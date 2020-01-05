@@ -1,37 +1,64 @@
 import React, { Fragment } from 'react'
-import { navigateTo } from 'gatsby-link'
+// import { navigateTo } from 'gatsby-link'
 
 import './Form.css'
 
-function encode(data) {
-  return Object.keys(data)
-    .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
-    .join('&')
-}
+// function encode(data) {
+//   return Object.keys(data)
+//     .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+//     .join('&')
+// }
 
 export default class Contact extends React.Component {
   constructor(props) {
     super(props)
-    this.state = {}
+    this.state = {
+      name: '',
+      email: '',
+      subject: '',
+      message: ''
+    }
+    this.formState = this.state
   }
+
+
 
   handleChange = e => {
-    this.setState({ [e.target.name]: e.target.value })
+    this.setState({ ...this.formState, [e.target.name]: e.target.value })
   }
 
-  handleSubmit = e => {
-    e.preventDefault()
-    const form = e.target
-    fetch('/', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: encode({
-        'form-name': form.getAttribute('name'),
-        ...this.state
-      })
+  handleSubmit = async (e) => {
+
+    e.preventDefault();
+
+  try{
+    const response = await fetch("/.functions/sendemail", {
+      method: "POST",
+      body: JSON.stringify(this.formState),
     })
-      .then(() => navigateTo(form.getAttribute('action')))
-      .catch(error => alert(error))
+
+    if (!response.ok) {
+      //not 200 response
+      return
+    }
+
+    //all OK
+
+  } catch(e){
+    //error
+  }
+    // e.preventDefault()
+    // const form = e.target
+    // fetch('/', {
+    //   method: 'POST',
+    //   headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+    //   body: encode({
+    //     'form-name': form.getAttribute('name'),
+    //     ...this.state
+    //   })
+    // })
+    //   .then(() => navigateTo(form.getAttribute('action')))
+    //   .catch(error => alert(error))
   }
 
   render() {
@@ -92,7 +119,6 @@ export default class Contact extends React.Component {
             className="Button Form--SubmitButton"
             type="submit"
             value="Send"
-            disabled={this.state.disabled}
           />
         </form>
       </Fragment>

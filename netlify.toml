@@ -6,3 +6,5 @@
   YARN_FLAGS = "--no-ignore-optional"
 [context.production]
   environment = { NETLIFY_MAP_KEY = "AIzaSyCQVuWUGXqlhPez96eHvPjvyZTJxj8fKmY" }
+[context.development]
+  environment = { SENDGRID_API_KEY = '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', SENDGRID_TO_EMAIL = 'steph.denny@gmail.com' }
