@@ -4,6 +4,13 @@ import { serialize } from 'dom-form-serializer'
 
 import './Form.css'
 
+
+function encode(data) {
+  return Object.keys(data)
+    .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+    .join('&')
+}
+
 class Form extends React.Component {
   static defaultProps = {
     name: 'contact',
@@ -27,7 +34,12 @@ class Form extends React.Component {
     const data = serialize(form)
     this.setState({ disabled: true })
     fetch(form.action + '?' + stringify(data), {
-      method: 'POST'
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: encode({
+        'form-name': form.getAttribute('name'),
+        ...this.state
+      })
     })
       .then(res => {
         if (res.ok) {
@@ -64,7 +76,7 @@ class Form extends React.Component {
           name={name}
           action={action}
           onSubmit={this.handleSubmit}
-          netlify
+          data-netlify="true"
           data-netlify-honeypot="bot-field"
         >
           {this.state.alert && (
