@@ -15,7 +15,8 @@ export const AboutPageTemplate = ({
          section1,
          section1img,
          section2,
-         accordion
+         accordion,
+         body
        }) => (
          <main className="About">
            <PageHeader
@@ -24,6 +25,13 @@ export const AboutPageTemplate = ({
              subtitle={subtitle}
              backgroundImage={featuredImage}
            />
+           {!!body && (
+           <section className="section">
+             <div className="container">
+                 <Content className="col-12" source={body} />
+             </div>
+           </section>
+           )}
            {!!section1 && (
              <section className="section">
                <div className="container">
@@ -47,13 +55,13 @@ export const AboutPageTemplate = ({
                </div>
              </section>
            )}
-            {!!accordion && (
+           {!!accordion && (
              <section className="section">
                <div className="container">
                  <Accordion items={accordion} />
                </div>
              </section>
-            )}
+           )}
          </main>
        )
 
