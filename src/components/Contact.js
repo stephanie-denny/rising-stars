@@ -3,11 +3,11 @@ import { navigateTo } from 'gatsby-link'
 
 import './Form.css'
 
-function encode(data) {
-  return Object.keys(data)
-    .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
-    .join('&')
-}
+// function encode(data) {
+//   return Object.keys(data)
+//     .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+//     .join('&')
+// }
 
 export default class Contact extends React.Component {
   constructor(props) {
@@ -32,10 +32,7 @@ export default class Contact extends React.Component {
     const response = await fetch('/.functions/sendemail', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: encode({
-        'form-name': form.getAttribute('name'),
-        ...this.state
-      })
+      body: JSON.stringify(this.state)
     })
 
     if (!response.ok) {
