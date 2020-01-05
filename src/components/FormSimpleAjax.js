@@ -1,5 +1,4 @@
 import React, { Fragment } from 'react'
-import Helmet from 'react-helmet'
 import { stringify } from 'qs'
 import { serialize } from 'dom-form-serializer'
 
@@ -7,8 +6,8 @@ import './Form.css'
 
 class Form extends React.Component {
   static defaultProps = {
-    name: 'Contact From Website',
-    subject: '', // optional subject of the notification email
+    name: 'contact',
+    subject: 'Hello from Risingstarsaustin.com', // optional subject of the notification email
     action: '',
     successMessage: 'Thanks for your message, we will get back to you soon',
     errorMessage:
@@ -32,8 +31,10 @@ class Form extends React.Component {
     })
       .then(res => {
         if (res.ok) {
+          console.log(res)
           return res
         } else {
+          console.log('error')
           throw new Error('Network error')
         }
       })
@@ -58,17 +59,13 @@ class Form extends React.Component {
 
     return (
       <Fragment>
-        <Helmet>
-          <script src="https://www.google.com/recaptcha/api.js" />
-        </Helmet>
         <form
           className="Form"
           name={name}
           action={action}
           onSubmit={this.handleSubmit}
-          data-netlify="true"
+          netlify
           data-netlify-honeypot="bot-field"
-          netlify-recaptcha=""
         >
           {this.state.alert && (
             <div className="Form--Alert">{this.state.alert}</div>

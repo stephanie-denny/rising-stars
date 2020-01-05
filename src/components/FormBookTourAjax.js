@@ -7,7 +7,7 @@ import './Form.css'
 
 class Form extends React.Component {
   static defaultProps = {
-    name: 'Contact From Website',
+    name: 'tour',
     subject: 'Book A Tour',
     action: '',
     successMessage: 'Thanks for your message, we will get back to you soon',

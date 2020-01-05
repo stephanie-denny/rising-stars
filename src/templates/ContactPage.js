@@ -66,9 +66,9 @@ export const ContactPageTemplate = ({
 
                <div>
                  {slug === 'contact' ? (
-                   <FormSimpleAjax name="Contact Rising Stars" />
+                   <FormSimpleAjax name="contact" />
                    ) : slug === 'book-a-tour' ?
-                   (<FormBookTourAjax name="Book A Tour With Rising Stars" />)
+                   (<FormBookTourAjax name="tour" />)
                    : ''
                  }
                </div>
