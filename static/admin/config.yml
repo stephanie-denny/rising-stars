@@ -290,7 +290,7 @@ collections: # A list of collections the CMS should be able to edit
                   required: false,
                 }
 
-        - file: 'content/pages/thankyou.md'
+      - file: 'content/pages/thankyou.md'
         label: 'Thank You'
         name: 'thank-you'
         fields:
