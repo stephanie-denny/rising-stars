@@ -29,7 +29,7 @@ export default class Contact extends React.Component {
     const form = e.target
 
   try{
-    const response = await fetch('/.functions/sendemail', {
+    const response = await fetch('/.netlify/functions/sendemail', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: JSON.stringify(this.state)
