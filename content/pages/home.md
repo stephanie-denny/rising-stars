@@ -2,7 +2,7 @@
 template: HomePage
 slug: ''
 title: Rising Stars Bilingual Learning Center
-featuredImage: 'https://ucarecdn.com/055b06a3-f7ff-4d43-8025-666c6d42842e'
+featuredImage: 'https://ucarecdn.com/66cfbc8e-9a73-436e-8c6e-74f0f3c4aa91/'
 subtitle: ' Nullam quis risus eget urna mollis ornare vel eu leo.'
 slides:
   - image: 'https://ucarecdn.com/055b06a3-f7ff-4d43-8025-666c6d42842e/girlwithleaf.jpg'
