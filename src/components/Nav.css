@@ -93,6 +93,7 @@
   overflow: hidden;
   transition: 0.3s ease all;
   z-index: 9999;
+  box-shadow: 0 6px 5px rgba(0, 0, 0, 0.2);
 }
 
 .Nav--Group.active .Nav--GroupLinks {
