@@ -16,9 +16,10 @@ export const ProgramsPageTemplate = ({
          featuredImage,
          section1,
          blades,
-         overview
+         overview,
+         slug
        }) => (
-         <main className="Programs">
+         <main className={"Programs " + slug}>
            <PageHeader
              large
              title={title}
@@ -116,6 +117,7 @@ export const pageQuery = graphql`
              ...Meta
              html
              frontmatter {
+               slug
                title
                subtitle
                featuredImage

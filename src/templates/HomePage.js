@@ -1,24 +1,32 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-import { isMobile } from 'react-device-detect'
+import { BrowserView, MobileView } from 'react-device-detect'
 import PageHeader from '../components/PageHeader'
 import Slideshow from '../components/Slideshow'
 import Layout from '../components/Layout'
 import AboutSection from '../components/AboutSection'
 import ProgramsSection from '../components/ProgramsSection'
 
-export const HomePageTemplate = ({ title, subtitle, featuredImage, slides, about, programs }) => (
+export const HomePageTemplate = ({
+         title,
+         subtitle,
+         featuredImage,
+         slides,
+         about,
+         programs
+       }) => (
          <main className="Home">
-           {isMobile ? (
+           <MobileView>
              <PageHeader
                large
                title={title}
                subtitle={subtitle}
                backgroundImage={featuredImage}
              />
-           ) : (
+           </MobileView>
+           <BrowserView>
              <Slideshow main="main" fadeImages={slides} />
-           )}
+           </BrowserView>
            <div className="divider"></div>
            <AboutSection about={about} />
            <ProgramsSection programs={programs} />

@@ -6,6 +6,7 @@ import PageHeader from '../components/PageHeader'
 import Accordion from '../components/Accordion'
 import Content from '../components/Content'
 import Layout from '../components/Layout'
+import './AboutPage.css'
 
 // Export Template for use in CMS preview
 export const AboutPageTemplate = ({
@@ -16,9 +17,10 @@ export const AboutPageTemplate = ({
          section1img,
          section2,
          accordion,
-         body
+         body,
+         slug
        }) => (
-         <main className="About">
+         <main className={"About " + slug}>
            <PageHeader
              large
              title={title}
@@ -84,6 +86,7 @@ export const pageQuery = graphql`
       ...Meta
       html
       frontmatter {
+        slug
         title
         subtitle
         featuredImage

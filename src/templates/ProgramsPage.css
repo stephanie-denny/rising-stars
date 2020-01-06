@@ -18,4 +18,10 @@
   .Programs .Content.Blade {
     padding: 2em;
   }
+  .Programs .PageHeader .BackgroundImage {
+    background-position: 50%;
+  }
+  .Programs.threes .PageHeader .BackgroundImage {
+    background-position: 35%;
+  }
 }
