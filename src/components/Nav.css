@@ -165,6 +165,7 @@
     display: block !important;
     margin-left: auto;
     z-index: 1;
+    padding: 0;
   }
   .Nav .Logo {
     z-index: 1;
@@ -246,6 +247,9 @@
   }
   .Nav--MenuButton svg {
     color: white;
+  }
+  .Nav.fixed .Nav--MenuButton svg {
+    color: var(--primary);
   }
   .Nav.Nav-active .Nav--MenuButton svg {
     color: var(--primary);
