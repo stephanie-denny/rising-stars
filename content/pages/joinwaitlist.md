@@ -16,4 +16,4 @@ meta:
   title: Rising Stars Waitlist
 ---
 
-Thank you for your interest in our school. Please complete this form to be placed on our wait list. There is a \$50 per family fee to be placed on the wait list.
+Thank you for your interest in our school. Please complete this form to be placed on our wait list. There is a \$60 per family fee to be placed on the wait list.

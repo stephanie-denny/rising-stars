@@ -36,3 +36,9 @@
     width: calc(50% - 2rem);
   }
 }
+
+.vertical-center {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+}

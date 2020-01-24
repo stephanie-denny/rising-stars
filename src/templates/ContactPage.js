@@ -63,14 +63,28 @@ export const ContactPageTemplate = ({
                  </div>
                </div>
 
-               <div>
+               <div class="vertical-center">
                  {slug === 'contact' ? (
                    <Contact />
                  ) : slug === 'book-a-tour' ? (
                    <ContactTour />
-                 ) : (
-                   ''
-                 )}
+                 ) : slug === 'employment' ? (
+                   <a
+                     href="/files/Employment_Application.pdf"
+                     target="_blank"
+                     className="Button"
+                   >
+                     Download Employment Application Form
+                   </a>
+                 ) : slug === 'join-waitlist' ? (
+                   <a
+                     href="/files/Waiting_list.pdf"
+                     target="_blank"
+                     className="Button"
+                   >
+                     Download and Print Wait List Form
+                   </a>
+                 ) : ('')}
                </div>
              </div>
            </section>

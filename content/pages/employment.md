@@ -1,27 +1,21 @@
 ---
 template: ContactPage
 slug: employment
-title: Rising Stars Employment Opportunities
-featuredImage: 'https://ucarecdn.com/0819ea94-ec42-4108-ac6b-46deccf43cae/'
-subtitle: This is the contact page subtitle.
-address: '404 James St, Burleigh Heads QLD 4220'
-phone: 0987 123 456
-email: example@example.com
+title: Rising Stars Employment
+featuredImage: 'https://ucarecdn.com/2d672c5d-eed9-4d45-9a0f-e04179d067a6/'
+subtitle: Come work with us!
+address: '11406 Conroy Ln, Manchaca, TX 78652'
+phone: (737) 226-0768
+email: risingstarsaustintexas@gmail.com
 locations:
-  - lat: '-27.9654732'
-    lng: '153.2432449'
-    mapLink: ''
+  - lat: '30.1398968'
+    lng: '-97.8073311'
+    mapLink: 'https://goo.gl/maps/UWPkfPT7wtjTuVDt9'
 meta:
-  description: This is a meta description.
-  title: Rising Stars Employment Opportunities
+  description: Rising Stars Employment
+  title: Rising Stars Employment
 ---
 
-# Example contact form
+### Come work with us!
 
-This form is setup to use Netlify's form handling:
-
-- the form action is set to the current absolute url: `action: '/contact/'`
-- a name attribute is sent with the form's data `'form-name': 'Contact'`
-- netlify data attributes are added to the form `data-netlify data-netlify-honeypot`
-
-Find out more in the [Netlify Docs](https://www.netlify.com/docs/form-handling/).
+Thank you for your interest in working with Rising Stars. Download the employment application form on the right. Please call [(737) 226-0768](tel:+17372260768) for questions.

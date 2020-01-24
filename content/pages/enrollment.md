@@ -21,7 +21,7 @@ meta:
 ### 3. Complete the Rising Stars Wait List Form.
 
 - Complete our [​Wait List Request Form​](/join-waitlist) to indicate your interest in enrolling your child at Rising Stars in the future.
-- Pay \$50 non-refundable enrollment fee. There is no obligation to enroll.
+- Pay \$60 non-refundable enrollment fee. There is no obligation to enroll.
 - The time between when you complete the Wait List Form and when you are invited to enroll your child varies greatly.
 
 ### 4. Enroll your child
@@ -29,4 +29,6 @@ meta:
 - When you receive an offer of enrollment, complete the Enrollment Agreement.
 - Schedule a home visit with your child’s new teacher.
 
-#### [Download the Rising Stars Tuition Rate Sheet](#)
+#### <a href="/files/enrollment_documents.pdf" target="_blank" class="Button">Rising Stars Enrollment Form</a>
+
+#### <a href="/files/Pre_Registration_Form.pdf" target="_blank" class="Button">Rising Stars Pre-Registration Form</a>
