@@ -330,7 +330,7 @@ collections: # A list of collections the CMS should be able to edit
                   required: false,
                 }
 
-        - file: 'content/pages/programs.md'
+      - file: 'content/pages/programs.md'
         label: 'Programs Page'
         name: 'programs'
         fields:
@@ -350,17 +350,35 @@ collections: # A list of collections the CMS should be able to edit
             widget: 'list'
             fields:
               - { name: leftText, label: Left Text, widget: markdown }
-              - { name: leftBgImg, label: Left Background Image, widget: string }
+              - {
+                  name: leftBgImg,
+                  label: Left Background Image,
+                  widget: string,
+                }
               - { name: leftImg, label: Left Image, widget: image }
               - { name: leftLink, label: Left Link, widget: string }
               - { name: leftLinkText, label: Left Link Text, widget: string }
-              - { name: leftTextDark, label: Dark Text?, widget: boolean, default: true }
+              - {
+                  name: leftTextDark,
+                  label: Dark Text?,
+                  widget: boolean,
+                  default: true,
+                }
               - { name: rightText, label: Right Text, widget: markdown }
-              - { name: rightBgImg, label: Right Background Image, widget: string }
+              - {
+                  name: rightBgImg,
+                  label: Right Background Image,
+                  widget: string,
+                }
               - { name: rightImg, label: Right Image, widget: image }
               - { name: rightLink, label: Right Link, widget: string }
               - { name: rightLinkText, label: Right Link Text, widget: string }
-              - { name: rightTextDark, label: Dark Text?, widget: boolean, default: true }
+              - {
+                  name: rightTextDark,
+                  label: Dark Text?,
+                  widget: boolean,
+                  default: true,
+                }
 
           - label: 'overview'
             name: 'overview'
@@ -370,7 +388,6 @@ collections: # A list of collections the CMS should be able to edit
               - { name: image, label: Image, widget: string }
               - { name: link, label: Link, widget: string }
               - { name: linkText, label: Link Text, widget: string }
-
 
           - label: 'Meta'
             required: false
