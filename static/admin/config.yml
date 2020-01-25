@@ -782,6 +782,338 @@ collections: # A list of collections the CMS should be able to edit
                   widget: boolean,
                   required: false,
                 }
+      - file: 'content/pages/Infants.md'
+        label: 'Infants'
+        name: 'infants'
+        fields:
+          - {
+              label: Template,
+              name: template,
+              widget: hidden,
+              default: ProgramsPage,
+            }
+          - { label: Slug, name: slug, widget: hidden, default: '' }
+          - { label: Title, name: title, widget: string }
+          - { label: Featured Image, name: featuredImage, widget: image }
+          - { label: Subtitle, name: subtitle, widget: markdown }
+          - { label: Section1, name: section1, widget: markdown }
+          - label: 'blades'
+            name: 'blades'
+            widget: 'list'
+            fields:
+              - { name: leftText, label: Left Text, widget: markdown }
+              - {
+                  name: leftBgImg,
+                  label: Left Background Image,
+                  widget: string,
+                }
+              - { name: leftImg, label: Left Image, widget: image }
+              - { name: leftLink, label: Left Link, widget: string }
+              - { name: leftLinkText, label: Left Link Text, widget: string }
+              - {
+                  name: leftTextDark,
+                  label: Dark Text?,
+                  widget: boolean,
+                  default: true,
+                }
+              - { name: rightText, label: Right Text, widget: markdown }
+              - {
+                  name: rightBgImg,
+                  label: Right Background Image,
+                  widget: string,
+                }
+              - { name: rightImg, label: Right Image, widget: image }
+              - { name: rightLink, label: Right Link, widget: string }
+              - { name: rightLinkText, label: Right Link Text, widget: string }
+              - {
+                  name: rightTextDark,
+                  label: Dark Text?,
+                  widget: boolean,
+                  default: true,
+                }
+
+          - label: 'overview'
+            name: 'overview'
+            widget: 'object'
+            fields:
+              - { name: text, label: Text, widget: markdown }
+              - { name: image, label: Image, widget: string }
+              - { name: link, label: Link, widget: string }
+              - { name: linkText, label: Link Text, widget: string }
+
+          - label: 'Meta'
+            required: false
+            name: 'meta'
+            widget: 'object'
+            fields:
+              - { label: Title, name: title, widget: string, required: false }
+              - {
+                  label: Description,
+                  name: description,
+                  widget: text,
+                  required: false,
+                }
+              - {
+                  label: Canonical Link,
+                  name: canonicalLink,
+                  widget: string,
+                  required: false,
+                }
+              - {
+                  label: Noindex,
+                  name: noindex,
+                  widget: boolean,
+                  required: false,
+                }
+      - file: 'content/pages/ones.md'
+        label: 'Ones'
+        name: 'ones'
+        fields:
+          - {
+              label: Template,
+              name: template,
+              widget: hidden,
+              default: ProgramsPage,
+            }
+          - { label: Slug, name: slug, widget: hidden, default: '' }
+          - { label: Title, name: title, widget: string }
+          - { label: Featured Image, name: featuredImage, widget: image }
+          - { label: Subtitle, name: subtitle, widget: markdown }
+          - { label: Section1, name: section1, widget: markdown }
+          - label: 'blades'
+            name: 'blades'
+            widget: 'list'
+            fields:
+              - { name: leftText, label: Left Text, widget: markdown }
+              - {
+                  name: leftBgImg,
+                  label: Left Background Image,
+                  widget: string,
+                }
+              - { name: leftImg, label: Left Image, widget: image }
+              - { name: leftLink, label: Left Link, widget: string }
+              - { name: leftLinkText, label: Left Link Text, widget: string }
+              - {
+                  name: leftTextDark,
+                  label: Dark Text?,
+                  widget: boolean,
+                  default: true,
+                }
+              - { name: rightText, label: Right Text, widget: markdown }
+              - {
+                  name: rightBgImg,
+                  label: Right Background Image,
+                  widget: string,
+                }
+              - { name: rightImg, label: Right Image, widget: image }
+              - { name: rightLink, label: Right Link, widget: string }
+              - { name: rightLinkText, label: Right Link Text, widget: string }
+              - {
+                  name: rightTextDark,
+                  label: Dark Text?,
+                  widget: boolean,
+                  default: true,
+                }
+
+          - label: 'overview'
+            name: 'overview'
+            widget: 'object'
+            fields:
+              - { name: text, label: Text, widget: markdown }
+              - { name: image, label: Image, widget: string }
+              - { name: link, label: Link, widget: string }
+              - { name: linkText, label: Link Text, widget: string }
+
+          - label: 'Meta'
+            required: false
+            name: 'meta'
+            widget: 'object'
+            fields:
+              - { label: Title, name: title, widget: string, required: false }
+              - {
+                  label: Description,
+                  name: description,
+                  widget: text,
+                  required: false,
+                }
+              - {
+                  label: Canonical Link,
+                  name: canonicalLink,
+                  widget: string,
+                  required: false,
+                }
+              - {
+                  label: Noindex,
+                  name: noindex,
+                  widget: boolean,
+                  required: false,
+                }
+      - file: 'content/pages/twos.md'
+        label: 'Twos'
+        name: 'twos'
+        fields:
+          - {
+              label: Template,
+              name: template,
+              widget: hidden,
+              default: ProgramsPage,
+            }
+          - { label: Slug, name: slug, widget: hidden, default: '' }
+          - { label: Title, name: title, widget: string }
+          - { label: Featured Image, name: featuredImage, widget: image }
+          - { label: Subtitle, name: subtitle, widget: markdown }
+          - { label: Section1, name: section1, widget: markdown }
+          - label: 'blades'
+            name: 'blades'
+            widget: 'list'
+            fields:
+              - { name: leftText, label: Left Text, widget: markdown }
+              - {
+                  name: leftBgImg,
+                  label: Left Background Image,
+                  widget: string,
+                }
+              - { name: leftImg, label: Left Image, widget: image }
+              - { name: leftLink, label: Left Link, widget: string }
+              - { name: leftLinkText, label: Left Link Text, widget: string }
+              - {
+                  name: leftTextDark,
+                  label: Dark Text?,
+                  widget: boolean,
+                  default: true,
+                }
+              - { name: rightText, label: Right Text, widget: markdown }
+              - {
+                  name: rightBgImg,
+                  label: Right Background Image,
+                  widget: string,
+                }
+              - { name: rightImg, label: Right Image, widget: image }
+              - { name: rightLink, label: Right Link, widget: string }
+              - { name: rightLinkText, label: Right Link Text, widget: string }
+              - {
+                  name: rightTextDark,
+                  label: Dark Text?,
+                  widget: boolean,
+                  default: true,
+                }
+
+          - label: 'overview'
+            name: 'overview'
+            widget: 'object'
+            fields:
+              - { name: text, label: Text, widget: markdown }
+              - { name: image, label: Image, widget: string }
+              - { name: link, label: Link, widget: string }
+              - { name: linkText, label: Link Text, widget: string }
+
+          - label: 'Meta'
+            required: false
+            name: 'meta'
+            widget: 'object'
+            fields:
+              - { label: Title, name: title, widget: string, required: false }
+              - {
+                  label: Description,
+                  name: description,
+                  widget: text,
+                  required: false,
+                }
+              - {
+                  label: Canonical Link,
+                  name: canonicalLink,
+                  widget: string,
+                  required: false,
+                }
+              - {
+                  label: Noindex,
+                  name: noindex,
+                  widget: boolean,
+                  required: false,
+                }
+      - file: 'content/pages/threes.md'
+        label: 'Threes'
+        name: 'threes'
+        fields:
+          - {
+              label: Template,
+              name: template,
+              widget: hidden,
+              default: ProgramsPage,
+            }
+          - { label: Slug, name: slug, widget: hidden, default: '' }
+          - { label: Title, name: title, widget: string }
+          - { label: Featured Image, name: featuredImage, widget: image }
+          - { label: Subtitle, name: subtitle, widget: markdown }
+          - { label: Section1, name: section1, widget: markdown }
+          - label: 'blades'
+            name: 'blades'
+            widget: 'list'
+            fields:
+              - { name: leftText, label: Left Text, widget: markdown }
+              - {
+                  name: leftBgImg,
+                  label: Left Background Image,
+                  widget: string,
+                }
+              - { name: leftImg, label: Left Image, widget: image }
+              - { name: leftLink, label: Left Link, widget: string }
+              - { name: leftLinkText, label: Left Link Text, widget: string }
+              - {
+                  name: leftTextDark,
+                  label: Dark Text?,
+                  widget: boolean,
+                  default: true,
+                }
+              - { name: rightText, label: Right Text, widget: markdown }
+              - {
+                  name: rightBgImg,
+                  label: Right Background Image,
+                  widget: string,
+                }
+              - { name: rightImg, label: Right Image, widget: image }
+              - { name: rightLink, label: Right Link, widget: string }
+              - { name: rightLinkText, label: Right Link Text, widget: string }
+              - {
+                  name: rightTextDark,
+                  label: Dark Text?,
+                  widget: boolean,
+                  default: true,
+                }
+
+          - label: 'overview'
+            name: 'overview'
+            widget: 'object'
+            fields:
+              - { name: text, label: Text, widget: markdown }
+              - { name: image, label: Image, widget: string }
+              - { name: link, label: Link, widget: string }
+              - { name: linkText, label: Link Text, widget: string }
+
+          - label: 'Meta'
+            required: false
+            name: 'meta'
+            widget: 'object'
+            fields:
+              - { label: Title, name: title, widget: string, required: false }
+              - {
+                  label: Description,
+                  name: description,
+                  widget: text,
+                  required: false,
+                }
+              - {
+                  label: Canonical Link,
+                  name: canonicalLink,
+                  widget: string,
+                  required: false,
+                }
+              - {
+                  label: Noindex,
+                  name: noindex,
+                  widget: boolean,
+                  required: false,
+                }
 
   - name: infoPages
     label: Info Page
