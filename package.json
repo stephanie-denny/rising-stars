@@ -10,6 +10,7 @@
   "dependencies": {
     "@reach/router": "^1.2.1",
     "@sendgrid/mail": "^6.4.0",
+    "@uploadcare/react-widget": "^1.2.4",
     "bootstrap": "^4.4.1",
     "dom-form-serializer": "^1.0.7",
     "gatsby": "^2.17.7",

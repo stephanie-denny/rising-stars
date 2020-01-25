@@ -4,17 +4,18 @@ backend:
   branch: master # Branch to update (optional; defaults to master)
 
 display_url: https://risingstarsaustin.com # This url will display in the top-right of the CMS
+logo_url: 'https://risingstarsaustin.com/images/Rising_Stars_Logo.svg'
+locale: 'en'
 media_library:
   name: uploadcare
   config:
     publicKey: 2612e9697c7d8e416ebe
-    multiple: false
+    multiple: true
     tabs: 'file camera url facebook gdrive'
     effects: 'crop,rotate,enhance,grayscale'
     imageShrink: '2000x2000'
     previewStep: true
     clearable: true
-media_folder: 'images/uploads'
 public_folder: '/images/uploads'
 collections: # A list of collections the CMS should be able to edit
   - name: 'pages'

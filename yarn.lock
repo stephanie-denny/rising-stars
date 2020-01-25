@@ -1781,6 +1781,30 @@
   resolved "https://registry.yarnpkg.com/@restart/hooks/-/hooks-0.3.19.tgz#1b54b4a61dca6157f3bfcd4f348855187d67d51f"
   integrity sha512-8bskLEkiDvuZztnfGN+vM56q2HQV8dyXS/Eb0nhXPx6fonii3hQLxfNVA2r5NTMbvEkwDo59bAau3idUXaGvww==
 
+"@sendgrid/client@^6.5.1":
+  version "6.5.1"
+  resolved "https://registry.yarnpkg.com/@sendgrid/client/-/client-6.5.1.tgz#2f777519a5355f70538bf29917bfc4306ef043a2"
+  integrity sha512-OooZXSy8wWcUI5ppz7ugddfNdZC66baTHYF1Yz57O64cTjpfhw60+mNmPB0ISKxBchqnHcMiVNZ1SL70eAItlg==
+  dependencies:
+    "@sendgrid/helpers" "^6.5.1"
+    request "^2.88.0"
+
+"@sendgrid/helpers@^6.5.1":
+  version "6.5.1"
+  resolved "https://registry.yarnpkg.com/@sendgrid/helpers/-/helpers-6.5.1.tgz#adb763570f383061da4627ff86217d3b819a4261"
+  integrity sha512-Bd05zxnKRAKtYCXMjDSlXKmlX/RceWMIHYVwU+auMFUk+C8Mx755hGhBl8IHLz0kYL03dF8cSQA0iXlnoMGIpQ==
+  dependencies:
+    chalk "^2.0.1"
+    deepmerge "^2.1.1"
+
+"@sendgrid/mail@^6.4.0":
+  version "6.5.1"
+  resolved "https://registry.yarnpkg.com/@sendgrid/mail/-/mail-6.5.1.tgz#42e01829769407adc3b3290094bc0ce8c74683de"
+  integrity sha512-OVHOrMykAy6Zt1xeOT//RhH6ThdPr6nhvkdzwXrKzSu3Ctr7OihIeWrWOGIh7CjGBOTiBWoMgFgVC6Twgr/jHw==
+  dependencies:
+    "@sendgrid/client" "^6.5.1"
+    "@sendgrid/helpers" "^6.5.1"
+
 "@sindresorhus/is@^0.7.0":
   version "0.7.0"
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-0.7.0.tgz#9a06f4f137ee84d7df0460c1fdb1135ffa6c50fd"
@@ -1954,6 +1978,20 @@
     is-glob "^4.0.1"
     lodash.unescape "4.0.1"
     semver "^6.3.0"
+
+"@uploadcare/client-suspense@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@uploadcare/client-suspense/-/client-suspense-1.0.2.tgz#498c48610a52a4612e3aa0698c3c78e0a1e00535"
+  integrity sha512-X0zECeN7JeYxXq8+rVCf5uEmQxcnUS3YOOP5lGt50oEdCIzsa9Moz5CJaajNGGBcVgMorUhaLF3Or11NgLcsDw==
+
+"@uploadcare/react-widget@^1.2.4":
+  version "1.2.4"
+  resolved "https://registry.yarnpkg.com/@uploadcare/react-widget/-/react-widget-1.2.4.tgz#8bc1fca6e6b79c564ee4d9b7ec2ae47178d4c383"
+  integrity sha512-ExLCqgOr8/SRnTg8Bkgv+xnc2BAnK2usUnHv7GEH13cA3/JJ48RT4xVLRiKOtIjzXgVzLJlM+kg6bt7pdEO9+g==
+  dependencies:
+    "@uploadcare/client-suspense" "^1.0.2"
+    react-fast-compare "^2.0.4"
+    uploadcare-widget "^3.8.2"
 
 "@webassemblyjs/ast@1.8.5":
   version "1.8.5"
@@ -4383,6 +4421,11 @@ deep-map@^1.5.0:
     lodash "^4.17.4"
     tslib "^1.6.0"
 
+deepmerge@^2.1.1:
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/deepmerge/-/deepmerge-2.2.1.tgz#5d3ff22a01c00f645405a2fbc17d0778a1801170"
+  integrity sha512-R9hc1Xa/NOBi9WRVUWg19rl1UB7Tt4kuPd+thNJgFZoxXsTz7ncaPaeIm+40oSGuP33DfMb4sZt1QIGiJzC4EA==
+
 deepmerge@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/deepmerge/-/deepmerge-4.0.0.tgz#3e3110ca29205f120d7cb064960a39c3d2087c09"
@@ -4965,7 +5008,7 @@ es6-weak-map@^2.0.2:
     es6-iterator "^2.0.3"
     es6-symbol "^3.1.1"
 
-escape-html@~1.0.3:
+escape-html@^1.0.3, escape-html@~1.0.3:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/escape-html/-/escape-html-1.0.3.tgz#0258eae4d3d0c0974de1c169188ef0051d1d1988"
 
@@ -8109,6 +8152,11 @@ jimp@^0.6.4:
 jpeg-js@^0.3.4:
   version "0.3.5"
   resolved "https://registry.yarnpkg.com/jpeg-js/-/jpeg-js-0.3.5.tgz#6fbd6cd0e49627c5a0341796c9e50c70a2aa3673"
+
+jquery@^3.4.1:
+  version "3.4.1"
+  resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.4.1.tgz#714f1f8d9dde4bdfa55764ba37ef214630d80ef2"
+  integrity sha512-36+AdBzCL+y6qjw5Tx7HgzeGCzC81MDDgaUP8ld2zhx58HdqXGoBd+tHdrBMiyjGQs0Hxs/MLZTu/eHNJJuWPw==
 
 js-base64@^2.1.8, js-base64@^2.5.1:
   version "2.5.1"
@@ -11569,7 +11617,7 @@ react-error-overlay@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/react-error-overlay/-/react-error-overlay-3.0.0.tgz#c2bc8f4d91f1375b3dad6d75265d51cd5eeaf655"
 
-react-fast-compare@^2.0.2:
+react-fast-compare@^2.0.2, react-fast-compare@^2.0.4:
   version "2.0.4"
   resolved "https://registry.yarnpkg.com/react-fast-compare/-/react-fast-compare-2.0.4.tgz#e84b4d455b0fec113e0402c329352715196f81f9"
 
@@ -14361,6 +14409,14 @@ update-notifier@^2.5.0:
     latest-version "^3.0.0"
     semver-diff "^2.0.0"
     xdg-basedir "^3.0.0"
+
+uploadcare-widget@^3.8.2:
+  version "3.8.2"
+  resolved "https://registry.yarnpkg.com/uploadcare-widget/-/uploadcare-widget-3.8.2.tgz#2be55ffcf130a693178a5b7b684cc53016281610"
+  integrity sha512-4bmvmDyyH4xX6bpR4qI5EQqiOqIT7ZLuCzMfJDB4bRM6OrVJ4y7IXArZ+ccoVbt2xUOCHBwuV9OrGiUgukgq0g==
+  dependencies:
+    escape-html "^1.0.3"
+    jquery "^3.4.1"
 
 upper-case@^1.1.1:
   version "1.1.3"
