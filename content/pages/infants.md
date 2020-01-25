@@ -5,7 +5,7 @@ title: Rising Stars Infants
 featuredImage: 'https://ucarecdn.com/66cfbc8e-9a73-436e-8c6e-74f0f3c4aa91/'
 subtitle: 'Hummingbirds, Chicks, Finches, Ducklings'
 meta:
-  description: This is a meta description.
+  description: Every day is an opportunity to explore, make friends, and grow. Our teachers support and nurture your child’s cognitive, social, emotional, and physical development. Rising Stars Bilingual Learning Center is an accredited child development center for infants through pre-K located in South Austin..
   title: Rising Stars Infants
 overview:
   text: |-

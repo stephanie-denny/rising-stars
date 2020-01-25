@@ -19,6 +19,6 @@ section2: |-
   Our curriculum involves English and Spanish language development. Our curriculum promotes social, physical, emotional, and cognitive development. We ensure your child is prepared for kindergarten. At the end of the day each one of my children aquire a set of skills that helps them become someone who can thrive on any situation and is always wanting to learn more and more.
 
 meta:
-  description: This is a meta description.
+  description: Every day is an opportunity to explore, make friends, and grow. Our teachers support and nurture your child’s cognitive, social, emotional, and physical development. Rising Stars Bilingual Learning Center is an accredited child development center for infants through pre-K located in South Austin..
   title: About Rising Stars
 ---

@@ -47,6 +47,6 @@ gallery:
     image: 'https://ucarecdn.com/83485d70-1552-4c97-b237-22330fb56a1e/'
     title: Yellow Ice Cream
 meta:
-  description: This is a meta description.
+  description: Every day is an opportunity to explore, make friends, and grow. Our teachers support and nurture your child’s cognitive, social, emotional, and physical development. Rising Stars Bilingual Learning Center is an accredited child development center for infants through pre-K located in South Austin..
   title: Components Page
 ---

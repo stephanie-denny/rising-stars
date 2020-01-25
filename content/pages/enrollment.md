@@ -5,7 +5,7 @@ title: How to Enroll in Rising Stars
 featuredImage: 'https://ucarecdn.com/ad25c23d-ca19-45ee-8178-c1de7cf11cde/'
 subtitle: 'We’re so glad you heard about Rising Stars and want to learn more! Your child is unique and special and the first five years of life are when the most significant brain development happens! Come visit us to find out how we will nurture and encourage your child.'
 meta:
-  description: This is a meta description.
+  description: Every day is an opportunity to explore, make friends, and grow. Our teachers support and nurture your child’s cognitive, social, emotional, and physical development. Rising Stars Bilingual Learning Center is an accredited child development center for infants through pre-K located in South Austin..
   title: How to Enroll in Rising Stars
 ---
 

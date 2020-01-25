@@ -12,7 +12,7 @@ locations:
     lng: '-97.8073311'
     mapLink: 'https://goo.gl/maps/UWPkfPT7wtjTuVDt9'
 meta:
-  description: This is a meta description.
+  description: Every day is an opportunity to explore, make friends, and grow. Our teachers support and nurture your child’s cognitive, social, emotional, and physical development. Rising Stars Bilingual Learning Center is an accredited child development center for infants through pre-K located in South Austin..
   title: Contact Rising Stars
 ---
 
