@@ -1081,16 +1081,134 @@ collections: # A list of collections the CMS should be able to edit
                   widget: boolean,
                   default: true,
                 }
-
-          - label: 'overview'
-            name: 'overview'
+      - file: 'content/pages/handbook.md'
+        label: 'Parent Handbook'
+        name: 'handbook'
+        fields:
+          - {
+              label: Template,
+              name: template,
+              widget: hidden,
+              default: ParentsPage,
+            }
+          - { label: Slug, name: slug, widget: hidden, default: '' }
+          - { label: Title, name: title, widget: string }
+          - { label: Featured Image, name: featuredImage, widget: image }
+          - { label: Subtitle, name: subtitle, widget: markdown }
+          - label: 'Meta'
+            required: false
+            name: 'meta'
             widget: 'object'
             fields:
-              - { name: text, label: Text, widget: markdown }
-              - { name: image, label: Image, widget: string }
-              - { name: link, label: Link, widget: string }
-              - { name: linkText, label: Link Text, widget: string }
-
+              - { label: Title, name: title, widget: string, required: false }
+              - {
+                  label: Description,
+                  name: description,
+                  widget: text,
+                  required: false,
+                }
+              - {
+                  label: Canonical Link,
+                  name: canonicalLink,
+                  widget: string,
+                  required: false,
+                }
+              - {
+                  label: Noindex,
+                  name: noindex,
+                  widget: boolean,
+                  required: false,
+                }
+      - file: 'content/pages/parents.md'
+        label: 'Parents'
+        name: 'parents'
+        fields:
+          - {
+              label: Template,
+              name: template,
+              widget: hidden,
+              default: ParentsPage,
+            }
+          - { label: Slug, name: slug, widget: hidden, default: '' }
+          - { label: Title, name: title, widget: string }
+          - { label: Featured Image, name: featuredImage, widget: image }
+          - { label: Subtitle, name: subtitle, widget: markdown }
+          - label: 'Meta'
+            required: false
+            name: 'meta'
+            widget: 'object'
+            fields:
+              - { label: Title, name: title, widget: string, required: false }
+              - {
+                  label: Description,
+                  name: description,
+                  widget: text,
+                  required: false,
+                }
+              - {
+                  label: Canonical Link,
+                  name: canonicalLink,
+                  widget: string,
+                  required: false,
+                }
+              - {
+                  label: Noindex,
+                  name: noindex,
+                  widget: boolean,
+                  required: false,
+                }
+      - file: 'content/pages/policies.md'
+        label: 'Policies'
+        name: 'policies'
+        fields:
+          - {
+              label: Template,
+              name: template,
+              widget: hidden,
+              default: ParentsPage,
+            }
+          - { label: Slug, name: slug, widget: hidden, default: '' }
+          - { label: Title, name: title, widget: string }
+          - { label: Featured Image, name: featuredImage, widget: image }
+          - { label: Subtitle, name: subtitle, widget: markdown }
+          - label: 'Meta'
+            required: false
+            name: 'meta'
+            widget: 'object'
+            fields:
+              - { label: Title, name: title, widget: string, required: false }
+              - {
+                  label: Description,
+                  name: description,
+                  widget: text,
+                  required: false,
+                }
+              - {
+                  label: Canonical Link,
+                  name: canonicalLink,
+                  widget: string,
+                  required: false,
+                }
+              - {
+                  label: Noindex,
+                  name: noindex,
+                  widget: boolean,
+                  required: false,
+                }
+      - file: 'content/pages/resources.md'
+        label: 'Resources'
+        name: 'resources'
+        fields:
+          - {
+              label: Template,
+              name: template,
+              widget: hidden,
+              default: ParentsPage,
+            }
+          - { label: Slug, name: slug, widget: hidden, default: '' }
+          - { label: Title, name: title, widget: string }
+          - { label: Featured Image, name: featuredImage, widget: image }
+          - { label: Subtitle, name: subtitle, widget: markdown }
           - label: 'Meta'
             required: false
             name: 'meta'
@@ -1120,7 +1238,7 @@ collections: # A list of collections the CMS should be able to edit
     label: 'Settings'
     delete: false # Prevent users from deleting documents in this collection
     editor:
-      preview: false
+      preview: true
     files:
       - file: 'content/settings/global.yml'
         label: 'Global Settings'
