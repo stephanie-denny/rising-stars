@@ -14,7 +14,8 @@ media_library:
     imageShrink: '2000x2000'
     previewStep: true
     clearable: true
-
+media_folder: 'images/uploads'
+public_folder: '/images/uploads'
 collections: # A list of collections the CMS should be able to edit
   - name: 'pages'
     label: 'Page'
