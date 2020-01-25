@@ -68,6 +68,9 @@ export default ({ children, meta, title }) => {
                 href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
                 rel="stylesheet"
               />
+              <script>UPLOADCARE_PUBLIC_KEY = '2612e9697c7d8e416ebe';</script>
+
+              <script src="https://ucarecdn.com/libs/widget/3.x/uploadcare.full.min.js"></script>
               {/* Add font link tags here */}
             </Helmet>
 
