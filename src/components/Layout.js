@@ -29,6 +29,7 @@ export default ({ children, meta, title }) => {
               bgimage
               title
               subtitle
+              altimg
             }
             waitlist {
               bgimage
