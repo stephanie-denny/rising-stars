@@ -63,6 +63,7 @@
   text-align: center;
   margin-right: 1em;
   background-color: var(--secondary);
+  display: inline-block;
 }
 .footer .SVGIcon .SVGIcon--icon {
   background: transparent;
