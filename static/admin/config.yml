@@ -1272,6 +1272,7 @@ collections: # A list of collections the CMS should be able to edit
               - { label: 'Background Image', name: bgimage, widget: image }
               - { label: 'Title', name: title, widget: string }
               - { label: 'Subtitle', name: subtitle, widget: string }
+              - { label: 'Alt Image', name: altimg, widget: image }
           - label: 'Wait List'
             name: 'waitlist'
             widget: 'object'
