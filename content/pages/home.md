@@ -44,9 +44,9 @@ programs:
   - image: 'https://ucarecdn.com/eb1846e9-8faf-4966-b619-c45575a1bade/ones.jpg'
     title: Toddlers
   - image: 'https://ucarecdn.com/6e881c73-22bc-4908-8d84-c84f8e4f71da/twos.jpg'
-    title: Pre-Schoolers
+    title: Early Preschool
   - image: 'https://ucarecdn.com/e3ada390-e0fb-4f5d-91fc-e0958ad4c02c/threes.jpg'
-    title: Pre-K
+    title: 'Preschool '
 meta:
   description: >-
     Every day is an opportunity to explore, make friends, and grow. Our teachers
