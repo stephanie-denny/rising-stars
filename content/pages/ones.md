@@ -1,16 +1,16 @@
 ---
 template: ProgramsPage
 slug: ones
-title: Rising Stars Ones
+title: Rising Stars Toddlers
 featuredImage: 'https://ucarecdn.com/6de433b3-1b57-492b-8627-2be3617247ce/'
 subtitle: 'Kangaroos, Cottontails, Otters, Honey Bears'
 meta:
-  description: Rising Stars Bilingual Learning Center Ones Program, Austin Tx
-  title: Rising Stars Ones
+  description: Rising Stars Bilingual Learning Center Toddlers Program, Austin Tx
+  title: Rising Stars Toddlers
 overview:
   text: |-
     ## Classroom Overview
-    In our Ones classrooms, our top priority is to provide a welcoming, trusting, and safe environment for your toddler to explore and learn boundaries with loving guidance from their caregivers. A sense of trust is built between a caregiver and a child naturally. We encourage your child to learn skills independently at their own pace without excessive or unnecessary guidance. We make sure your child’s need for love and growth are met each day.
+    In our Toddlers classrooms, our top priority is to provide a welcoming, trusting, and safe environment for your toddler to explore and learn boundaries with loving guidance from their caregivers. A sense of trust is built between a caregiver and a child naturally. We encourage your child to learn skills independently at their own pace without excessive or unnecessary guidance. We make sure your child’s need for love and growth are met each day.
   image: 'https://ucarecdn.com/4be70aa8-600b-49f6-9484-0063f264dab4/kidspaintingwithteacher.jpg'
   link: '/enrollment'
   linkText: 'Learn About Enrollment'

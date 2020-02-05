@@ -71,6 +71,7 @@ export const pageQuery = graphql`
                programs {
                  image
                  title
+                 link
                }
              }
            }

@@ -1,16 +1,16 @@
 ---
 template: ProgramsPage
 slug: twos
-title: Rising Stars Twos
+title: Rising Stars Early Preschool
 featuredImage: 'https://ucarecdn.com/a0891986-1f1f-4c66-9415-a96bdec11209/'
 subtitle: 'Koalas, Little Lambs, Turtles'
 meta:
-  description: Rising Stars Bilingual Learning Center Twos Program, Austin Tx
-  title: Rising Stars Twos
+  description: Rising Stars Bilingual Learning Center Early Preschool Program, Austin Tx
+  title: Rising Stars Early Preschool
 overview:
   text: |-
     ## Classroom Overview
-    Every day and each experience is a learning lab for kids in our twos program. Our goal is to provide new experiences that relate to each child’s needs, interests, and developmental level. In the two-year-old classroom, your child will be interacting with peers in a loving, safe, and friendly environment. We provide experiences that challenge and support each child’s language, social, emotional, physical, and creative development. Everyday your child will have opportunities to create, develop personal interaction skills, and learn problem-solving skills and concepts through hands-on experiences.
+    Every day and each experience is a learning lab for kids in our Early Preschool program. Our goal is to provide new experiences that relate to each child’s needs, interests, and developmental level. In the Early Preschool classroom, your child will be interacting with peers in a loving, safe, and friendly environment. We provide experiences that challenge and support each child’s language, social, emotional, physical, and creative development. Everyday your child will have opportunities to create, develop personal interaction skills, and learn problem-solving skills and concepts through hands-on experiences.
   image: 'https://ucarecdn.com/58bb758e-a7c3-487f-ac51-c4a585bc6a44/kidsfruit.jpg'
   link: '/enrollment'
   linkText: 'Learn About Enrollment'

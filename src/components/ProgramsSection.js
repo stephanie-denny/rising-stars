@@ -15,7 +15,7 @@ const ProgramsSection = ({
           {!!programs &&
             programs.map((program, index) => (
               <Col className="col-12 col-md-3 m-0 p-0" key={index}>
-                <Link to={`/${program.title}`}>
+                <Link to={`/${program.link}`}>
                   {program.image && (
                     <figure>
                       <img

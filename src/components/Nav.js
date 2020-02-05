@@ -132,13 +132,13 @@ export class Navigation extends Component {
                   Infants
                 </NavLink>
                 <NavLink to="/ones/" className="Nav--GroupLink">
-                  Ones
+                  Toddlers
                 </NavLink>
                 <NavLink to="/twos/" className="Nav--GroupLink">
-                  Twos
+                  Early Preschool
                 </NavLink>
                 <NavLink to="/threes/" className="Nav--GroupLink">
-                  Threes +
+                  Preschool
                 </NavLink>
               </div>
             </div>

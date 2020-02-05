@@ -1,12 +1,12 @@
 ---
 template: ProgramsPage
 slug: threes
-title: Rising Stars Threes+
+title: Rising Stars Preschool
 featuredImage: 'https://ucarecdn.com/055b06a3-f7ff-4d43-8025-666c6d42842e/'
 subtitle: 'Robins, Colts, Pandas'
 meta:
-  description: Rising Stars Bilingual Learning Center Threes+ Program, Austin Tx
-  title: Rising Stars Threes+
+  description: Rising Stars Bilingual Learning Center Preschool Program, Austin Tx
+  title: Rising Stars Preschool
 overview:
   text: |-
     ## Classroom Overview
