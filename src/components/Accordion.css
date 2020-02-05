@@ -35,10 +35,17 @@
 }
 
 .Accordion--item svg {
-  float: right;
+  position: absolute;
+  top: 1.8em;
+  right: 1em;
   transition: ease all 0.3s;
 }
 
+@media screen and (max-width: 600px) {
+  .Accordion--item {
+    padding: 2em 3em;
+  }
+}
 .Accordion--item.active svg {
   transform: rotate(-180deg);
 }
