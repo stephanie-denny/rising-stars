@@ -43,7 +43,7 @@ programs:
     link: /infants
     title: infants
   - image: 'https://ucarecdn.com/eb1846e9-8faf-4966-b619-c45575a1bade/ones.jpg'
-    link: /ones/
+    link: /enrollment
     title: ones
   - image: 'https://ucarecdn.com/6e881c73-22bc-4908-8d84-c84f8e4f71da/twos.jpg'
     link: /twos/
