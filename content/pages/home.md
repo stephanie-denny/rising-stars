@@ -40,17 +40,17 @@ about:
     development center for infants through pre-K located in South Austin.
 programs:
   - image: 'https://ucarecdn.com/f6118b66-830d-4111-a420-cc514dd75b42/babies.jpg'
+    link: Infants
     title: Infants
-    link: infants
   - image: 'https://ucarecdn.com/eb1846e9-8faf-4966-b619-c45575a1bade/ones.jpg'
+    link: Toddlers
     title: Toddlers
-    link: ones
   - image: 'https://ucarecdn.com/6e881c73-22bc-4908-8d84-c84f8e4f71da/twos.jpg'
+    link: Early Preschool
     title: Early Preschool
-    link: twos
   - image: 'https://ucarecdn.com/e3ada390-e0fb-4f5d-91fc-e0958ad4c02c/threes.jpg'
-    title: 'Preschool'
-    link: threes
+    link: Preschool
+    title: Preschool
 meta:
   description: >-
     Every day is an opportunity to explore, make friends, and grow. Our teachers
@@ -59,3 +59,4 @@ meta:
     development center for infants through pre-K located in South Austin.
   title: Rising Stars Bilingual Learning Center
 ---
+
