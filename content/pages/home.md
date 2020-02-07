@@ -40,7 +40,7 @@ about:
     development center for infants through pre-K located in South Austin.
 programs:
   - image: 'https://ucarecdn.com/f6118b66-830d-4111-a420-cc514dd75b42/babies.jpg'
-    link: 'https://risingstarsaustin.com/ones/'
+    link: risingstarsaustin.com/ones/
     title: Infants
   - image: 'https://ucarecdn.com/eb1846e9-8faf-4966-b619-c45575a1bade/ones.jpg'
     link: 'https://risingstarsaustin.com/ones/'
