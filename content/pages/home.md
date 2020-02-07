@@ -39,12 +39,12 @@ about:
     development. Rising Stars Bilingual Learning Center is an accredited child
     development center for infants through pre-K located in South Austin.
 programs:
-  - image: 'https://ucarecdn.com/f6118b66-830d-4111-a420-cc514dd75b42/babies.jpg'
-    link: risingstarsaustin.com/infants/
-    title: Infants
   - image: 'https://ucarecdn.com/eb1846e9-8faf-4966-b619-c45575a1bade/ones.jpg'
     link: risingstarsaustin.com/ones/
     title: Toddlers
+  - image: 'https://ucarecdn.com/f6118b66-830d-4111-a420-cc514dd75b42/babies.jpg'
+    link: risingstarsaustin.com/infants/
+    title: Infants
   - image: 'https://ucarecdn.com/6e881c73-22bc-4908-8d84-c84f8e4f71da/twos.jpg'
     link: 'https://risingstarsaustin.com/ones/'
     title: Early Preschool
