@@ -9,7 +9,9 @@ subtitle: >-
   levels. Rising Stars is a bilingual, diverse, and nurturing childcare center
   where young children grow into independent, self-confident, inquisitive
   learners.
-section1img: 'https://ucarecdn.com/2bf1c2c6-f444-4eea-804a-dff1754a8c34/audreyholdingtoy.jpg'
+section1img:
+  - >-
+    https://ucarecdn.com/bd2f625b-baf0-4347-8a27-dfb241f09168/-/crop/1233x786/0,0/-/preview/
 section1: >-
   ## We believe in nurturing the whole child
 
