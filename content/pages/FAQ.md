@@ -25,7 +25,7 @@ accordion:
       Rising Stars comprises over 30 families, with infants (starting at two months old) through children up to five years old.
     title: How many children are enrolled and how old are they?
   - description: |-
-      Yes, Rising Stars has a part-time program. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
+      Yes, Rising Stars has a part-time program.
     title: May my child attend part-time?
   - description: |-
       We maintain the following child/teacher ratios...

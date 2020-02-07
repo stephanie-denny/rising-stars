@@ -424,9 +424,24 @@ collections: # A list of collections the CMS should be able to edit
           - { label: Title, name: title, widget: string }
           - { label: Featured Image, name: featuredImage, widget: image }
           - { label: Subtitle, name: subtitle, widget: markdown }
-          - { label: Section 1 Image, name: section1img, widget: image }
-          - { label: Section 1, name: section1, widget: markdown }
-          - { label: Section 2, name: section2, widget: markdown }
+          - {
+              label: Section 1 Image,
+              name: section1img,
+              widget: image,
+              required: false,
+            }
+          - {
+              label: Section 1,
+              name: section1,
+              widget: markdown,
+              required: false,
+            }
+          - {
+              label: Section 2,
+              name: section2,
+              widget: markdown,
+              required: false,
+            }
           - label: 'accordion'
             name: 'accordion'
             widget: 'list'
@@ -474,9 +489,24 @@ collections: # A list of collections the CMS should be able to edit
           - { label: Title, name: title, widget: string }
           - { label: Featured Image, name: featuredImage, widget: image }
           - { label: Subtitle, name: subtitle, widget: markdown }
-          - { label: Section 1 Image, name: section1img, widget: image }
-          - { label: Section 1, name: section1, widget: markdown }
-          - { label: Section 2, name: section2, widget: markdown }
+          - {
+              label: Section 1 Image,
+              name: section1img,
+              widget: image,
+              required: false,
+            }
+          - {
+              label: Section 1,
+              name: section1,
+              widget: markdown,
+              required: false,
+            }
+          - {
+              label: Section 2,
+              name: section2,
+              widget: markdown,
+              required: false,
+            }
           - label: 'accordion'
             name: 'accordion'
             widget: 'list'
@@ -523,6 +553,24 @@ collections: # A list of collections the CMS should be able to edit
           - { label: Slug, name: slug, widget: hidden, default: '' }
           - { label: Title, name: title, widget: string }
           - { label: Featured Image, name: featuredImage, widget: image }
+          - {
+              label: Section 1 Image,
+              name: section1img,
+              widget: image,
+              required: false,
+            }
+          - {
+              label: Section 1,
+              name: section1,
+              widget: markdown,
+              required: false,
+            }
+          - {
+              label: Section 2,
+              name: section2,
+              widget: markdown,
+              required: false,
+            }
           - { label: Subtitle, name: subtitle, widget: markdown }
           - label: 'accordion'
             name: 'accordion'
@@ -571,9 +619,24 @@ collections: # A list of collections the CMS should be able to edit
           - { label: Title, name: title, widget: string }
           - { label: Featured Image, name: featuredImage, widget: image }
           - { label: Subtitle, name: subtitle, widget: markdown }
-          - { label: Section 1 Image, name: section1img, widget: image }
-          - { label: Section 1, name: section1, widget: markdown }
-          - { label: Section 2, name: section2, widget: markdown }
+          - {
+              label: Section 1 Image,
+              name: section1img,
+              widget: image,
+              required: false,
+            }
+          - {
+              label: Section 1,
+              name: section1,
+              widget: markdown,
+              required: false,
+            }
+          - {
+              label: Section 2,
+              name: section2,
+              widget: markdown,
+              required: false,
+            }
           - label: 'accordion'
             name: 'accordion'
             widget: 'list'
@@ -621,9 +684,24 @@ collections: # A list of collections the CMS should be able to edit
           - { label: Title, name: title, widget: string }
           - { label: Featured Image, name: featuredImage, widget: image }
           - { label: Subtitle, name: subtitle, widget: markdown }
-          - { label: Section 1 Image, name: section1img, widget: image }
-          - { label: Section 1, name: section1, widget: markdown }
-          - { label: Section 2, name: section2, widget: markdown }
+          - {
+              label: Section 1 Image,
+              name: section1img,
+              widget: image,
+              required: false,
+            }
+          - {
+              label: Section 1,
+              name: section1,
+              widget: markdown,
+              required: false,
+            }
+          - {
+              label: Section 2,
+              name: section2,
+              widget: markdown,
+              required: false,
+            }
           - label: 'accordion'
             name: 'accordion'
             widget: 'list'
@@ -1078,44 +1156,6 @@ collections: # A list of collections the CMS should be able to edit
                   label: Dark Text?,
                   widget: boolean,
                   default: true,
-                }
-      - file: 'content/pages/handbook.md'
-        label: 'Parent Handbook'
-        name: 'handbook'
-        fields:
-          - {
-              label: Template,
-              name: template,
-              widget: hidden,
-              default: ParentsPage,
-            }
-          - { label: Slug, name: slug, widget: hidden, default: '' }
-          - { label: Title, name: title, widget: string }
-          - { label: Featured Image, name: featuredImage, widget: image }
-          - { label: Subtitle, name: subtitle, widget: markdown }
-          - label: 'Meta'
-            required: false
-            name: 'meta'
-            widget: 'object'
-            fields:
-              - { label: Title, name: title, widget: string, required: false }
-              - {
-                  label: Description,
-                  name: description,
-                  widget: text,
-                  required: false,
-                }
-              - {
-                  label: Canonical Link,
-                  name: canonicalLink,
-                  widget: string,
-                  required: false,
-                }
-              - {
-                  label: Noindex,
-                  name: noindex,
-                  widget: boolean,
-                  required: false,
                 }
       - file: 'content/pages/parents.md'
         label: 'Parents'

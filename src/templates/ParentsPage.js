@@ -4,6 +4,7 @@ import { graphql } from 'gatsby'
 import PageHeader from '../components/PageHeader'
 import Content from '../components/Content'
 import Layout from '../components/Layout'
+import './ParentsPage.css'
 
 // Export Template for use in CMS preview
 export const ParentsPageTemplate = ({ title, subtitle, featuredImage, body }) => (

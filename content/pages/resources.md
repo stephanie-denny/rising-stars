@@ -15,3 +15,20 @@ meta:
   title: About Rising Stars Resources
 ---
 
+##Rising Stars 2020 Calendar
+
+Rising Stars will be closed on the following dates:
+
+| Month     | Day   |
+| --------- | ----- |
+| January   | 1     |
+| January   | 20    |
+| February  | 17    |
+| March     | 20    |
+| April     | 10    |
+| May       | 25    |
+| July      | 3     |
+| September | 7     |
+| October   | 12    |
+| November  | 25-27 |
+| December  | 21-31 |

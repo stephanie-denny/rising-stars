@@ -9,9 +9,7 @@ subtitle: >-
   levels. Rising Stars is a bilingual, diverse, and nurturing childcare center
   where young children grow into independent, self-confident, inquisitive
   learners.
-section1img:
-  - >-
-    https://ucarecdn.com/bd2f625b-baf0-4347-8a27-dfb241f09168/-/crop/1233x786/0,0/-/preview/
+section1img: 'https://ucarecdn.com/bd2f625b-baf0-4347-8a27-dfb241f09168/-/crop/1233x786/0,0/-/preview/'
 section1: >-
   ## We believe in nurturing the whole child
 
@@ -36,4 +34,3 @@ meta:
     development center for infants through pre-K located in South Austin..
   title: About Rising Stars
 ---
-

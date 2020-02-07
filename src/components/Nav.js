@@ -153,7 +153,6 @@ export class Navigation extends Component {
                 to="/parents/"
                 className={`NavLink Nav--GroupParent ${
                   this.props.location.pathname.includes('policies') ||
-                  this.props.location.pathname.includes('handbook') ||
                   this.props.location.pathname.includes('resources')
                     ? 'active'
                     : ''
@@ -169,9 +168,6 @@ export class Navigation extends Component {
               >
                 <NavLink to="/policies/" className="Nav--GroupLink">
                   Policies
-                </NavLink>
-                <NavLink to="/handbook/" className="Nav--GroupLink">
-                  Handbook
                 </NavLink>
                 <NavLink to="/resources/" className="Nav--GroupLink">
                   Resources

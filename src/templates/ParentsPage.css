@@ -1,0 +1,29 @@
+table {
+  width: 100%;
+  border: 1px solid gray;
+}
+
+th {
+  padding: 10px;
+}
+
+tr {
+  border-bottom: 1px solid gray;
+}
+
+td {
+  padding: 10px;
+  border-right: 1px solid gray;
+}
+tbody td:first-child {
+  font-weight: 600;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #ececec;
+}
+
+thead tr {
+  background-color: lightblue;
+  border-bottom: 1px solid gray;
+}
