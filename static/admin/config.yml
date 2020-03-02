@@ -337,7 +337,13 @@ collections: # A list of collections the CMS should be able to edit
             }
           - { label: Slug, name: slug, widget: hidden, default: '' }
           - { label: Title, name: title, widget: string }
-          - { label: Featured Image, name: featuredImage, widget: image }
+          - {
+              label: Featured Image,
+              name: featuredImage,
+              widget: image,
+              options:
+                { media_library: { config: { imageShrink: 2600x2600 } } },
+            }
           - { label: Subtitle, name: subtitle, widget: markdown }
           - label: Slideshow
             name: slides
@@ -347,6 +353,13 @@ collections: # A list of collections the CMS should be able to edit
             fields:
               - { label: 'Image', name: image, widget: image }
               - { label: 'Title', name: 'title', widget: string, default: '' }
+              - {
+                  label: 'Subtitle',
+                  name: 'subtitle',
+                  widget: string,
+                  default: '',
+                  required: false,
+                }
           - label: 'About'
             name: 'about'
             widget: 'object'
@@ -422,7 +435,13 @@ collections: # A list of collections the CMS should be able to edit
             }
           - { label: Slug, name: slug, widget: hidden, default: '' }
           - { label: Title, name: title, widget: string }
-          - { label: Featured Image, name: featuredImage, widget: image }
+          - {
+              label: Featured Image,
+              name: featuredImage,
+              widget: image,
+              options:
+                { media_library: { config: { imageShrink: 2600x2600 } } },
+            }
           - { label: Subtitle, name: subtitle, widget: markdown }
           - {
               label: Section 1 Image,
@@ -446,10 +465,20 @@ collections: # A list of collections the CMS should be able to edit
             name: 'accordion'
             widget: 'list'
             fields:
-              - { name: title, label: title, widget: string, default: '' }
-              - { name: description, label: description, widget: markdown }
-              - { name: link, label: link, widget: string }
-              - { name: linkTitle, label: Link Title, widget: string }
+              - { label: 'Title', name: 'title', widget: 'string', default: '' }
+              - { label: 'Description', name: 'description', widget: markdown }
+              - {
+                  label: 'Link',
+                  name: 'link',
+                  widget: 'string',
+                  required: false,
+                }
+              - {
+                  label: 'Link Title',
+                  name: 'linkTitle',
+                  widget: 'string',
+                  required: false,
+                }
 
           - label: 'Meta'
             required: false
@@ -487,7 +516,13 @@ collections: # A list of collections the CMS should be able to edit
             }
           - { label: Slug, name: slug, widget: hidden, default: '' }
           - { label: Title, name: title, widget: string }
-          - { label: Featured Image, name: featuredImage, widget: image }
+          - {
+              label: Featured Image,
+              name: featuredImage,
+              widget: image,
+              options:
+                { media_library: { config: { imageShrink: 2600x2600 } } },
+            }
           - { label: Subtitle, name: subtitle, widget: markdown }
           - {
               label: Section 1 Image,
@@ -511,10 +546,20 @@ collections: # A list of collections the CMS should be able to edit
             name: 'accordion'
             widget: 'list'
             fields:
-              - { name: title, label: title, widget: string, default: '' }
-              - { name: description, label: description, widget: markdown }
-              - { name: link, label: link, widget: string }
-              - { name: linkTitle, label: Link Title, widget: string }
+              - { label: 'Title', name: 'title', widget: 'string', default: '' }
+              - { label: 'Description', name: 'description', widget: markdown }
+              - {
+                  label: 'Link',
+                  name: 'link',
+                  widget: 'string',
+                  required: false,
+                }
+              - {
+                  label: 'Link Title',
+                  name: 'linkTitle',
+                  widget: 'string',
+                  required: false,
+                }
 
           - label: 'Meta'
             required: false
@@ -552,7 +597,13 @@ collections: # A list of collections the CMS should be able to edit
             }
           - { label: Slug, name: slug, widget: hidden, default: '' }
           - { label: Title, name: title, widget: string }
-          - { label: Featured Image, name: featuredImage, widget: image }
+          - {
+              label: Featured Image,
+              name: featuredImage,
+              widget: image,
+              options:
+                { media_library: { config: { imageShrink: 2600x2600 } } },
+            }
           - {
               label: Section 1 Image,
               name: section1img,
@@ -576,13 +627,18 @@ collections: # A list of collections the CMS should be able to edit
             name: 'accordion'
             widget: 'list'
             fields:
-              - { name: title, label: title, widget: string, default: '' }
-              - { name: description, label: description, widget: markdown }
-              - { name: link, label: link, widget: string, required: false }
+              - { label: 'Title', name: 'title', widget: 'string', default: '' }
+              - { label: 'Description', name: 'description', widget: markdown }
               - {
-                  name: linkTitle,
-                  label: Link Title,
-                  widget: string,
+                  label: 'Link',
+                  name: 'link',
+                  widget: 'string',
+                  required: false,
+                }
+              - {
+                  label: 'Link Title',
+                  name: 'linkTitle',
+                  widget: 'string',
                   required: false,
                 }
 
@@ -622,7 +678,13 @@ collections: # A list of collections the CMS should be able to edit
             }
           - { label: Slug, name: slug, widget: hidden, default: '' }
           - { label: Title, name: title, widget: string }
-          - { label: Featured Image, name: featuredImage, widget: image }
+          - {
+              label: Featured Image,
+              name: featuredImage,
+              widget: image,
+              options:
+                { media_library: { config: { imageShrink: 2600x2600 } } },
+            }
           - { label: Subtitle, name: subtitle, widget: markdown }
           - {
               label: Section 1 Image,
@@ -646,10 +708,20 @@ collections: # A list of collections the CMS should be able to edit
             name: 'accordion'
             widget: 'list'
             fields:
-              - { name: title, label: title, widget: string, default: '' }
-              - { name: description, label: description, widget: markdown }
-              - { name: link, label: link, widget: string }
-              - { name: linkTitle, label: Link Title, widget: string }
+              - { label: 'Title', name: 'title', widget: 'string', default: '' }
+              - { label: 'Description', name: 'description', widget: markdown }
+              - {
+                  label: 'Link',
+                  name: 'link',
+                  widget: 'string',
+                  required: false,
+                }
+              - {
+                  label: 'Link Title',
+                  name: 'linkTitle',
+                  widget: 'string',
+                  required: false,
+                }
 
           - label: 'Meta'
             required: false
@@ -687,7 +759,13 @@ collections: # A list of collections the CMS should be able to edit
             }
           - { label: Slug, name: slug, widget: hidden, default: '' }
           - { label: Title, name: title, widget: string }
-          - { label: Featured Image, name: featuredImage, widget: image }
+          - {
+              label: Featured Image,
+              name: featuredImage,
+              widget: image,
+              options:
+                { media_library: { config: { imageShrink: 2600x2600 } } },
+            }
           - { label: Subtitle, name: subtitle, widget: markdown }
           - {
               label: Section 1 Image,
@@ -711,10 +789,20 @@ collections: # A list of collections the CMS should be able to edit
             name: 'accordion'
             widget: 'list'
             fields:
-              - { name: title, label: title, widget: string, default: '' }
-              - { name: description, label: description, widget: markdown }
-              - { name: link, label: link, widget: string }
-              - { name: linkTitle, label: Link Title, widget: string }
+              - { label: 'Title', name: 'title', widget: 'string', default: '' }
+              - { label: 'Description', name: 'description', widget: markdown }
+              - {
+                  label: 'Link',
+                  name: 'link',
+                  widget: 'string',
+                  required: false,
+                }
+              - {
+                  label: 'Link Title',
+                  name: 'linkTitle',
+                  widget: 'string',
+                  required: false,
+                }
 
           - label: 'Meta'
             required: false
@@ -753,7 +841,13 @@ collections: # A list of collections the CMS should be able to edit
             }
           - { label: Slug, name: slug, widget: hidden, default: '' }
           - { label: Title, name: title, widget: string }
-          - { label: Featured Image, name: featuredImage, widget: image }
+          - {
+              label: Featured Image,
+              name: featuredImage,
+              widget: image,
+              options:
+                { media_library: { config: { imageShrink: 2600x2600 } } },
+            }
           - { label: Subtitle, name: subtitle, widget: markdown }
 
           - label: 'Meta'
@@ -793,7 +887,13 @@ collections: # A list of collections the CMS should be able to edit
             }
           - { label: Slug, name: slug, widget: hidden, default: '' }
           - { label: Title, name: title, widget: string }
-          - { label: Featured Image, name: featuredImage, widget: image }
+          - {
+              label: Featured Image,
+              name: featuredImage,
+              widget: image,
+              options:
+                { media_library: { config: { imageShrink: 2600x2600 } } },
+            }
           - { label: Subtitle, name: subtitle, widget: markdown }
           - { label: Section1, name: section1, widget: markdown }
           - label: 'blades'

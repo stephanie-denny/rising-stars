@@ -25,7 +25,7 @@ export const HomePageTemplate = ({
              />
            </MobileView>
            <BrowserView>
-             <Slideshow main="main" fadeImages={slides} subtitle={subtitle} />
+             <Slideshow main="main" fadeImages={slides} />
            </BrowserView>
            <div className="divider"></div>
            <AboutSection about={about} />

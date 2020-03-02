@@ -1,6 +1,6 @@
 ---
 template: ProgramsPage
-slug: ones
+slug: toddlers
 title: Rising Stars Toddlers
 featuredImage: 'https://ucarecdn.com/6de433b3-1b57-492b-8627-2be3617247ce/'
 subtitle: 'Kangaroos, Cottontails, Otters, Honey Bears'

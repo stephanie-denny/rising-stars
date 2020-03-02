@@ -9,9 +9,15 @@ export default class Slideshow extends React.Component {
 
   render() {
 
-  const { fadeImages, main, subtitle } = this.props
+  const { fadeImages, main } = this.props
     return (
-      <Carousel className={main} fade={true} controls={false} pauseOnHover={false} interval={4000}>
+      <Carousel
+        className={main}
+        fade={true}
+        controls={false}
+        pauseOnHover={false}
+        interval={4000}
+      >
         {!!fadeImages &&
           fadeImages.map((slide, index) => (
             <Carousel.Item key={index}>
@@ -22,9 +28,7 @@ export default class Slideshow extends React.Component {
               />
               <Carousel.Caption>
                 <h1>{slide.title}</h1>
-                <p>
-                  {subtitle}
-                </p>
+                <p>{slide.subtitle}</p>
               </Carousel.Caption>
             </Carousel.Item>
           ))}

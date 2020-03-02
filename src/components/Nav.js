@@ -113,9 +113,9 @@ export class Navigation extends Component {
                 to="/programs/"
                 className={`NavLink Nav--GroupParent ${
                   this.props.location.pathname.includes('infants') ||
-                  this.props.location.pathname.includes('ones') ||
-                  this.props.location.pathname.includes('twos') ||
-                  this.props.location.pathname.includes('threes')
+                  this.props.location.pathname.includes('toddlers') ||
+                  this.props.location.pathname.includes('early-preschool') ||
+                  this.props.location.pathname.includes('preschool')
                     ? 'active'
                     : ''
                 }`}
@@ -131,13 +131,13 @@ export class Navigation extends Component {
                 <NavLink to="/infants/" className="Nav--GroupLink">
                   Infants
                 </NavLink>
-                <NavLink to="/ones/" className="Nav--GroupLink">
+                <NavLink to="/toddlers/" className="Nav--GroupLink">
                   Toddlers
                 </NavLink>
-                <NavLink to="/twos/" className="Nav--GroupLink">
+                <NavLink to="/early-preschool/" className="Nav--GroupLink">
                   Early Preschool
                 </NavLink>
-                <NavLink to="/threes/" className="Nav--GroupLink">
+                <NavLink to="/preschool/" className="Nav--GroupLink">
                   Preschool
                 </NavLink>
               </div>

@@ -1,6 +1,6 @@
 ---
 template: ProgramsPage
-slug: twos
+slug: early-preschool
 title: Rising Stars Early Preschool
 featuredImage: 'https://ucarecdn.com/a0891986-1f1f-4c66-9415-a96bdec11209/'
 subtitle: 'Koalas, Little Lambs, Turtles'

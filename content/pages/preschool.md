@@ -1,6 +1,6 @@
 ---
 template: ProgramsPage
-slug: threes
+slug: preschool
 title: Rising Stars Preschool
 featuredImage: 'https://ucarecdn.com/055b06a3-f7ff-4d43-8025-666c6d42842e/'
 subtitle: 'Robins, Colts, Pandas'
