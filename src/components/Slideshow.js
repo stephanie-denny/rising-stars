@@ -9,7 +9,7 @@ export default class Slideshow extends React.Component {
 
   render() {
 
-  const { fadeImages, main } = this.props
+  const { fadeImages, main, subtitle } = this.props
     return (
       <Carousel className={main} fade={true} controls={false} pauseOnHover={false} interval={4000}>
         {!!fadeImages &&
@@ -23,7 +23,7 @@ export default class Slideshow extends React.Component {
               <Carousel.Caption>
                 <h1>{slide.title}</h1>
                 <p>
-                  Nulla vitae elit libero, a pharetra augue mollis interdum.
+                  {subtitle}
                 </p>
               </Carousel.Caption>
             </Carousel.Item>
