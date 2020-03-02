@@ -2,7 +2,8 @@
 template: AboutPage
 slug: faq
 title: Rising Stars FAQ
-featuredImage: 'https://ucarecdn.com/2d672c5d-eed9-4d45-9a0f-e04179d067a6/'
+featuredImage:
+  - 'https://ucarecdn.com/b921e461-c9ec-4aa9-a4d1-73814550def8/'
 subtitle: Rising Stars Frequently Asked Questions
 accordion:
   - description: >-
