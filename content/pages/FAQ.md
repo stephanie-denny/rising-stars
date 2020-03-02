@@ -7,7 +7,7 @@ subtitle: Rising Stars Frequently Asked Questions
 accordion:
   - description: >-
       We provide tours Monday-Friday at 9:30-10:30 ​AM and 2:30-4:30 PM. Call us
-      to schedule a visit. ggfgfgff
+      to schedule a visit.
     link: 'tel:+7372260768'
     linkTitle: Call (737) 226-0768
     title: May I come for a tour?
