@@ -57,6 +57,7 @@ export const pageQuery = graphql`
                slides {
                  image
                  title
+                 subtitle
                }
                about {
                  title
