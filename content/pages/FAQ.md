@@ -20,7 +20,7 @@ accordion:
   - description: >-
       Classes are available for drop off/pick up between 7 AM-6 PM Monday
       through Friday. Rising Stars is open year around. We close for federal
-      holidays, end-of-year holidays.
+      holidays, end-of-year holidays, and Austin ISD holidays.
     title: When is Rising Stars open?
   - description: >-
       Rising Stars comprises over 30 families, with infants (starting at two
