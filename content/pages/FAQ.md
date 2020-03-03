@@ -20,7 +20,7 @@ accordion:
   - description: >-
       Classes are available for drop off/pick up between 7 AM-6 PM Monday
       through Friday. Rising Stars is open year around. We close for federal
-      holidays, end-of-year holidays, and Austin ISD holidays.
+      holidays, end-of-year holidays, and we follow the Austin ISD holidays.
     title: When is Rising Stars open?
   - description: >-
       Rising Stars comprises over 30 families, with infants (starting at two
@@ -31,10 +31,10 @@ accordion:
   - description: |-
       We maintain the following child/teacher ratios...
 
-      - Infants - 3:1,
-      - Toddlers – 4:1,
-      - Early Preschool – 5:1,
-      - Preschool – 7:1
+      * Infants - 4:1,
+      * Toddlers – 5:1,
+      * Early Preschool – 7:1,
+      * Preschool – 8:1
     title: What are your child to staff ratios and group sizes?
   - description: >-
       Each class is directed by a Lead Teacher who has had formal training in
@@ -71,12 +71,12 @@ accordion:
       discuss and resolve conflicts rather than "act out" their feelings.
     title: How do you discipline children?
   - description: >-
-      Rising Stars furnishes healthy, nutritional snacks morning and afternoon
-      for toddlers and older children. We avoid food items with added sugar
-      and/or salt. Fresh fruits and vegetables are used whenever possible. View
-      a sample Snack Menu. Parents provide their own child’s lunch, which is
-      refrigerated and may be heated by our staff before serving. Parents of
-      infants supply all food products.
+      Rising Stars furnishes healthy, nutritional breakfast, lunch and pm snack
+      for 18 months and up. We avoid food items with added sugar and/or salt.
+      Fresh fruits and vegetables are used whenever possible. View a sample
+      Snack Menu. Parents provide their own child’s lunch, which is refrigerated
+      and may be heated by our staff before serving. Parents of infants supply
+      all food products.
     title: What meals and snacks do you provide?
   - description: >-
       The main reasons for excluding children from the Center are...
@@ -113,3 +113,4 @@ meta:
   description: Rising Stars Frequently Asked Questions
   title: Rising Stars FAQ
 ---
+
