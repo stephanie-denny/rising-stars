@@ -7,7 +7,8 @@ subtitle: >-
   Rising Stars provides loving care in a child-focused environment with a low
   student to teacher ratio to nurture your child’s cognitive, social, emotional,
   and physical growth.
-section1img: 'https://ucarecdn.com/043fc9d5-6f19-4eb9-a51d-73ed6dcf489e/babysmiling.jpg'
+section1img:
+  - 'https://ucarecdn.com/2b691c8e-24a8-4880-bbeb-9cfd26c60284/'
 section1: >-
   ## Nurturing Your Unique Child
 
