@@ -2,8 +2,7 @@
 template: ContactPage
 slug: contact
 title: Contact Rising Stars
-featuredImage:
-  - 'https://ucarecdn.com/52bffd14-336c-4e3b-9a29-3c5c99e2efa8/'
+featuredImage: 'https://ucarecdn.com/52bffd14-336c-4e3b-9a29-3c5c99e2efa8/'
 subtitle: We would love to hear from you!
 address: '11406 Conroy Ln, Manchaca, TX 78652'
 phone: (737) 226-0768
