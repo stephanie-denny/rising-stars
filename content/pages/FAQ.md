@@ -23,7 +23,7 @@ accordion:
       holidays, end-of-year holidays, and we follow the Austin ISD holidays.
     title: When is Rising Stars open?
   - description: >-
-      Rising Stars comprises over 30 families, with infants (starting at two
+      Rising Stars comprises over 30 families, with infants (starting at three
       months old) through children up to five years old.
     title: How many children are enrolled and how old are they?
   - description: 'Yes, Rising Stars has a part-time program.'
