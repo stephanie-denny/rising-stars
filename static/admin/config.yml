@@ -895,7 +895,12 @@ collections: # A list of collections the CMS should be able to edit
                 { media_library: { config: { imageShrink: 2600x2600 } } },
             }
           - { label: Subtitle, name: subtitle, widget: markdown }
-          - { label: Section1, name: section1, widget: markdown }
+          - {
+              label: Section1,
+              name: section1,
+              widget: markdown,
+              required: false,
+            }
           - label: 'blades'
             name: 'blades'
             widget: 'list'
@@ -978,7 +983,12 @@ collections: # A list of collections the CMS should be able to edit
           - { label: Title, name: title, widget: string }
           - { label: Featured Image, name: featuredImage, widget: image }
           - { label: Subtitle, name: subtitle, widget: markdown }
-          - { label: Section1, name: section1, widget: markdown }
+          - {
+              label: Section1,
+              name: section1,
+              widget: markdown,
+              required: false,
+            }
           - label: 'blades'
             name: 'blades'
             widget: 'list'
@@ -1061,7 +1071,12 @@ collections: # A list of collections the CMS should be able to edit
           - { label: Title, name: title, widget: string }
           - { label: Featured Image, name: featuredImage, widget: image }
           - { label: Subtitle, name: subtitle, widget: markdown }
-          - { label: Section1, name: section1, widget: markdown }
+          - {
+              label: Section1,
+              name: section1,
+              widget: markdown,
+              required: false,
+            }
           - label: 'blades'
             name: 'blades'
             widget: 'list'
@@ -1144,7 +1159,12 @@ collections: # A list of collections the CMS should be able to edit
           - { label: Title, name: title, widget: string }
           - { label: Featured Image, name: featuredImage, widget: image }
           - { label: Subtitle, name: subtitle, widget: markdown }
-          - { label: Section1, name: section1, widget: markdown }
+          - {
+              label: Section1,
+              name: section1,
+              widget: markdown,
+              required: false,
+            }
           - label: 'blades'
             name: 'blades'
             widget: 'list'
@@ -1227,7 +1247,12 @@ collections: # A list of collections the CMS should be able to edit
           - { label: Title, name: title, widget: string }
           - { label: Featured Image, name: featuredImage, widget: image }
           - { label: Subtitle, name: subtitle, widget: markdown }
-          - { label: Section1, name: section1, widget: markdown }
+          - {
+              label: Section1,
+              name: section1,
+              widget: markdown,
+              required: false,
+            }
           - label: 'blades'
             name: 'blades'
             widget: 'list'
