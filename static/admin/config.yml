@@ -993,35 +993,79 @@ collections: # A list of collections the CMS should be able to edit
             name: 'blades'
             widget: 'list'
             fields:
-              - { name: leftText, label: Left Text, widget: markdown }
+              - {
+                  name: leftText,
+                  label: Left Text,
+                  widget: markdown,
+                  required: false,
+                }
               - {
                   name: leftBgImg,
                   label: Left Background Image,
                   widget: string,
+                  required: false,
                 }
-              - { name: leftImg, label: Left Image, widget: image }
-              - { name: leftLink, label: Left Link, widget: string }
-              - { name: leftLinkText, label: Left Link Text, widget: string }
+              - {
+                  name: leftImg,
+                  label: Left Image,
+                  widget: image,
+                  required: false,
+                }
+              - {
+                  name: leftLink,
+                  label: Left Link,
+                  widget: string,
+                  required: false,
+                }
+              - {
+                  name: leftLinkText,
+                  label: Left Link Text,
+                  widget: string,
+                  required: false,
+                }
               - {
                   name: leftTextDark,
                   label: Dark Text?,
                   widget: boolean,
                   default: true,
+                  required: false,
                 }
-              - { name: rightText, label: Right Text, widget: markdown }
+              - {
+                  name: rightText,
+                  label: Right Text,
+                  widget: markdown,
+                  required: false,
+                }
               - {
                   name: rightBgImg,
                   label: Right Background Image,
                   widget: string,
+                  required: false,
                 }
-              - { name: rightImg, label: Right Image, widget: image }
-              - { name: rightLink, label: Right Link, widget: string }
-              - { name: rightLinkText, label: Right Link Text, widget: string }
+              - {
+                  name: rightImg,
+                  label: Right Image,
+                  widget: image,
+                  required: false,
+                }
+              - {
+                  name: rightLink,
+                  label: Right Link,
+                  widget: string,
+                  required: false,
+                }
+              - {
+                  name: rightLinkText,
+                  label: Right Link Text,
+                  widget: string,
+                  required: false,
+                }
               - {
                   name: rightTextDark,
                   label: Dark Text?,
                   widget: boolean,
                   default: true,
+                  required: false,
                 }
 
           - label: 'overview'
