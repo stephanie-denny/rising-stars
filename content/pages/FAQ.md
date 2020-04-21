@@ -104,6 +104,24 @@ accordion:
     link: /enrollment'
     linkTitle: Learn more about enrollment
     title: Does enrollment continue from year to year?
+  - description: >-
+      Learning a second language at an early age has far-reaching cognitive
+      benefits, including enhanced problem-solving, mathematical and linguistic
+      skills.
+    title: Why learn a second language?
+  - description: >-
+      Research has shown that the best time for language acquisition is between
+      the age of 2 and 5. It is actually easier for a child to learn two, even
+      three languages at the same time so that he can associate ideas and
+      objects with the proper vocabulary instead of mastering a language and
+      then translate his existing knowledge into another language.  Furthermore,
+      studies have shown that a second language actually increases proficiency
+      in the native language, as it broadens vocabulary.  Finally, around age
+      three, vocal chords harden and it then becomes more difficult to reproduce
+      “unusual” sounds to recreate the accent of a native speaker.
+    title: >-
+      Will my child be confused if he/she learns a second language at such a
+      young age or forgets English?
 meta:
   description: Rising Stars Frequently Asked Questions
   title: Rising Stars FAQ
