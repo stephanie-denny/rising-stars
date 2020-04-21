@@ -44,11 +44,6 @@ accordion:
       a BA, AA, or CDA (Child Development Associate credential).
     title: What qualifications do your teachers have?
   - description: >-
-      We offer an unbiased curriculum and an inclusive community where all
-      families are celebrated and welcome. We aren’t affiliated with a church or
-      religious community.
-    title: Are you affiliated with a church or other religious community?
-  - description: >-
       Rising Stars classrooms are spacious and well equipped. Large windows
       provide abundant natural light and a delightful view outside. Classrooms
       include learning/activity centers such as Home Living, Book Corner, Art,
