@@ -3,7 +3,7 @@ template: ProgramsPage
 slug: infants
 title: Rising Stars Infants
 featuredImage:
-  - 'https://ucarecdn.com/61969162-e5dd-4847-9a0e-8bdf4d6169cc/baby-boy-standing-in-crib-PFFA5DF.jpg'
+  - 'https://ucarecdn.com/29657255-7a04-4134-a75c-c9348c50649e/'
 subtitle: 'Hummingbirds, Chicks, Finches, Ducklings'
 blades:
   - rightBgImg: >-
@@ -55,3 +55,4 @@ meta:
     development center for infants through pre-K located in South Austin..
   title: Rising Stars Infants
 ---
+
