@@ -2,8 +2,7 @@
 template: ProgramsPage
 slug: infants
 title: Rising Stars Infants
-featuredImage:
-  - 'https://ucarecdn.com/61969162-e5dd-4847-9a0e-8bdf4d6169cc/baby-boy-standing-in-crib-PFFA5DF.jpg'
+featuredImage: 'https://ucarecdn.com/61969162-e5dd-4847-9a0e-8bdf4d6169cc/'
 subtitle: 'Hummingbirds, Chicks, Finches, Ducklings'
 blades:
   - rightBgImg: >-
