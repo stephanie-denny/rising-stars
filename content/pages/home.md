@@ -3,7 +3,7 @@ template: HomePage
 slug: ""
 title: Rising Stars Bilingual Learning Center
 featuredImage: https://ucarecdn.com/e3ada390-e0fb-4f5d-91fc-e0958ad4c02c/
-subtitle: Every day is an opportunity to explore, make friends, and grow.
+subtitle: To know two languages is to be part of two worlds
 slides:
   - image: https://ucarecdn.com/055b06a3-f7ff-4d43-8025-666c6d42842e/girlwithleaf.jpg
     title: Rising Stars Bilingual Learning Center
@@ -28,7 +28,7 @@ about:
       text: We encircle your child with relationships, activities, and opportunities
         to explore, create, and learn.
       title: Fostering a Love of Learning
-  title: "To know two languages is to be part of two worlds "
+  title: " "
   subtitle: Rising Stars is home to children, families, and teachers from many
     countries and walks of life
   text: Every day is an opportunity to explore, make friends, and grow. Our
