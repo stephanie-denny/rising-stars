@@ -3,7 +3,7 @@ template: HomePage
 slug: ""
 title: Rising Stars Bilingual Learning Center
 featuredImage: https://ucarecdn.com/e3ada390-e0fb-4f5d-91fc-e0958ad4c02c/
-subtitle: To know two languages is to be part of two worlds
+subtitle: "**To know two languages is to be part of two worlds**"
 slides:
   - image: https://ucarecdn.com/055b06a3-f7ff-4d43-8025-666c6d42842e/girlwithleaf.jpg
     title: Rising Stars Bilingual Learning Center
